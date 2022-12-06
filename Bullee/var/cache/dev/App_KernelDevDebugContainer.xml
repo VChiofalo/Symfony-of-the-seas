@@ -336,7 +336,7 @@
         <argument type="service" id=".service_locator.l1ae.Qz.App\Controller\HomeController"/>
       </call>
     </service>
-    <service id="App\Repository\AnsersRepository" class="App\Repository\AnsersRepository" autowire="true" autoconfigure="true">
+    <service id="App\Repository\AnswersRepository" class="App\Repository\AnswersRepository" autowire="true" autoconfigure="true">
       <tag name="doctrine.repository_service"/>
       <argument type="service" id="doctrine"/>
     </service>
@@ -4093,7 +4093,7 @@
     <service id="doctrine.orm.configuration" class="Doctrine\ORM\Configuration" abstract="true"/>
     <service id="doctrine.orm.entity_manager.abstract" class="Doctrine\ORM\EntityManager" lazy="true" abstract="true"/>
     <service id="doctrine.orm.container_repository_factory" class="Doctrine\Bundle\DoctrineBundle\Repository\ContainerRepositoryFactory">
-      <argument type="service" id=".service_locator.mCf84O8"/>
+      <argument type="service" id=".service_locator.vV1d_ZQ"/>
     </service>
     <service id="doctrine.orm.manager_configurator.abstract" class="Doctrine\Bundle\DoctrineBundle\ManagerConfigurator" abstract="true">
       <argument type="collection"/>
@@ -5911,8 +5911,8 @@
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\HomeController" class="App\Controller\HomeController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\HomeController" class="App\Controller\HomeController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\HomeController" class="App\Controller\HomeController" autowire="true" autoconfigure="true" abstract="true"/>
-    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\AnsersRepository" class="App\Repository\AnsersRepository" autowire="true" abstract="true"/>
-    <service id=".abstract.instanceof.App\Repository\AnsersRepository" class="App\Repository\AnsersRepository" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\AnswersRepository" class="App\Repository\AnswersRepository" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Repository\AnswersRepository" class="App\Repository\AnswersRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\ArticlesRepository" class="App\Repository\ArticlesRepository" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Repository\ArticlesRepository" class="App\Repository\ArticlesRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\QuestionsRepository" class="App\Repository\QuestionsRepository" autowire="true" abstract="true"/>
@@ -6411,10 +6411,10 @@
         <argument key="doctrine.orm.messenger.doctrine_schema_subscriber" type="service_closure" id="doctrine.orm.messenger.doctrine_schema_subscriber"/>
       </argument>
     </service>
-    <service id=".service_locator.mCf84O8" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.vV1d_ZQ" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
-        <argument key="App\Repository\AnsersRepository" type="service_closure" id="App\Repository\AnsersRepository"/>
+        <argument key="App\Repository\AnswersRepository" type="service_closure" id="App\Repository\AnswersRepository"/>
         <argument key="App\Repository\ArticlesRepository" type="service_closure" id="App\Repository\ArticlesRepository"/>
         <argument key="App\Repository\QuestionsRepository" type="service_closure" id="App\Repository\QuestionsRepository"/>
         <argument key="App\Repository\ResultsRepository" type="service_closure" id="App\Repository\ResultsRepository"/>

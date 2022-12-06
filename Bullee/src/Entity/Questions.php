@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\QuestionsRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: QuestionsRepository::class)]
@@ -18,6 +20,14 @@ class Questions
 
     #[ORM\Column(length: 255, nullable: true)]
     private ?string $img = null;
+
+    #[ORM\OneToMany(mappedBy: 'questions', targetEntity: Answers::class)]
+    private Collection $answers;
+
+    public function __construct()
+    {
+        $this->answers = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -44,6 +54,36 @@ class Questions
     public function setImg(?string $img): self
     {
         $this->img = $img;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, Answers>
+     */
+    public function getAnswers(): Collection
+    {
+        return $this->answers;
+    }
+
+    public function addAnswer(Answers $answer): self
+    {
+        if (!$this->answers->contains($answer)) {
+            $this->answers->add($answer);
+            $answer->setQuestions($this);
+        }
+
+        return $this;
+    }
+
+    public function removeAnswer(Answers $answer): self
+    {
+        if ($this->answers->removeElement($answer)) {
+            // set the owning side to null (unless already changed)
+            if ($answer->getQuestions() === $this) {
+                $answer->setQuestions(null);
+            }
+        }
 
         return $this;
     }
