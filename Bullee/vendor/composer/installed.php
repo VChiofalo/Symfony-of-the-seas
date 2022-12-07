@@ -1,22 +1,22 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
+        'reference' => '4456c1d947f8817edbb99e3a5c4ae6f216944579',
         'name' => '__root__',
         'dev' => true,
     ),
     'versions' => array(
         '__root__' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => '4456c1d947f8817edbb99e3a5c4ae6f216944579',
             'dev_requirement' => false,
         ),
         'doctrine/annotations' => array(
@@ -161,6 +161,15 @@
             'install_path' => __DIR__ . '/../doctrine/sql-formatter',
             'aliases' => array(),
             'reference' => '25a06c7bf4c6b8218f47928654252863ffc890a5',
+            'dev_requirement' => false,
+        ),
+        'easycorp/easyadmin-bundle' => array(
+            'pretty_version' => 'v4.4.4',
+            'version' => '4.4.4.0',
+            'type' => 'symfony-bundle',
+            'install_path' => __DIR__ . '/../easycorp/easyadmin-bundle',
+            'aliases' => array(),
+            'reference' => '8d91efa1448b44b7ad0f7be0253daf87cd176c8b',
             'dev_requirement' => false,
         ),
         'egulias/email-validator' => array(
@@ -1034,6 +1043,15 @@
             'reference' => '707403074c8ea6e2edaf8794b0157a0bfa52157a',
             'dev_requirement' => false,
         ),
+        'symfony/polyfill-uuid' => array(
+            'pretty_version' => 'v1.27.0',
+            'version' => '1.27.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/polyfill-uuid',
+            'aliases' => array(),
+            'reference' => 'f3cf1a645c2734236ed1e2e671e273eeb3586166',
+            'dev_requirement' => false,
+        ),
         'symfony/process' => array(
             'pretty_version' => 'v6.0.11',
             'version' => '6.0.11.0',
@@ -1197,6 +1215,15 @@
             'install_path' => __DIR__ . '/../symfony/twig-bundle',
             'aliases' => array(),
             'reference' => '0c5bb02150d08fa3174d8cd7600496a51702360a',
+            'dev_requirement' => false,
+        ),
+        'symfony/uid' => array(
+            'pretty_version' => 'v6.0.13',
+            'version' => '6.0.13.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/uid',
+            'aliases' => array(),
+            'reference' => 'db426b27173f5e2d8b960dd10fa8ce19ea9ca5f3',
             'dev_requirement' => false,
         ),
         'symfony/validator' => array(

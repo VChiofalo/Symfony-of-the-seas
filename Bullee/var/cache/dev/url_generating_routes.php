@@ -15,5 +15,10 @@ return [
     '_profiler_router' => [['token'], ['_controller' => 'web_profiler.controller.router::panelAction'], [], [['text', '/router'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], [], []],
     '_profiler_exception' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::body'], [], [['text', '/exception'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], [], []],
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::stylesheet'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], [], []],
+    'app_agis' => [[], ['_controller' => 'App\\Controller\\AgisController::index'], [], [['text', '/agis']], [], [], []],
+    'app_demande' => [[], ['_controller' => 'App\\Controller\\DemandeController::index'], [], [['text', '/demande']], [], [], []],
     'app_home' => [[], ['_controller' => 'App\\Controller\\HomeController::index'], [], [['text', '/home']], [], [], []],
+    'app_inform' => [[], ['_controller' => 'App\\Controller\\InformController::index'], [], [['text', '/inform']], [], [], []],
+    'app_quiz_q_r' => [[], ['_controller' => 'App\\Controller\\QuizQRController::index'], [], [['text', '/quiz/q/r']], [], [], []],
+    'app_quiz_resultats' => [[], ['_controller' => 'App\\Controller\\QuizResultatsController::index'], [], [['text', '/quiz/resultats']], [], [], []],
 ];
