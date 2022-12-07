@@ -1,0 +1,26 @@
+ *{
+    box-sizing: 0;
+ }
+ /****************** PAGE HOMEQUIZ *******************/
+ body{
+    background-color:#BF7998 ;
+}
+
+div p{
+    display: flex;
+}
+
+.quit-form{
+    color: white;
+    justify-content: end;
+}
+
+.onleft{
+    color: white;
+    /*RAJOUTER FLEX ICI SUR LE TEXTE + BOUTON */
+}
+
+/*****************PAGE TUTOQUIZ ***************************/
+
+
+
