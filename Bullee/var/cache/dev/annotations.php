@@ -174,8 +174,8 @@ return [[
 '[C]App%5CController%5CInformController%23index' => 1,
 'App%5CController%5CQuizController' => 0,
 '[C]App%5CController%5CQuizController' => 1,
-'App%5CController%5CQuizController%23index' => 0,
-'[C]App%5CController%5CQuizController%23index' => 1,
+'App%5CController%5CQuizController%23question' => 0,
+'[C]App%5CController%5CQuizController%23question' => 1,
 'App%5CController%5CRegistrationController' => 0,
 '[C]App%5CController%5CRegistrationController' => 1,
 'App%5CController%5CRegistrationController%23register' => 0,
@@ -944,6 +944,6 @@ return [[
 ], [
 
 0 => [],
-1 => 1670409030,
+1 => 1670419718,
 
 ]];
