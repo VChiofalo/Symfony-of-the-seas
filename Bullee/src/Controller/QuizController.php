@@ -2,17 +2,32 @@
 
 namespace App\Controller;
 
+use App\Entity\Questions;
+use App\Entity\Answers;
+use App\Repository\QuestionsRepository;
+use App\Repository\AnswersRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 
-class QuizQRController extends AbstractController
+
+class QuizController extends AbstractController
 {
-    #[Route('/quiz/q/r', name: 'app_quiz')]
-    public function index(): Response
+    #[Route('/quiz/{questions_id}', name: 'app_quiz_question')]
+    public function question($questions_id, QuestionsRepository $questionsRepository ): Response
     {
-        return $this->render('quiz_qr/index.html.twig', [
-            'controller_name' => 'QuizQRController',
-        ]);
+        // get answers by question ID
+       $question = $questionsRepository -> findOneById($questions_id);
+       return $this->render('quiz/index.html.twig', [
+        'question' => $question
+    ]);
+
+
     }
+    
 }
+
+
+
+

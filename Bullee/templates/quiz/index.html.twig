@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello QuizQRController!{% endblock %}
+{% block title %}Hello !{% endblock %}
 
 {% block body %}
 <style>
@@ -8,10 +8,16 @@
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
 
-<div class="example-wrapper">
-    <h1> QR</h1>
 
-    <a href="{{ 'app_quiz' }}">src/Controller/QuizQRController.php</a>
+   <img src="{{question.img}}" alt="a venir">
+   
+    <h1>Details : {{ question.label }}</h1>
 
-</div>
+   
+    {% for answer in question.answers %}
+    {{ answer.label}}
+  
+    {% endfor %}
+
+
 {% endblock %}
