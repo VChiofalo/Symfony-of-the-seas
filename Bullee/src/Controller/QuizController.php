@@ -6,13 +6,13 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class QuizQRController extends AbstractController
+class QuizController extends AbstractController
 {
-    #[Route('/quiz/q/r', name: 'app_quiz')]
+    #[Route('/quiz', name: 'app_quiz')]
     public function index(): Response
     {
-        return $this->render('quiz_qr/index.html.twig', [
-            'controller_name' => 'QuizQRController',
+        return $this->render('quiz/homequiz.html.twig', [
+            'controller_name' => 'QuizController',
         ]);
     }
 }

@@ -421,18 +421,11 @@
         <argument type="service" id=".service_locator.l1ae.Qz.App\Controller\InformController"/>
       </call>
     </service>
-    <service id="App\Controller\QuizQRController" class="App\Controller\QuizQRController" public="true" autowire="true" autoconfigure="true">
+    <service id="App\Controller\QuizController" class="App\Controller\QuizController" public="true" autowire="true" autoconfigure="true">
       <tag name="controller.service_arguments"/>
       <tag name="container.service_subscriber"/>
       <call method="setContainer">
-        <argument type="service" id=".service_locator.l1ae.Qz.App\Controller\QuizQRController"/>
-      </call>
-    </service>
-    <service id="App\Controller\QuizResultatsController" class="App\Controller\QuizResultatsController" public="true" autowire="true" autoconfigure="true">
-      <tag name="controller.service_arguments"/>
-      <tag name="container.service_subscriber"/>
-      <call method="setContainer">
-        <argument type="service" id=".service_locator.l1ae.Qz.App\Controller\QuizResultatsController"/>
+        <argument type="service" id=".service_locator.l1ae.Qz.App\Controller\QuizController"/>
       </call>
     </service>
     <service id="App\Controller\RegistrationController" class="App\Controller\RegistrationController" public="true" autowire="true" autoconfigure="true">
@@ -6535,12 +6528,9 @@
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\InformController" class="App\Controller\InformController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\InformController" class="App\Controller\InformController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\InformController" class="App\Controller\InformController" autowire="true" autoconfigure="true" abstract="true"/>
-    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\QuizQRController" class="App\Controller\QuizQRController" autowire="true" abstract="true"/>
-    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\QuizQRController" class="App\Controller\QuizQRController" autowire="true" abstract="true"/>
-    <service id=".abstract.instanceof.App\Controller\QuizQRController" class="App\Controller\QuizQRController" autowire="true" autoconfigure="true" abstract="true"/>
-    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\QuizResultatsController" class="App\Controller\QuizResultatsController" autowire="true" abstract="true"/>
-    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\QuizResultatsController" class="App\Controller\QuizResultatsController" autowire="true" abstract="true"/>
-    <service id=".abstract.instanceof.App\Controller\QuizResultatsController" class="App\Controller\QuizResultatsController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\QuizController" class="App\Controller\QuizController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\QuizController" class="App\Controller\QuizController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\QuizController" class="App\Controller\QuizController" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\RegistrationController" class="App\Controller\RegistrationController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\RegistrationController" class="App\Controller\RegistrationController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\RegistrationController" class="App\Controller\RegistrationController" autowire="true" autoconfigure="true" abstract="true"/>
@@ -7835,15 +7825,9 @@
       <argument type="service" id="service_container"/>
       <factory service=".service_locator.l1ae.Qz" method="withContext"/>
     </service>
-    <service id=".service_locator.l1ae.Qz.App\Controller\QuizQRController" class="Symfony\Component\DependencyInjection\ServiceLocator">
-      <tag name="container.service_locator_context" id="App\Controller\QuizQRController"/>
-      <argument>App\Controller\QuizQRController</argument>
-      <argument type="service" id="service_container"/>
-      <factory service=".service_locator.l1ae.Qz" method="withContext"/>
-    </service>
-    <service id=".service_locator.l1ae.Qz.App\Controller\QuizResultatsController" class="Symfony\Component\DependencyInjection\ServiceLocator">
-      <tag name="container.service_locator_context" id="App\Controller\QuizResultatsController"/>
-      <argument>App\Controller\QuizResultatsController</argument>
+    <service id=".service_locator.l1ae.Qz.App\Controller\QuizController" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator_context" id="App\Controller\QuizController"/>
+      <argument>App\Controller\QuizController</argument>
       <argument type="service" id="service_container"/>
       <factory service=".service_locator.l1ae.Qz" method="withContext"/>
     </service>

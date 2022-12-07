@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello QuizQRController!{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">   
+{% endblock %}
+
+{% block body %}
+ 
+<div class="example-wrapper">
+
+<p class="quit-form">Je me rends directement sur le site <a> #rajouter img# </a> </p>
+    {# RAJOUTER LOGO A LA PLACE DU H1#}
+    <h1> Bullee </h1>
+</div>
+
+<div>
+    <p class="onleft"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex repellat eius error sequi nisi aut placeat ducimus pariatur accusantium sit suscipit repudiandae voluptas nam earum dolor, eaque hic possimus quisquam?</p>
+
+    <button><a href="{{'app_quiz'}}">Je commence le quiz</a></button>
+
+</div>
+{% endblock %}
+ 
