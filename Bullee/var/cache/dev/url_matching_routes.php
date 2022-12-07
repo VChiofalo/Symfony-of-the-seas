@@ -18,8 +18,7 @@ return [
         '/demande' => [[['_route' => 'app_demande', '_controller' => 'App\\Controller\\DemandeController::index'], null, null, null, false, false, null]],
         '/home' => [[['_route' => 'app_home', '_controller' => 'App\\Controller\\HomeController::index'], null, null, null, false, false, null]],
         '/inform' => [[['_route' => 'app_inform', '_controller' => 'App\\Controller\\InformController::index'], null, null, null, false, false, null]],
-        '/quiz/q/r' => [[['_route' => 'app_quiz_q_r', '_controller' => 'App\\Controller\\QuizQRController::index'], null, null, null, false, false, null]],
-        '/quiz/resultats' => [[['_route' => 'app_quiz_resultats', '_controller' => 'App\\Controller\\QuizResultatsController::index'], null, null, null, false, false, null]],
+        '/quiz' => [[['_route' => 'app_quiz', '_controller' => 'App\\Controller\\QuizController::index'], null, null, null, false, false, null]],
         '/register' => [[['_route' => 'app_register', '_controller' => 'App\\Controller\\RegistrationController::register'], null, null, null, false, false, null]],
         '/login' => [[['_route' => 'app_login', '_controller' => 'App\\Controller\\SecurityController::login'], null, null, null, false, false, null]],
         '/logout' => [[['_route' => 'app_logout', '_controller' => 'App\\Controller\\SecurityController::logout'], null, null, null, false, false, null]],
@@ -41,6 +40,7 @@ return [
                         .'|(*:159)'
                     .')'
                 .')'
+                .'|/quiz/situation/([^/]++)(*:193)'
             .')/?$}sDu',
     ],
     [ // $dynamicRoutes
@@ -50,8 +50,9 @@ return [
         116 => [[['_route' => '_profiler_router', '_controller' => 'web_profiler.controller.router::panelAction'], ['token'], null, null, false, false, null]],
         136 => [[['_route' => '_profiler_exception', '_controller' => 'web_profiler.controller.exception_panel::body'], ['token'], null, null, false, false, null]],
         149 => [[['_route' => '_profiler_exception_css', '_controller' => 'web_profiler.controller.exception_panel::stylesheet'], ['token'], null, null, false, false, null]],
-        159 => [
-            [['_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'], ['token'], null, null, false, true, null],
+        159 => [[['_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'], ['token'], null, null, false, true, null]],
+        193 => [
+            [['_route' => 'app_quiz_situation', '_controller' => 'App\\Controller\\QuizController::situation'], ['id'], null, null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],
     ],
