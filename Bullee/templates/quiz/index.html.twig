@@ -11,7 +11,20 @@
 <div class="example-wrapper">
     <h1> QR</h1>
 
-    <a href="{{ 'app_quiz' }}">src/Controller/QuizQRController.php</a>
+   <img src="{{question.img}}" alt="a venir">
+   
+    <h1>Details : {{ question.label }}</h1>
 
-</div>
+    <form>
+    <input type="hidden" name="id_value" value="{{ question.value }}">
+    <input type="hidden" name="id_question" value="{{ question.id }}">
+    <div id="quest" >
+    {% for answer in question.answers %}
+    </div>
+    <div id="answ">
+    {{ answer.label }}<br>
+  
+    {% endfor %}
+    </div>
+    </form
 {% endblock %}
