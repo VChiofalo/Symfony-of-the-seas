@@ -7054,7 +7054,7 @@
         <argument key="authenticationUtils" type="service_closure" id="security.authentication_utils"/>
       </argument>
     </service>
-    <service id=".service_locator.BI97Qo1" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.yN600gW" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Controller\Admin\AnswersCrudController::autocomplete" type="service_closure" id=".service_locator.ZOQ9v2d"/>
@@ -7163,6 +7163,7 @@
         <argument key="App\Controller\Admin\UserCrudController::persistEntity" type="service_closure" id=".service_locator.l2QwsaZ"/>
         <argument key="App\Controller\Admin\UserCrudController::renderFilters" type="service_closure" id=".service_locator.ZOQ9v2d"/>
         <argument key="App\Controller\Admin\UserCrudController::updateEntity" type="service_closure" id=".service_locator.l2QwsaZ"/>
+        <argument key="App\Controller\QuizController::licorneGetResult" type="service_closure" id=".service_locator.7JpDYGt"/>
         <argument key="App\Controller\QuizController::question" type="service_closure" id=".service_locator.ih4vWE0"/>
         <argument key="App\Controller\QuizController::saveQuestion" type="service_closure" id=".service_locator.7JpDYGt"/>
         <argument key="App\Controller\RegistrationController::register" type="service_closure" id=".service_locator.4u5os03"/>
@@ -7277,6 +7278,7 @@
         <argument key="App\Controller\Admin\UserCrudController:persistEntity" type="service_closure" id=".service_locator.l2QwsaZ"/>
         <argument key="App\Controller\Admin\UserCrudController:renderFilters" type="service_closure" id=".service_locator.ZOQ9v2d"/>
         <argument key="App\Controller\Admin\UserCrudController:updateEntity" type="service_closure" id=".service_locator.l2QwsaZ"/>
+        <argument key="App\Controller\QuizController:licorneGetResult" type="service_closure" id=".service_locator.7JpDYGt"/>
         <argument key="App\Controller\QuizController:question" type="service_closure" id=".service_locator.ih4vWE0"/>
         <argument key="App\Controller\QuizController:saveQuestion" type="service_closure" id=".service_locator.7JpDYGt"/>
         <argument key="App\Controller\RegistrationController:register" type="service_closure" id=".service_locator.4u5os03"/>
@@ -8042,12 +8044,12 @@
       <argument type="service" id="EasyCorp\Bundle\EasyAdminBundle\Router\AdminUrlGenerator"/>
     </service>
     <service id="debug.argument_resolver.service.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver">
-      <argument type="service" id=".service_locator.BI97Qo1"/>
+      <argument type="service" id=".service_locator.yN600gW"/>
     </service>
     <service id="debug.argument_resolver.default.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver"/>
     <service id="debug.argument_resolver.variadic.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\VariadicValueResolver"/>
     <service id="debug.argument_resolver.not_tagged_controller.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver">
-      <argument type="service" id=".service_locator.BI97Qo1"/>
+      <argument type="service" id=".service_locator.yN600gW"/>
     </service>
     <service id="debug.traced.messenger.bus.default.inner" class="Symfony\Component\Messenger\MessageBus">
       <argument type="iterator">
@@ -9016,7 +9018,7 @@
     <service id="sensio_framework_extra.security.expression_language" alias="sensio_framework_extra.security.expression_language.default"/>
     <service id="container.env_var_processors_locator" alias=".service_locator.gSv9zYw" public="true"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem"/>
-    <service id="argument_resolver.controller_locator" alias=".service_locator.BI97Qo1"/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator.yN600gW"/>
     <service id="doctrine.id_generator_locator" alias=".service_locator.KLVvNIq"/>
     <service id="twig.loader" alias="twig.loader.native_filesystem"/>
     <service id="Psr\Log\LoggerInterface $requestLogger" alias="monolog.logger.request"/>
@@ -9042,7 +9044,7 @@
     <service id=".service_locator.rAlqQ78" alias=".service_locator.3on9uHL"/>
     <service id=".service_locator.tbo4Jjv" alias=".service_locator.bgO__Zr"/>
     <service id=".service_locator.Dby0_1s" alias=".service_locator.4u5os03"/>
-    <service id=".service_locator.FguUZqR" alias=".service_locator.BI97Qo1"/>
+    <service id=".service_locator.sWYAKsp" alias=".service_locator.yN600gW"/>
     <service id=".service_locator.wKF4yn1" alias=".service_locator.19_mNxd"/>
     <service id=".service_locator.zOEDDkY" alias=".service_locator.aF0VNrt"/>
     <service id=".service_locator.XW18Svm" alias=".service_locator.TcKhdzh"/>

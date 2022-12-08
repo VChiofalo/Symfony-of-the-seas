@@ -22,22 +22,20 @@ class QuizController extends AbstractController
         // get answers by question ID
        $question = $questionsRepository -> findOneById($questions_id);
 
-       //initiate the session for each question 
+   
        return $this->render('quiz/index.html.twig', [
             'question' => $question
         ]);
 
-
     }
 
-    //define Route
+    //define Route for saving answers
     #[Route('/quizsave', name: 'app_quiz_save')]
 
     //iniate storage in session
     public function saveQuestion(RequestStack $requestStack, Request $request): Response
     {
-        
-
+        //retry the result of the previous page
         $session = $requestStack->getSession();
 
         dd($session);
@@ -52,13 +50,34 @@ class QuizController extends AbstractController
         dd($tab);
         $session->set('question', $tab);
 
-        // allow to return to next question of id isn't 10, otherwise, go next
-        if($questions_id != 10){
-            return $this->render('quiz/index.html.twig', [
-                'question' => ($questions_id +1)
+        // allow to return to next question of id isn't 10, otherwise, go next 
+        $question = $questionsRepository -> findOneById($questions_id); 
+
+        //if there is less than 10 questions, return to the next question
+
+        if(count($tab <10)){
+            $this->redirect('quiz/save', [
+                'question' => (($questions_id)+1)
             ]);
             }
+            //otherwise got to the result
+            else {
+                $this->redirect('quiz/result');
+            }  
 
-    }  
-}
+    }
+
+     //define Route for results
+     #[Route('/quizresult', name: 'app_quiz_result')]
+
+     //unicorn because this is the "touchiest" function
+     public function licorneGetResult (RequestStack $requestStack, Request $request): Response
+     {
     
+    // retry tab result
+    //proceed to calculation
+    //if to show relevant profile
+    //push profile
+     }
+}
+

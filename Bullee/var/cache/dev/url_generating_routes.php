@@ -22,6 +22,7 @@ return [
     'app_inform' => [[], ['_controller' => 'App\\Controller\\InformController::index'], [], [['text', '/inform']], [], [], []],
     'app_quiz_question' => [['questions_id'], ['_controller' => 'App\\Controller\\QuizController::question'], [], [['variable', '/', '[^/]++', 'questions_id', true], ['text', '/quiz']], [], [], []],
     'app_quiz_save' => [[], ['_controller' => 'App\\Controller\\QuizController::saveQuestion'], [], [['text', '/quizsave']], [], [], []],
+    'app_quiz_result' => [[], ['_controller' => 'App\\Controller\\QuizController::licorneGetResult'], [], [['text', '/quizresult']], [], [], []],
     'app_register' => [[], ['_controller' => 'App\\Controller\\RegistrationController::register'], [], [['text', '/register']], [], [], []],
     'app_login' => [[], ['_controller' => 'App\\Controller\\SecurityController::login'], [], [['text', '/login']], [], [], []],
     'app_logout' => [[], ['_controller' => 'App\\Controller\\SecurityController::logout'], [], [['text', '/logout']], [], [], []],
