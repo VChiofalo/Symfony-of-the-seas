@@ -11,13 +11,16 @@
 
    <img src="{{question.img}}" alt="a venir">
    
-    <h1>Details : {{ question.label }}</h1>
+    <h3>Details : {{ question.label }}</h3>
 
-   
     {% for answer in question.answers %}
-    {{ answer.label}}
+    {{ answer.label}}</br>
+
+    
   
     {% endfor %}
-
+   
 
 {% endblock %}
+
+
