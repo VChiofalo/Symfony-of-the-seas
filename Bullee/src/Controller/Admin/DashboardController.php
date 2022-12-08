@@ -16,6 +16,7 @@ use EasyCorp\Bundle\EasyAdminBundle\Router\AdminUrlGenerator;
 
 class DashboardController extends AbstractDashboardController
 {
+    //#[IsGranted('ADMIN')]
     #[Route('/admin', name: 'admin')]
     public function index(): Response
     {
@@ -44,6 +45,7 @@ class DashboardController extends AbstractDashboardController
             ->setTitle('Bullee');
     }
 
+    // Section du back-office
     public function configureMenuItems(): iterable
     {
         yield MenuItem::linkToDashboard('Dashboard', 'fa fa-home');
