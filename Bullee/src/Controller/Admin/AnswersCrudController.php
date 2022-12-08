@@ -4,7 +4,9 @@ namespace App\Controller\Admin;
 
 use App\Entity\Answers;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 
+#[IsGranted('ROLE_ADMIN')]
 class AnswersCrudController extends AbstractCrudController
 {
     public static function getEntityFqcn(): string
