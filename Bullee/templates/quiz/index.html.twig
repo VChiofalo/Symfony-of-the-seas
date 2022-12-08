@@ -12,12 +12,22 @@
    <img src="{{question.img}}" alt="a venir">
    
     <h1>Details : {{ question.label }}</h1>
+    
+    <form method="post" action={{path('app_quiz_save')}}>
 
+    <input type="hidden" name="id_answer" id="data" value="">
+    <input type="hidden" name="id_question" value="{{ question.id }}">
    
     {% for answer in question.answers %}
-    {{ answer.label}}
-  
+    
+    <div class="answ" data-id="{{answer.id}}">
+    {{ answer.label }}<br>
+  </div>
     {% endfor %}
+    <button method="" type="submit" name="clicked">Suivant</buton>
 
-
+    </form>
 {% endblock %}
+{% block javascripts %}
+    <script type="text/javascript" src="/assets/js/index.js"></script>
+ {% endblock %}
