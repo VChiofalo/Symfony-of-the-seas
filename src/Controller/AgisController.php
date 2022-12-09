@@ -8,6 +8,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class AgisController extends AbstractController
 {
+    //display ateliers by id 
     #[Route('/agis', name: 'app_agis')]
     public function index(): Response
     {
@@ -15,4 +16,6 @@ class AgisController extends AbstractController
             'controller_name' => 'AgisController',
         ]);
     }
+
+    //display articles by id
 }
