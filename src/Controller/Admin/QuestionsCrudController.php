@@ -20,9 +20,9 @@ class QuestionsCrudController extends AbstractCrudController
     public function configureFields(string $pageName): iterable
     {
         return [
-            TextField::new('Label', 'Questions'), // Récuperation du champ label pour ajouter/éditer les questions
-            ImageField::new('img', 'Image') // Récuperation du champ img pour ajouter/éditer les images
-                ->setUploadDir('public/assets/img/') // Direction d'upload des images
+            TextField::new('Label', 'Questions'),       // Récuperation du champ label pour ajouter/éditer les questions
+            ImageField::new('img', 'Image')             // Récuperation du champ img pour ajouter/éditer les images
+                ->setUploadDir('public/assets/img/')    // Direction d'upload des images
         ];
     }
    
