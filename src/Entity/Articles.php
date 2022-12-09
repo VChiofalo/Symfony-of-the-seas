@@ -17,14 +17,14 @@ class Articles
     #[ORM\Column(length: 255)]
     private ?string $title = null;
 
-    #[ORM\Column(length: 900)]
-    private ?string $contents = null;
-
     #[ORM\Column(length: 255)]
     private ?string $slug = null;
 
     #[ORM\Column(type: Types::DATE_MUTABLE, nullable: true)]
     private ?\DateTimeInterface $date = null;
+
+    #[ORM\Column(type: Types::TEXT)]
+    private ?string $contents = null;
 
     public function getId(): ?int
     {
@@ -39,18 +39,6 @@ class Articles
     public function setTitle(string $title): self
     {
         $this->title = $title;
-
-        return $this;
-    }
-
-    public function getContents(): ?string
-    {
-        return $this->contents;
-    }
-
-    public function setContents(string $contents): self
-    {
-        $this->contents = $contents;
 
         return $this;
     }
@@ -75,6 +63,18 @@ class Articles
     public function setDate(?\DateTimeInterface $date): self
     {
         $this->date = $date;
+
+        return $this;
+    }
+
+    public function getContents(): ?string
+    {
+        return $this->contents;
+    }
+
+    public function setContents(string $contents): self
+    {
+        $this->contents = $contents;
 
         return $this;
     }
