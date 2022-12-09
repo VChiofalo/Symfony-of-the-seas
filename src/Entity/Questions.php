@@ -29,6 +29,12 @@ class Questions
         $this->answers = new ArrayCollection();
     }
 
+    // Permet de transformer une entité en chaine de caractère
+    public function __toString()
+    {
+        return $this->Label;
+    }
+
     public function getId(): ?int
     {
         return $this->id;

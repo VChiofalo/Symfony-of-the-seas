@@ -49,11 +49,11 @@ class DashboardController extends AbstractDashboardController
     // Section du back-office
     public function configureMenuItems(): iterable
     {
-        yield MenuItem::linkToDashboard('Dashboard', 'fa fa-home');
-        yield MenuItem::linkToCrud('User', 'fas fa-list', User::class);
-        yield MenuItem::linkToCrud('Articles', 'fas fa-list', Articles::class);
-        yield MenuItem::linkToCrud('Questions', 'fas fa-list', Questions::class);
-        yield MenuItem::linkToCrud('Answers', 'fas fa-list', Answers::class);
-        yield MenuItem::linkToCrud('Results', 'fas fa-list', Results::class);
+        yield MenuItem::linkToDashboard('Dashboard', 'fa fa-home');                 // Affichage du Dashboard
+        yield MenuItem::linkToCrud('Utilisateur', 'fas fa-user', User::class);             // Backoffice de la table user
+        yield MenuItem::linkToCrud('Articles', 'fas fa-newspaper', Articles::class);     // Backoffice de la table articles
+        yield MenuItem::linkToCrud('Questions', 'fas fa-circle-question', Questions::class);   // Backoffice de la table questions
+        yield MenuItem::linkToCrud('Réponses', 'fas fa-file-circle-question', Answers::class);       // Backoffice de la table réponses
+        yield MenuItem::linkToCrud('Résultats', 'fas fa-circle-check', Results::class);       // Backoffice de la table resultats
     }
 }
