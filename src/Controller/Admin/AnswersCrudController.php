@@ -33,7 +33,7 @@ class AnswersCrudController extends AbstractCrudController
             ])
             ->renderExpanded()                                  // Affiche les choix possible
             ->allowMultipleChoices(false),                      // Rend possible ou non la possibilité de choisir plusieur role (ici non)
-            AssociationField::new('questions', 'Questions')     // Récuperation du champ questions pour ajouter/éditer l'association des réponses à sa question
+            AssociationField::new('questions', 'Question')      // Récuperation du champ questions pour ajouter/éditer l'association des réponses à sa question
 
         ];
     }

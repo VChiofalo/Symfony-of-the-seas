@@ -33,7 +33,7 @@ class UserCrudController extends AbstractCrudController
                     'Administrateur' => 'ROLE_ADMIN' 
                 ])
                 ->renderExpanded()                      // Affiche les choix possible (ici un seul)
-                ->allowMultipleChoices()           // Rend possible ou non la possibilité de choisir plusieur role (ici non)
+                ->allowMultipleChoices()                // Rend possible ou non la possibilité de choisir plusieur role (ici non)
         ];
     }
 }
