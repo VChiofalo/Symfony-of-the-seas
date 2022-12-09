@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use App\Repository\ResultsRepository;
+use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: ResultsRepository::class)]
@@ -13,52 +14,56 @@ class Results
     #[ORM\Column]
     private ?int $id = null;
 
-    #[ORM\Column(length: 255)]
-    private ?string $Label = null;
+    
 
-    #[ORM\Column(length: 255)]
-    private ?string $min = null;
+    #[ORM\Column]
+    private ?int $min = null;
 
-    #[ORM\Column(length: 255)]
-    private ?string $max = null;
+    #[ORM\Column]
+    private ?int $max = null;
+
+    #[ORM\Column(type: Types::TEXT)]
+    private ?string $label = null;
 
     public function getId(): ?int
     {
         return $this->id;
     }
 
-    public function getLabel(): ?string
-    {
-        return $this->Label;
-    }
+    
 
-    public function setLabel(string $Label): self
-    {
-        $this->Label = $Label;
-
-        return $this;
-    }
-
-    public function getMin(): ?string
+    public function getMin(): ?int
     {
         return $this->min;
     }
 
-    public function setMin(string $min): self
+    public function setMin(int $min): self
     {
         $this->min = $min;
 
         return $this;
     }
 
-    public function getMax(): ?string
+    public function getMax(): ?int
     {
         return $this->max;
     }
 
-    public function setMax(string $max): self
+    public function setMax(int $max): self
     {
         $this->max = $max;
+
+        return $this;
+    }
+
+    public function getLabel(): ?string
+    {
+        return $this->label;
+    }
+
+    public function setLabel(string $label): self
+    {
+        $this->label = $label;
 
         return $this;
     }
