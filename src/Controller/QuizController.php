@@ -19,7 +19,7 @@ class QuizController extends AbstractController
     #[Route('/quiz/{questions_id}', name: 'app_quiz_question')]
     public function question($questions_id, QuestionsRepository $questionsRepository , RequestStack $requestStack): Response
     {
-        //pour vider la teableau et recommencer le test
+        //pour vider le tableau et recommencer le test
         //$session = $requestStack->getSession();
         //$session->set('question', []);
 
@@ -60,14 +60,15 @@ class QuizController extends AbstractController
         //$question = $questionsRepository -> findOneById($questions_id); 
 
         //if there is less than 10 questions, return to the next question
-
+        //dd($tab);
         if(count($tab) <10){
 
-            $c = count($tab)+1;
+            //to show next question if it is under 10
+            $q = count($tab)+1;
         
-
+            //to show next question if it is under 10
             return $this->redirectToRoute('app_quiz_question', [
-                'questions_id' => $c
+                'questions_id' => $q
             ]);
             }
             //otherwise got to the result
@@ -76,22 +77,39 @@ class QuizController extends AbstractController
                     
                 ]);
             }  
-
+            
     }
 
      //define Route for results
      #[Route('/quizresult', name: 'app_quiz_result')]
 
      //unicorn because this is the "touchiest" function
-     public function licorneGetResult (RequestStack $requestStack, Request $request): Response
+     public function licorneGetResult (AnswersRepository $answersRepository,RequestStack $requestStack, Request $request): Response
      {
+        // retry final tab result 
+        $session = $requestStack->getSession();
+        $tab = $session->get('question');
+        $resultFinal=0;
+        $question='';
+        //dd($tab);
 
+        //retry value per answer id
 
-    
-    // retry tab result
-    //proceed to calculation
-    //if to show relevant profile
-    //push profile
+        foreach ($tab as $row) {
+
+            $row[1];
+            $result = $answersRepository -> findOneById($row[1]);
+            $resultFinal += $result -> getValue();
+        };
+        
+        //dd($resultFinal);
+
+        //if($resultFinal > )
+        
+        
+        
+     
+        //if to show relevant profile
+        //push profile
      }
 }
-
