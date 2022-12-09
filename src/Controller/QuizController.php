@@ -4,8 +4,10 @@ namespace App\Controller;
 
 use App\Entity\Questions;
 use App\Entity\Answers;
+use App\Enity\Results;
 use App\Repository\QuestionsRepository;
 use App\Repository\AnswersRepository;
+use App\Repository\ResultsRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -84,7 +86,7 @@ class QuizController extends AbstractController
      #[Route('/quizresult', name: 'app_quiz_result')]
 
      //unicorn because this is the "touchiest" function
-     public function licorneGetResult (AnswersRepository $answersRepository,RequestStack $requestStack, Request $request): Response
+     public function licorneGetResult (ResultsRepository $resultsRepository,AnswersRepository $answersRepository,RequestStack $requestStack, Request $request): Response
      {
         // retry final tab result 
         $session = $requestStack->getSession();
@@ -104,12 +106,27 @@ class QuizController extends AbstractController
         
         //dd($resultFinal);
 
-        //if($resultFinal > )
-        
-        
-        
+        //display relevant profile and push it
+        if($resultFinal < 8){
+            $bad=$resultsRepository -> findOneById(3);
+            return $this->render('quiz/result.html.twig', [
+                'result' => $bad
+            ]);
+
+        }   elseif($resultFinal >8 && $resultFinal <16){
+            $medium=$resultsRepository -> findOneById(2);
+            return $this->render('quiz/result.html.twig', [
+                'result' => $medium
+            ]);
+
+        }   else {
+            $good=$resultsRepository -> findOneById(1);
+            return $this->render('quiz/result.html.twig', [
+                'result' => $good
+            ]);
+        }
+   
      
-        //if to show relevant profile
-        //push profile
-     }
+     
+}
 }
