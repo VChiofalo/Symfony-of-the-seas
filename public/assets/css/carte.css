@@ -1,0 +1,18 @@
+.map_img{
+
+}
+
+.map_img svg path{
+    transition: all 1s;
+    transform-origin: center;
+    transform-box: fill-box;
+    stroke-opacity: 1;
+}
+
+.map_img svg path:hover {
+    /* fill: #FF8EBF; */
+    /* transition: fill 0.3s; */
+    /* stroke: white; */
+    /* stroke-width: 2px; */
+    transform: scale(1.2);
+}
