@@ -26,5 +26,4 @@ class QuestionsCrudController extends AbstractCrudController
                 ->setBasePath('/assets/img/')           // Recherche la route de l'image pour l'afficher dans le backoffice
         ];
     }
-   
 }

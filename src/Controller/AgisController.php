@@ -11,6 +11,7 @@ class AgisController extends AbstractController
     #[Route('/agis', name: 'app_agis')]
     public function index(): Response
     {
+
         return $this->render('agis/index.html.twig', [
             'controller_name' => 'AgisController',
         ]);
