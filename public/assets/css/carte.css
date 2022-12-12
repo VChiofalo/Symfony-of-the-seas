@@ -10,7 +10,17 @@
 }
 
 .map_img svg path:hover {
+    order: 1;
     fill: #FF8EBF; 
+    transition: fill 0.3s;
+    stroke: white;
+    stroke-width: 2px;
+    transform: scale(1.2);
+}
+
+.map_img svg path:active {
+    order: 1;
+    fill: #C33070; 
     transition: fill 0.3s;
     stroke: white;
     stroke-width: 2px;

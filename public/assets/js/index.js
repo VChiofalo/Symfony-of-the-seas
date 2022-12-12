@@ -11,5 +11,4 @@ function addClick(e){
     qValues = e.currentTarget;
     qValues = qValues.getAttribute('data-id');
     dataValue.value = qValues;
-    console.log(dataValue.value);
 };

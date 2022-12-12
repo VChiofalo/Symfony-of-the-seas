@@ -3,7 +3,6 @@
 // var cards = map.querySelectorAll('.map_list');
 
 
-
 // paths.forEach (function (path){
 //     path.addEventListener('mouseenter', function(e){
 //         let onClick = this.id.replace('region-', '');
@@ -12,11 +11,31 @@
 
 // });
 
-let elements = document.getElementsByClassName('land');
 
-for (let i = 0; i < elements.length; i++){
-    elements[i].addEventListener('mouseenter', function(e){
-        let plop = document.createElementNS(elements[i], 'path')
-        console.log(elements[i].id)
-        elements[i].parentNode.appendChild(plop)})
+// Fonction pour faire passer un path devant les autres
+document.addEventListener('DOMContentLoaded', (e) => {
+
+    let lands = document.querySelectorAll('.land');
+    let mapSVG = document.querySelector('#map svg');
+    lands.forEach(land => {
+        
+        land.addEventListener('mouseover', (e)=> {
+            mapSVG.removeChild(e.target);
+            mapSVG.appendChild(e.target);
+        });
+    });
+
+});
+
+/* function landClicked(){
+    console.log('.land');
+    if(.lands)
 }
+ */
+
+
+
+
+
+
+
