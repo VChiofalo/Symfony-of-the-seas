@@ -24,14 +24,15 @@ document.addEventListener('DOMContentLoaded', (e) => {
             mapSVG.appendChild(e.target);
         });
     });
+    // lands.forEach(land => {
+    //     land.addEventListener('click', (e)=> {
+    //         land.setAttribute('', '100px')
+    //     });
+    // });
 
 });
 
-/* function landClicked(){
-    console.log('.land');
-    if(.lands)
-}
- */
+
 
 
 
