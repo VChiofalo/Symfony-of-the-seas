@@ -42,3 +42,5 @@ fos_ck_editor:
                 "Source",
               ],
           }
+      filebrowserBrowseRoute: elfinder
+      filebrowserBrowseRouteParameters: []
