@@ -16,7 +16,13 @@ class ApiContactController extends AbstractController
     {
 
         $contact = $contactRepository->findOneById($contact_id);
-        return new JsonResponse(['contact' => (array)$contact]);
+
+        $tab = array(
+            'name' => $contact->getAcademyName(),
+            'contact' => $contact->getContact()
+        );
+
+        return new JsonResponse($tab);
     }
 }
 
