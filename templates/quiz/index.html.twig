@@ -9,7 +9,7 @@
 </style>
 
 
-   <img src="{{question.img}}" alt="a venir">
+   <img src="/assets/img/{{ question.img }}" alt="{{ question.label }}">
    
     <h1>Details : {{ question.label }}</h1>
     
@@ -20,7 +20,7 @@
    
     {% for answer in question.answers %}
     
-    <div class="answ" data-id="{{answer.id}}">
+    <div class="answ" data-id="{{ answer.id }}">
     {{ answer.label }}<br>
   </div>
     {% endfor %}
