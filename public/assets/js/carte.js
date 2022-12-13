@@ -12,11 +12,11 @@
 // });
 
 
-// Fonction pour faire passer un path devant les autres
 document.addEventListener('DOMContentLoaded', (e) => {
-
+    
     let lands = document.querySelectorAll('.land');
     let mapSVG = document.querySelector('#map svg');
+    // Boucle pour faire passer un path devant les autres
     lands.forEach(land => {
         
         land.addEventListener('mouseover', (e)=> {
@@ -24,12 +24,21 @@ document.addEventListener('DOMContentLoaded', (e) => {
             mapSVG.appendChild(e.target);
         });
     });
-    // lands.forEach(land => {
-    //     land.addEventListener('click', (e)=> {
-    //         land.setAttribute('', '100px')
-    //     });
-    // });
+    lands.forEach(land => {
+        land.addEventListener('click', (e)=> {
+            changeColor(land)
 
+        });
+    });
+// Fonction pour ajouter la couleur "pourpre" sur 1 région clickée et remettre la couleur de prédéfinie sur les autres régions
+    function changeColor(land) {
+        let lands = document.querySelectorAll('.land');
+        lands.forEach(land => {
+            let color = land.dataset.fill;
+            land.setAttribute('fill', color);
+        })
+        land.setAttribute('fill', '#C33070');
+    }
 });
 
 
