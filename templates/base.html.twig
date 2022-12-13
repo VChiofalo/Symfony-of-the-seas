@@ -14,9 +14,29 @@
 
         
     </head>
+    <header>
+      <a href= {{path('app_home')}}> Bullee, c'est qui? </a> </br>
+        <a href= {{path('app_inform')}}> Je m'informe </a> </br>
+        <a href= {{path('app_agis')}}> J'agis </a> </br>
+        <a href= {{path('app_demande')}}>Je demande de l'aide </a> </br>
+        <a href= {{path('app_quiz_start')}}> Je refais le quizz </a> </br>
+    </header>
     <body>
         {% block body %}{% endblock %}
+        </br>
+
+      
     </body>
+    <footer>
+    <div>
+    Mentions légales</br>
+    Politique de confidentialité</br>
+    Paramètres des cookies</br>
+    Questions fréquentes</br>
+    Les avis sur BulleeNous contacter</br>
+    Bullee@contact.fr</br>
+    </div>
+     </footer>
 </html>
 {% block javascripts %}
     {{ encore_entry_script_tags('app') }}

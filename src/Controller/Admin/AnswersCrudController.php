@@ -3,6 +3,7 @@
 namespace App\Controller\Admin;
 
 use App\Entity\Answers;
+use EasyCorp\Bundle\EasyAdminBundle\Config\Crud;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
 use EasyCorp\Bundle\EasyAdminBundle\Field\AssociationField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\ChoiceField;
@@ -18,6 +19,13 @@ class AnswersCrudController extends AbstractCrudController
     public static function getEntityFqcn(): string
     {
         return Answers::class;
+    }
+
+    public function configureCrud(Crud $crud): Crud
+    {
+        return $crud
+            ->setEntityLabelInSingular('Réponse')
+            ->setEntityLabelInPlural('Réponses');
     }
 
     // Configuration des champs pour les réponses

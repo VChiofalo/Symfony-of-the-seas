@@ -3,6 +3,7 @@
 namespace App\Controller\Admin;
 
 use App\Entity\User;
+use EasyCorp\Bundle\EasyAdminBundle\Config\Crud;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
 use EasyCorp\Bundle\EasyAdminBundle\Field\ChoiceField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\EmailField;
@@ -19,6 +20,13 @@ class UserCrudController extends AbstractCrudController
         return User::class;
     }
 
+    public function configureCrud(Crud $crud): Crud
+    {
+        return $crud
+            ->setEntityLabelInSingular('Utilisateur')
+            ->setEntityLabelInPlural('Utilisateurs');
+    }
+
     // Configuration des champs de gestion des Utilisateurs/Admins
     public function configureFields(string $pageName): iterable
     {
@@ -33,7 +41,7 @@ class UserCrudController extends AbstractCrudController
                     'Administrateur' => 'ROLE_ADMIN' 
                 ])
                 ->renderExpanded()                      // Affiche les choix possible (ici un seul)
-                ->allowMultipleChoices()           // Rend possible ou non la possibilité de choisir plusieur role (ici non)
+                ->allowMultipleChoices()                // Rend possible ou non la possibilité de choisir plusieur role (ici non)
         ];
     }
 }

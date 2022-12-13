@@ -4,8 +4,10 @@ namespace App\Controller;
 
 use App\Entity\Questions;
 use App\Entity\Answers;
+use App\Enity\Results;
 use App\Repository\QuestionsRepository;
 use App\Repository\AnswersRepository;
+use App\Repository\ResultsRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -15,6 +17,20 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class QuizController extends AbstractController
 {
+    //clear session in case of restart the quiz
+
+    #[Route('/quiz', name: 'app_quiz_start')]
+    public function initiate(RequestStack $requestStack) : Response
+    {
+        $session = $requestStack->getSession();
+        $session->set('question', []);
+
+        return $this->redirectToRoute('app_quiz_question', [
+            'questions_id' => 1
+        ]);
+    }
+
+    
     //define Route
     #[Route('/quiz/{questions_id}', name: 'app_quiz_question')]
     public function question($questions_id, QuestionsRepository $questionsRepository , RequestStack $requestStack): Response
@@ -42,7 +58,7 @@ class QuizController extends AbstractController
         //retry the result of the previous page
         $session = $requestStack->getSession();
 
-        //dd($session);
+        //dd($session->get('question'));
         $tab = $session->get('question');
         /// create tab to store question and answers values
         if($tab == null){
@@ -84,7 +100,7 @@ class QuizController extends AbstractController
      #[Route('/quizresult', name: 'app_quiz_result')]
 
      //unicorn because this is the "touchiest" function
-     public function licorneGetResult (AnswersRepository $answersRepository,RequestStack $requestStack, Request $request): Response
+     public function getLicorneResult (ResultsRepository $resultsRepository,AnswersRepository $answersRepository,RequestStack $requestStack, Request $request): Response
      {
         // retry final tab result 
         $session = $requestStack->getSession();
@@ -104,12 +120,27 @@ class QuizController extends AbstractController
         
         //dd($resultFinal);
 
-        //if($resultFinal > )
-        
-        
-        
+        //display relevant profile and push it
+        if($resultFinal < 8){
+            $bad=$resultsRepository -> findOneById(3);
+            return $this->render('quiz/result.html.twig', [
+                'result' => $bad
+            ]);
+
+        }   elseif($resultFinal >8 && $resultFinal <16){
+            $medium=$resultsRepository -> findOneById(2);
+            return $this->render('quiz/result.html.twig', [
+                'result' => $medium
+            ]);
+
+        }   else {
+            $good=$resultsRepository -> findOneById(1);
+            return $this->render('quiz/result.html.twig', [
+                'result' => $good
+            ]);
+        }
+   
      
-        //if to show relevant profile
-        //push profile
-     }
+     
+}
 }
