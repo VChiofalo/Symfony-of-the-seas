@@ -20,11 +20,14 @@ class Articles
     #[ORM\Column(length: 255)]
     private ?string $slug = null;
 
-    #[ORM\Column(type: Types::DATE_MUTABLE, nullable: true)]
-    private ?\DateTimeInterface $date = null;
-
     #[ORM\Column(type: Types::TEXT)]
     private ?string $contents = null;
+
+    #[ORM\Column(length: 255)]
+    private ?string $thumbnail = null;
+
+    #[ORM\Column(length: 255)]
+    private ?string $description = null;
 
     public function getId(): ?int
     {
@@ -55,18 +58,6 @@ class Articles
         return $this;
     }
 
-    public function getDate(): ?\DateTimeInterface
-    {
-        return $this->date;
-    }
-
-    public function setDate(?\DateTimeInterface $date): self
-    {
-        $this->date = $date;
-
-        return $this;
-    }
-
     public function getContents(): ?string
     {
         return $this->contents;
@@ -75,6 +66,30 @@ class Articles
     public function setContents(string $contents): self
     {
         $this->contents = $contents;
+
+        return $this;
+    }
+
+    public function getThumbnail(): ?string
+    {
+        return $this->thumbnail;
+    }
+
+    public function setThumbnail(string $thumbnail): self
+    {
+        $this->thumbnail = $thumbnail;
+
+        return $this;
+    }
+
+    public function getDescription(): ?string
+    {
+        return $this->description;
+    }
+
+    public function setDescription(string $description): self
+    {
+        $this->description = $description;
 
         return $this;
     }
