@@ -3,6 +3,7 @@
 namespace App\Controller\Admin;
 
 use App\Entity\Results;
+use EasyCorp\Bundle\EasyAdminBundle\Config\Crud;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
 use EasyCorp\Bundle\EasyAdminBundle\Field\ImageField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\IntegerField;
@@ -15,6 +16,13 @@ class ResultsCrudController extends AbstractCrudController
     public static function getEntityFqcn(): string
     {
         return Results::class;
+    }
+
+    public function configureCrud(Crud $crud): Crud
+    {
+        return $crud
+            ->setEntityLabelInSingular('Résultat')
+            ->setEntityLabelInPlural('Résultats');
     }
 
 

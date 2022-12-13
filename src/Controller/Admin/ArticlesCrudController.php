@@ -23,6 +23,9 @@ class ArticlesCrudController extends AbstractCrudController
     public function configureCrud(Crud $crud): Crud
     {
         return $crud
+            ->setEntityLabelInSingular('Article')
+            ->setEntityLabelInPlural('Articles')
+
             ->addFormTheme('@FOSCKEditor/Form/ckeditor_widget.html.twig'); // Ajout du formulaire Wisiwig
     }
 

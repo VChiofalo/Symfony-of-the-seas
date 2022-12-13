@@ -3,6 +3,7 @@
 namespace App\Controller\Admin;
 
 use App\Entity\Questions;
+use EasyCorp\Bundle\EasyAdminBundle\Config\Crud;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
 use EasyCorp\Bundle\EasyAdminBundle\Field\ImageField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextField;
@@ -14,6 +15,13 @@ class QuestionsCrudController extends AbstractCrudController
     public static function getEntityFqcn(): string
     {
         return Questions::class;
+    }
+
+    public function configureCrud(Crud $crud): Crud
+    {
+        return $crud
+            ->setEntityLabelInSingular('Question')
+            ->setEntityLabelInPlural('Questions');
     }
 
     // Configuration des champs pour les Questions
