@@ -6,9 +6,11 @@ use App\Entity\Workshops;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Crud;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
 use EasyCorp\Bundle\EasyAdminBundle\Field\DateField;
+use EasyCorp\Bundle\EasyAdminBundle\Field\ImageField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\SlugField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextareaField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextField;
+use FOS\CKEditorBundle\Form\Type\CKEditorType;
 
 class WorkshopsCrudController extends AbstractCrudController
 {
@@ -35,6 +37,10 @@ class WorkshopsCrudController extends AbstractCrudController
             TextareaField::new('contents', 'Contenue')  // Récuperation du champ contents pour ajouter/éditer le contenue des ateliers
                 ->setFormType(CKEditorType::class)      // Appelle du formulaire Wisiwig
                 ->hideOnIndex(),
+            ImageField::new('thumbnail', 'Miniature')   // Récuperation du champ img pour ajouter/éditer les images
+                ->setUploadDir('public/assets/img/')    // Direction d'upload des images
+                ->setBasePath('/assets/img/'),          // Recherche la route de l'image pour l'afficher dans le backoffice
+            TextField::new('description', 'Extrait'),   // Récuperation du champ description pour ajouter/éditer les extraits
             DateField::new('date', 'Date'),             // Récuperation du chanp date pour ajouter/éditer la date de publication des ateliers
             SlugField::new('slug', 'Slug ?')            // Récuperation du chanp slug pour ajouter/éditer la date de publication des ateliers
                 ->setTargetFieldName('title')           // Rattache le slug au titre

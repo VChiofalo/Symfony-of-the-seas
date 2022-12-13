@@ -56,6 +56,6 @@ class DashboardController extends AbstractDashboardController
         yield MenuItem::linkToCrud('Questions', 'fas fa-circle-question', Questions::class);    // Backoffice de la table questions
         yield MenuItem::linkToCrud('Réponses', 'fas fa-file-circle-question', Answers::class);  // Backoffice de la table réponses
         yield MenuItem::linkToCrud('Résultats', 'fas fa-circle-check', Results::class);         // Backoffice de la table résultats
-        yield MenuItem::linkToCrud('Ateliers', 'fas fa-circle-check', Workshops::class);        // Backoffice de la table ateliers
+        yield MenuItem::linkToCrud('Ateliers', 'fas fa-handshake', Workshops::class);        // Backoffice de la table ateliers
     }
 }
