@@ -22,21 +22,26 @@
         <a href= {{path('app_quiz_start')}}> Je refais le quizz </a> </br>
     </header>
     <body>
-        {% block body %}{% endblock %}
-        </br>
+        {% block body %}
+        
+        {% endblock %}
+        
 
       
     </body>
     <footer>
-    <div>
+    {% block footer %}
+   
     Mentions légales</br>
     Politique de confidentialité</br>
     Paramètres des cookies</br>
     Questions fréquentes</br>
     Les avis sur BulleeNous contacter</br>
     Bullee@contact.fr</br>
-    </div>
-     </footer>
+    
+   {% endblock %}
+     </footer> 
+
 </html>
 {% block javascripts %}
     {{ encore_entry_script_tags('app') }}

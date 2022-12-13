@@ -114,6 +114,7 @@ class QuizController extends AbstractController
         foreach ($tab as $row) {
 
             $row[1];
+            //dd($row[1]);
             $result = $answersRepository -> findOneById($row[1]);
             $resultFinal += $result -> getValue();
         };
