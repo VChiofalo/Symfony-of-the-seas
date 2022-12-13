@@ -28,7 +28,7 @@ class AgisController extends AbstractController
         
         $article = $articlesRepository -> findOneBySlug($slug);
 
-        return $this->render('agis/index.html.twig', [
+        return $this->render('agis/articles.html.twig', [
             'article' => $article
         ]);
     }
