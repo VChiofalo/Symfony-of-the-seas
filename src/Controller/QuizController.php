@@ -35,9 +35,7 @@ class QuizController extends AbstractController
     #[Route('/quiz/{questions_id}', name: 'app_quiz_question')]
     public function question($questions_id, QuestionsRepository $questionsRepository , RequestStack $requestStack): Response
     {
-        //pour vider le tableau et recommencer le test
-        //$session = $requestStack->getSession();
-        //$session->set('question', []);
+   
 
         // get answers by question ID
        $question = $questionsRepository -> findOneById($questions_id);
