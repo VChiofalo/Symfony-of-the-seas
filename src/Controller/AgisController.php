@@ -13,7 +13,7 @@ class AgisController extends AbstractController
     #[Route('/agis', name: 'app_agis')]
     public function index(ArticlesRepository $articlesRepository): Response
     {
-        
+        // Récupère les articles depuis la Db
         $articles = $articlesRepository -> findAll();
 
         return $this->render('agis/index.html.twig', [
@@ -22,10 +22,10 @@ class AgisController extends AbstractController
         ]);
     }
 
-    #[Route('/article/{slug}', name: 'app_agis_article')]
+    #[Route('/article/{slug}', name: 'app_article')]
     public function articles($slug, ArticlesRepository $articlesRepository): Response
     {
-        
+        // Récupère les articles un par un depuis la db via son slug
         $article = $articlesRepository -> findOneBySlug($slug);
 
         return $this->render('agis/articles.html.twig', [
