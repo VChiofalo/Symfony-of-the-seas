@@ -22,6 +22,12 @@ class Testimonials
     #[ORM\Column(length: 255)]
     private ?string $content = null;
 
+    #[ORM\Column(length: 255, nullable: true)]
+    private ?string $class_css = null;
+
+    #[ORM\Column(length: 255)]
+    private ?string $logo = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -59,6 +65,30 @@ class Testimonials
     public function setContent(string $content): self
     {
         $this->content = $content;
+
+        return $this;
+    }
+
+    public function getClassCss(): ?string
+    {
+        return $this->class_css;
+    }
+
+    public function setClassCss(?string $class_css): self
+    {
+        $this->class_css = $class_css;
+
+        return $this;
+    }
+
+    public function getLogo(): ?string
+    {
+        return $this->logo;
+    }
+
+    public function setLogo(string $logo): self
+    {
+        $this->logo = $logo;
 
         return $this;
     }
