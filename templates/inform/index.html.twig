@@ -88,10 +88,10 @@
 
                         
                         {% for testimonial in testimonials %}
-                        <div class="maclasseCSSdemaDB">
+                        <div class="{{ testimonial.class_css}}">
                         <div class="" data-id="{{ testimonial.id }}">
                         <div class="offset-1 col-lg-10">
-                            <img src="monimagademadb" alt="Facebook">
+                            <img src="{{testimonial.logo}}" alt="{{testimonial.logo}}">
                         </div>  
                             <h4>{{ testimonial.name }}</h4>
                             <h5>{{ testimonial.age }}</h5>
