@@ -23,8 +23,8 @@ class UserCrudController extends AbstractCrudController
     public function configureCrud(Crud $crud): Crud
     {
         return $crud
-            ->setEntityLabelInSingular('Utilisateur')
-            ->setEntityLabelInPlural('Utilisateurs');
+            ->setEntityLabelInSingular('Utilisateur')   // Définis le nom de la table au singulier
+            ->setEntityLabelInPlural('Utilisateurs');   // Définis le nom de la table au pluriel
     }
 
     // Configuration des champs de gestion des Utilisateurs/Admins

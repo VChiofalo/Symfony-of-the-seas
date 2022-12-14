@@ -21,8 +21,8 @@ class ResultsCrudController extends AbstractCrudController
     public function configureCrud(Crud $crud): Crud
     {
         return $crud
-            ->setEntityLabelInSingular('Résultat')
-            ->setEntityLabelInPlural('Résultats');
+            ->setEntityLabelInSingular('Résultat')          // Définis le nom de la table au singulier
+            ->setEntityLabelInPlural('Résultats');          // Définis le nom de la table au pluriel
     }
 
 

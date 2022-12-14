@@ -20,8 +20,8 @@ class QuestionsCrudController extends AbstractCrudController
     public function configureCrud(Crud $crud): Crud
     {
         return $crud
-            ->setEntityLabelInSingular('Question')
-            ->setEntityLabelInPlural('Questions');
+            ->setEntityLabelInSingular('Question')      // Définis le nom de la table au singulier
+            ->setEntityLabelInPlural('Questions');      // Définis le nom de la table au pluriel
     }
 
     // Configuration des champs pour les Questions

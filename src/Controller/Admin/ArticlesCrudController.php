@@ -23,10 +23,10 @@ class ArticlesCrudController extends AbstractCrudController
     public function configureCrud(Crud $crud): Crud
     {
         return $crud
-            ->setEntityLabelInSingular('Article')
-            ->setEntityLabelInPlural('Articles')
+            ->setEntityLabelInSingular('Article')                           // Définis le nom de la table au pluriel
+            ->setEntityLabelInPlural('Articles')                            // Définis le nom de la table au pluriel
 
-            ->addFormTheme('@FOSCKEditor/Form/ckeditor_widget.html.twig'); // Ajout du formulaire Wisiwig
+            ->addFormTheme('@FOSCKEditor/Form/ckeditor_widget.html.twig');  // Ajout du formulaire Wisiwig
     }
 
 
