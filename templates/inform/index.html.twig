@@ -1,33 +1,34 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello InformController!{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{asset('/assets/css/jeminforme.css')}}">
+ {% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+
+     
 <section>
 <div class="containersigne container-fluid">
             <section id="signes" class="container row text-center">
                 <h3 class="col-12">LES 4  SIGNES POUR RECONNAITRE LE HARCELEMENT</h3>
                 <div class="d-flex justify-content-between flex-wrap">
                     <article class="cardsigne">
-                        <img src="../BULLEE/images/anxiete.bonformat.svg" alt="">
+                        <img src="." alt="">
                         <div class="offset-1 col-10 txtsigne">
                             <h4> Stress et anxiété </h4>
                             <p> Tu as des difficulté à t’endormir, tu as mal au ventre, tu n’as plus d’appétit, tu as peur de venir à l’école </p>
                         </div>
                     </article>
                     <article class="cardsigne">
-                        <img src="../BULLEE/images/isolement.bonformat.svg" alt="">
+                        <img src="" alt="">
                         <div class="offset-1 col-10 txtsigne">
                             <h4> Isolement  </h4>
                             <p> Tu ne fais plus partie d'un groupe, n'es plus invité et tu préfères rester seul</p>
                         </div>
                     </article>
                     <article class="cardsigne">
-                        <img src="images/changement-humeurs.bonformat.svg" alt="">
+                        <img src="" alt="">
                         <div class="titrelong offset-1 col-10 txtsigne">
                             <h4> Changement de comportement </h4>
                             <p> Tu te renfermes sur toi-même et tu peux devenir agressif</p>
@@ -88,17 +89,22 @@
 
                         
                         {% for testimonial in testimonials %}
-                        <div class="{{ testimonial.class_css}}">
-                        <div class="" data-id="{{ testimonial.id }}">
-                        <div class="offset-1 col-lg-10">
-                            <img src="{{testimonial.logo}}" alt="{{testimonial.logo}}">
-                        </div>  
+                        <div class="carte{{ testimonial.classCss}}">
+                            <div class="reseau{{ testimonial.classCss}}">
+                                <img src="/assets/img/{{testimonial.logo}}" alt="{{testimonial.logo}}">
+                            </div>
+                            <div class="offset-1 col-lg-10">
+                                 <div class="" data-id="{{ testimonial.id }}">
+                                 
                             <h4>{{ testimonial.name }}</h4>
                             <h5>{{ testimonial.age }}</h5>
                             <p>
                                 {{ testimonial.content }}
                             </p>
                            
+                        </div>
+                        </div>
+                        
                         </div>
                             {% endfor %}
 
@@ -107,5 +113,6 @@
 
                 </div>
 
-             <script src="../BULLEE/accordeon.js"></script>         
+             <script src="/assets/js/accordeon.js"></script>
+             {# <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>         #}
 {% endblock %}

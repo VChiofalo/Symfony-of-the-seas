@@ -1,0 +1,489 @@
+/***IMPORT***/
+@import url('https://fonts.googleapis.com/css2?family=Mandali&family=Playfair+Display&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Mandali&family=Playfair+Display&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body h1 {
+    font-family: 'Poppins', sans-serif;  
+    font-size: 45px;
+    font-weight: 700;
+}
+
+body p {
+    font-family: 'Poppins', sans-serif;     
+   
+    font-weight: 400;
+}
+
+body h2 {
+    font-family: 'Poppins', sans-serif;    
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+body h3 {
+    font-family: 'Poppins', sans-serif;    
+    font-size: 25px;
+    font-weight: 600; 
+}
+
+/*PANCARTES*/
+/************************14/12 EN COURS-DEBUT**********************************/
+#panneau{
+    width: 28%;
+    
+}
+
+
+
+.pancartes{
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+    background: url(../BULLEE/images/vague\ de\ fond-22.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90vw;
+}
+/*1*/
+#pancarte1{
+    background: url(../BULLEE/images/pancarte_defaut/pancarte\ 1-01.svg);
+    position: absolute;
+    width: 230px;
+    bottom: -160px;  
+}
+
+#pancarte1:hover{
+    transform: translateY(-50px);
+}
+
+/*2*/
+#pancarte2{
+    background: url(../BULLEE/images/test-pancarte/pancarte\ 1\ hover-01.svg);
+    position: absolute;
+    width: 230px;
+    bottom: -160px; 
+    left:420px 
+}
+
+#pancarte2:hover{
+    transform: translateY(-50px);
+}
+
+/*3*/
+#pancarte3{
+    background: url(../BULLEE/images/test-pancarte/pancarte\ 1\ hover-01.svg);
+    position: absolute;
+    width: 230px;
+    bottom: -160px; 
+    left:500px 
+}
+
+#pancarte3:hover{
+    transform: translateY(-50px);
+}
+
+/*4*/
+#pancarte4{
+    background: url(../BULLEE/images/test-pancarte/pancarte\ 1\ hover-01.svg);
+    position: absolute;
+    width: 230px;
+    bottom: -160px; 
+    left:650px 
+}
+
+#pancarte4:hover{
+    transform: translateY(-50px);
+}
+
+/*5*/
+#pancarte5{
+    background: url(../BULLEE/images/test-pancarte/pancarte\ 1\ hover-01.svg);
+    position: absolute;
+    width: 230px;
+    bottom: -160px; 
+    left:800px 
+}
+
+#pancarte5:hover{
+    transform: translateY(-50px);
+}
+
+/*6*/
+#pancarte6{
+    background: url(../BULLEE/images/pancarte_hover/pancarte\ 6\ hover-01.svg);
+    position: absolute;
+    width: 230px;
+    bottom: -160px; 
+    left:920px 
+}
+
+#pancarte6:hover{
+    transform: translateY(-50px);
+}
+
+/*7*/
+#pancarte7{
+    background: url(../BULLEE/images/test-pancarte/pancarte\ 1\ hover-01.svg);
+    position: absolute;
+    width: 230px;
+    bottom: -160px; 
+    left:1050px 
+}
+
+#pancarte7:hover{
+    transform: translateY(-50px);
+}
+
+/*8*/
+#pancarte8{
+    background: url(../BULLEE/images/test-pancarte/pancarte\ 1\ hover-01.svg);
+    position: absolute;
+    width: 230px;
+    bottom: -160px; 
+    left:1200px 
+}
+
+#pancarte8:hover{
+    transform: translateY(-50px);
+}
+
+/*9*/
+#pancarte9{
+    background: url(../BULLEE/images/test-pancarte/pancarte\ 1\ hover-01.svg);
+    position: absolute;
+    width: 230px;
+    bottom: -160px; 
+    left:1350px 
+}
+
+#pancarte9:hover{
+    transform: translateY(-50px);
+}
+
+/*all*/
+.image_qui_disparait:hover{
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out
+}
+/************************14/12 EN COURS-FIN**********************************/
+
+
+/* LES 4  SIGNES POUR RECONNAITRE LE HARCELEMENT*/
+.txtsigne{
+    margin-top: 40px;
+}
+#signes{
+    margin: auto;
+}
+
+.txtsigne h4{
+    color: #2F2D84
+
+}
+
+#signes img{
+    width: 150px;
+    height: 112px;
+    margin-top: 2rem;
+}
+
+.containersigne{
+    background-color: #3F3D9A;
+    padding: 50px;
+
+}
+
+.cardsigne{
+    background-color: white;
+    width: 290px;
+    border-radius: 80px 80px 20px 20px;
+}
+
+#signes h3{
+    color: white;
+}
+
+/*Connaître la loi*/
+
+.loibackground{
+    background: linear-gradient(180deg, rgba(243, 247, 255, 0) 0%, #F3F7FF 78.65%);
+}
+
+#laloi{
+    margin: auto;
+}
+
+#laloi img {
+    height: 430px;
+    width: 630px;
+}
+.artloi h2{
+    color: #2F2D84;
+}
+
+
+/*Accordéon*/
+.accordion {  
+    color:black;
+    background-color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+  
+.accordion .active, .accordion:hover {
+    background-color: #C33070;
+    color: white;
+    border-radius: 20px;
+}
+  
+.panel {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.zoneaccordeon{
+      font-size: 14px;
+}
+
+h6{
+   color:#2F2D84
+}
+
+.accordion:after {
+    content: '\02795'; /*unicode + */
+    font-size: 13px;
+    
+    float: right;
+    margin-left: 5px;
+}
+  
+.accordion .active:after {
+    content: "\2796"; /*unicode - */
+    color:white
+}
+
+/* Bouton*/  
+#bouton{
+    text-decoration: none;
+    background-color: #3F3D9A;
+    padding: 8px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 100px;
+    color: white;
+    margin:auto;
+    width: 191px;
+    margin-bottom: 20px;
+}
+
+#bouton:hover{
+    text-decoration: none;
+    background-color: #FF8EBF;
+    padding: 8px 32px;
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.05);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
+    border-radius: 100px;
+    color: white;
+
+}
+
+#bouton:active{
+    text-decoration: none;
+    background-color: #FF8EBF;
+    padding: 8px 32px;
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.05);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
+    border-radius: 100px;
+    color: white;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1)
+
+}
+
+
+/* Temoignages*/
+.containertemoignage {
+    background-color: #F3F7FF; 
+    padding: 50px;
+  
+
+}
+
+#temoignages{
+    margin: auto;
+
+}
+
+/*Facebook*/
+
+.cartefb{
+    border: 5px solid #454bd7;
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    width: 250px;
+}
+
+.cartefb .reseaufb{
+    background-color: #F3F7FF;
+    border-left: 5px solid #454bd7;
+    border-right: 5px solid #454bd7;
+    border-bottom: 5px solid #454bd7;
+    border-radius: 0 0 63px 63px;
+    margin: -35px auto 0;
+    text-align: center;
+    width: 105px;
+}
+
+.cartefb .reseaufb img{
+    padding: 0 22px 15px;
+    
+}
+
+.cartefb h4{
+    color: #454bd7;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.carte h5{
+    color: #454bd7;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+/*Instagram*/
+
+.carteinsta{
+    border: 5px solid #FF8EBF;
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    width: 250px;
+}
+
+.carteinsta .reseauinsta{
+    background-color: #F3F7FF;
+    border-left: 5px solid #FF8EBF;
+    border-right: 5px solid #FF8EBF;
+    border-bottom: 5px solid #FF8EBF;
+    border-radius: 0 0 63px 63px;
+    margin: -35px auto 0;
+    text-align: center;
+    width: 105px;
+}
+
+.carteinsta .reseauinsta img{
+    padding: 0 22px 15px;
+    width: 95%;
+    
+}
+
+.carteinsta h4{
+    color: #FF8EBF;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.carteinsta h5{
+    color: #FF8EBF;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+/*Snapchat*/
+
+.cartesnap{
+    border: 5px solid #F78008;
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    width: 250px;
+}
+
+.cartesnap .reseausnap{
+    background-color: #F3F7FF;
+    border-left: 5px solid #F78008;
+    border-right: 5px solid #F78008;
+    border-bottom: 5px solid #F78008;
+    border-radius: 0 0 63px 63px;
+    margin: -35px auto 0;
+    text-align: center;
+    width: 105px;
+}
+
+.cartesnap .reseausnap img{
+    padding: 0 22px 15px;
+    width: 95%;
+    
+}
+
+.cartesnap h4{
+    color: #F78008;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.cartesnap h5{
+    color: #F78008;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+/*Twitter*/
+
+.cartetwitter{
+    border: 5px solid #4878D2;
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    width: 250px;
+}
+
+.cartetwitter .reseautwitter{
+    background-color: #F3F7FF;
+    border-left: 5px solid #4878D2;
+    border-right: 5px solid #4878D2;
+    border-bottom: 5px solid #4878D2;
+    border-radius: 0 0 63px 63px;
+    margin: -35px auto 0;
+    text-align: center;
+    width: 105px;
+}
+
+.cartetwitter .reseautwitter img{
+    padding: 0 22px 15px;
+    width: 95%;
+    
+}
+
+.cartetwitter h4{
+    color: #4878D2;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.cartetwitter h5{
+    color: #4878D2;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+
+
