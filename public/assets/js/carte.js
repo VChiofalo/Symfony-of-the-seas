@@ -4,13 +4,27 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
     let lands = document.querySelectorAll('.land');
     let mapSVG = document.querySelector('#map svg');
+    let activeLand = null;
     // Boucle pour faire passer un path devant les autres
     lands.forEach(land => {
 
+        // ajout du mouseover sur les lands
         land.addEventListener('mouseover', (e) => {
             mapSVG.removeChild(e.target);
             mapSVG.appendChild(e.target);
         });
+
+        // ajout du click sur les lands
+        land.addEventListener('click', (e) => {
+            
+            // land precedent
+            if(activeLand) 
+                activeLand.classList.remove('land_active');
+            
+            // land sur lequel on a cliqué
+            e.target.classList.add('land_active');
+            activeLand = e.target;
+        })
     });
     lands.forEach(land => {
         land.addEventListener('click', (e) => {

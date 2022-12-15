@@ -7,9 +7,15 @@
 }
 /* Ce hover permet de mettre en avant l'académie que la souris survole */
 .map_img svg path:hover {
-    order: 1;
-    fill: #FF8EBF; 
-    transition: fill 0.3s;
+    /* fill: #FF8EBF; */
+    transition: fill 0.1s;
+    stroke: white;
+    stroke-width: 2px;
+   transform: scale(1.2) ;
+}
+
+.land_active {
+    fill: #C33070; 
     stroke: white;
     stroke-width: 2px;
     transform: scale(1.2);
