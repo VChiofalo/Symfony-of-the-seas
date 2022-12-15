@@ -39,20 +39,18 @@ class ResultsRepository extends ServiceEntityRepository
         }
     }
 
-//    /**
+
 //     * @return Results[] Returns an array of Results objects
-//     */
-//    public function findByExampleField($value): array
-//    {
-//        return $this->createQueryBuilder('r')
-//            ->andWhere('r.exampleField = :val')
-//            ->setParameter('val', $value)
-//            ->orderBy('r.id', 'ASC')
-//            ->setMaxResults(10)
-//            ->getQuery()
-//            ->getResult()
-//        ;
-//    }
+//     */ custom function to retrieve the relevant result regarding the number of points
+public function findResultDescription($value): array
+{
+        return $this->createQueryBuilder('r')
+            ->andWhere('r.min<= :val AND r.max >= :val')
+            ->setParameter('val', $value)
+            ->getQuery()
+            ->getResult()
+        ;
+   }
 
 //    public function findOneBySomeField($value): ?Results
 //    {
