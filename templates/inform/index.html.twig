@@ -80,39 +80,42 @@
             </section>
         </div>
 
-        <div class="containertemoignage container-fluid">
-            <section id="temoignages" class="container row text-center">
+        <div class="containertemoignage">
+            <section class="text-center">
+                <div class="container">
+                    <div class="row">
+                        <h3 class="col-lg-12">Témoignages</h3> 
+                        <h4 class="col-lg-12"> De nombreuses personnes ont réussi à mettre fin au harcèlement</h4> 
+                    </div>
+                </div>
 
-                <h3 class="col-lg-12">Témoignages</h3> 
-                <h4 class="col-lg-12"> De nombreuses personnes ont réussi à mettre fin au harcèlement</h4> 
-                <div id="article" class="d-flex justify-content-between flex-wrap">
-
-                        
+                <div id="temoignages-container" class="container">
+                    <i class="btn-prev"></i>
+                    <i class="btn-next"></i>
+                    <div id="temoignages" class="d-flex justify-content-between flex-no-wrap">
+                            
                         {% for testimonial in testimonials %}
                         <div class="carte{{ testimonial.classCss}}">
                             <div class="reseau{{ testimonial.classCss}}">
                                 <img src="/assets/img/{{testimonial.logo}}" alt="{{testimonial.logo}}">
                             </div>
-                            <div class="offset-1 col-lg-10">
-                                 <div class="" data-id="{{ testimonial.id }}">
-                                 
-                            <h4>{{ testimonial.name }}</h4>
-                            <h5>{{ testimonial.age }}</h5>
-                            <p>
-                                {{ testimonial.content }}
-                            </p>
-                           
+                            <div id="cardTemoigagnes" class="offset-1 col-lg-10">
+                                <div class="" data-id="{{ testimonial.id }}">
+                                    <h4>{{ testimonial.name }}</h4>
+                                    <h5>{{ testimonial.age }}</h5>
+                                    <p>{{ testimonial.content }}</p>
+                                </div>
+                            </div>
                         </div>
-                        </div>
-                        
-                        </div>
-                            {% endfor %}
-
-    
+                        {% endfor %}
                     </div>
-
+                    
                 </div>
+                   
+            </section>
 
+        </div>
              <script src="/assets/js/accordeon.js"></script>
+             <script src="/assets/js/sliderTemoignages.js"></script>
              {# <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>         #}
 {% endblock %}
