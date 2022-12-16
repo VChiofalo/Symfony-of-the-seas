@@ -157,7 +157,7 @@ body p {
 }
 
 .cardsoutenir:nth-child(2n){
-    /* background-color: #4C6EAE */
+    background-color: #4C6EAE
 }
 
 .cardsoutenir:nth-child(2n) h4, .cardsoutenir:nth-child(2n) p{
