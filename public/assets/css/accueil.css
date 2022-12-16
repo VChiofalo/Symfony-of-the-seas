@@ -1,0 +1,604 @@
+/* Page accueil mis à jour (ainsi que son html) */
+@keyframes bulle_center {
+    0% {
+        /* Règles CSS de départ */
+        top: 250px;
+        left: -20px;
+    }
+    5% {
+        /* Règles CSS à 5% de l'animation */
+        top: 230px;
+        left: 96px;
+    }
+    10% {
+        /* Règles CSS à 10% de l'animation */
+        top: 210px;
+        left: 192px;
+    }
+    15% {
+        /* Règles CSS à 15% de l'animation */
+        top: 190px;
+        left: 288px;
+    }
+    20% {
+        /* Règles CSS à 20% de l'animation */
+        top: 170px;
+        left: 384px;
+    }
+    25% {
+        /* Règles CSS à 25% de l'animation */
+        top: 190px;
+        left: 480px;
+    }
+    30% {
+        /* Règles CSS à 30% de l'animation */
+        top: 210px;
+        left: 576px;
+    }
+    35% {
+        /* Règles CSS à 35% de l'animation */
+        top: 230px;
+        left: 672px;
+    }
+    40% {
+        /* Règles CSS à 40% de l'animation */
+        top: 250px;
+        left: 768px;
+    }
+    45% {
+        /* Règles CSS à 45% de l'animation */
+        top: 270px;
+        left: 864px;
+    }
+    50% {
+        /* Règles CSS à 50% de l'animation */
+        top: 290px;
+        left: 960px;
+    }
+    55% {
+        /* Règles CSS à 55% de l'animation */
+        top: 310px;
+        left: 1056px;
+    }
+    60% {
+        /* Règles CSS à 60% de l'animation */
+        top: 290px;
+        left: 1152px;
+    }
+    65% {
+        /* Règles CSS à 65% de l'animation */
+        top: 270px;
+        left: 1248px;
+    }
+    70% {
+        /* Règles CSS à 70% de l'animation */
+        top: 250px;
+        left: 1344px;
+    }
+    75% {
+        /* Règles CSS à 75% de l'animation */
+        top: 230px;
+        left: 1440px;
+    }
+    80% {
+        /* Règles CSS à 80% de l'animation */
+        top: 210px;
+        left: 1536px;
+    }
+    85% {
+        /* Règles CSS à 85% de l'animation */
+        top: 190px;
+        left: 1632px;
+    }
+    90% {
+        /* Règles CSS à 90% de l'animation */
+        top: 210px;
+        left: 1728px;
+    }
+    95% {
+        /* Règles CSS à 95% de l'animation */
+        top: 220px;
+        left: 1824px;
+    }
+    100% {
+        /* Règles CSS à 100% de l'animation */
+        top: 250px;
+        left: 1920px;
+    }
+}
+
+@keyframes bulle_bottom_to_top {
+    0% {
+        /* Règles CSS de départ */
+        top: 300px;
+        left: -20px;
+    }
+    5% {
+        /* Règles CSS à 5% de l'animation */
+        top: 250px;
+        left: 96px;
+    }
+    10% {
+        /* Règles CSS à 10% de l'animation */
+        top: 200px;
+        left: 192px;
+    }
+    15% {
+        /* Règles CSS à 15% de l'animation */
+        top: 150px;
+        left: 288px;
+    }
+    20% {
+        /* Règles CSS à 20% de l'animation */
+        top: 180px;
+        left: 384px;
+    }
+    25% { 
+        /* Règles CSS à 25% de l'animation */
+        top: 210px;
+        left: 480px;
+    }
+    30% {
+        /* Règles CSS à 30% de l'animation */
+        top: 240px;
+        left: 576px;
+    }
+    35% {
+        /* Règles CSS à 35% de l'animation */
+        top: 270px;
+        left: 672px;
+    }
+    40% {
+        /* Règles CSS à 40% de l'animation */
+        top: 300px;
+        left: 768px;
+    }
+    45% {
+        /* Règles CSS à 45% de l'animation */
+        top: 250px;
+        left: 864px;
+    }
+    50% {
+        /* Règles CSS à 50% de l'animation */
+        top: 200px;
+        left: 960px;
+    }
+    55% {
+        /* Règles CSS à 55% de l'animation */
+        top: 150px;
+        left: 1056px;
+    }
+    60% {
+        /* Règles CSS à 60% de l'animation */
+        top: 100px;
+        left: 1152px;
+    }
+    65% {
+        /* Règles CSS à 65% de l'animation */
+        top: 130px;
+        left: 1248px;
+    }
+    70% {
+        /* Règles CSS à 70% de l'animation */
+        top: 160px;
+        left: 1344px;
+    }
+    75% {
+        /* Règles CSS à 75% de l'animation */
+        top: 190px;
+        left: 1440px;
+    }
+    80% {
+        /* Règles CSS à 80% de l'animation */
+        top: 140px;
+        left: 1536px;
+    }
+    85% {
+        /* Règles CSS à 85% de l'animation */
+        top: 90px;
+        left: 1632px;
+    }
+    90% {
+        /* Règles CSS à 90% de l'animation */
+        top: 40px;
+        left: 1728px;
+    }
+    95% {
+        /* Règles CSS à 95% de l'animation */
+        top: -10px;
+        left: 1824px;
+    }
+    100% {
+        /* Règles CSS à 100% de l'animation */
+        top: -60px;
+        left: 1920px;
+    }
+}
+
+@keyframes bulle_top_to_bottom {
+    0% {
+        /* Règles CSS de départ */
+        top: 40px;
+        left: -50px;
+    }
+    5% {
+        /* Règles CSS à 5% de l'animation */
+        top: 80px;
+        left: 96px;
+    }
+    10% {
+        /* Règles CSS à 10% de l'animation */
+        top: 120px;
+        left: 192px;
+    }
+    15% {
+        /* Règles CSS à 15% de l'animation */
+        top: 140px;
+        left: 288px;
+    }
+    20% {
+        /* Règles CSS à 20% de l'animation */
+        top: 180px;
+        left: 384px;
+    }
+    25% { 
+        /* Règles CSS à 25% de l'animation */
+        top: 190px;
+        left: 480px;
+    }
+    30% {
+        /* Règles CSS à 30% de l'animation */
+        top: 160px;
+        left: 576px;
+    }
+    35% {
+        /* Règles CSS à 35% de l'animation */
+        top: 130px;
+        left: 672px;
+    }
+    40% {
+        /* Règles CSS à 40% de l'animation */
+        top: 100px;
+        left: 768px;
+    }
+    45% {
+        /* Règles CSS à 45% de l'animation */
+        top: 150px;
+        left: 864px;
+    }
+    50% {
+        /* Règles CSS à 50% de l'animation */
+        top: 200px;
+        left: 960px;
+    }
+    55% {
+        /* Règles CSS à 55% de l'animation */
+        top: 250px;
+        left: 1056px;
+    }
+    60% {
+        /* Règles CSS à 60% de l'animation */
+        top: 300px;
+        left: 1152px;
+    }
+    65% {
+        /* Règles CSS à 65% de l'animation */
+        top: 270px;
+        left: 1248px;
+    }
+    70% {
+        /* Règles CSS à 70% de l'animation */
+        top: 240px;
+        left: 1344px;
+    }
+    75% {
+        /* Règles CSS à 75% de l'animation */
+        top: 210px;
+        left: 1440px;
+    }
+    80% {
+        /* Règles CSS à 80% de l'animation */
+        top: 180px;
+        left: 1536px;
+    }
+    85% {
+        /* Règles CSS à 85% de l'animation */
+        top: 150px;
+        left: 1632px;
+    }
+    90% {
+        /* Règles CSS à 90% de l'animation */
+        top: 200px;
+        left: 1728px;
+    }
+    95% {
+        /* Règles CSS à 95% de l'animation */
+        top: 250px;
+        left: 1824px;
+    }
+    100% {
+        /* Règles CSS à 100% de l'animation */
+        top: 300px;
+        left: 1920px;
+    }
+}
+/* Zone de travail */
+#box {
+    overflow: hidden;
+    width: calc(100% - 24px);  
+    height: 100%;
+    position: absolute;   
+}
+.animated_bubble {
+    /* Options générale à toutes les bulles */
+    position: absolute;
+    left: 1920px;
+    top: 200px;
+    animation-timing-function: linear;      
+}
+
+.animated_bubble_1, .animated_bubble_3, .animated_bubble_6, .animated_bubble_8 {
+    /* Options d'animation de x bulles */
+    animation-name: bulle_bottom_to_top;
+}
+
+.animated_bubble_2, .animated_bubble_4, .animated_bubble_5, .animated_bubble_7 {
+    /* Options d'animation de x bulles */
+    animation-name: bulle_center;
+}
+
+.animated_bubble_9, .animated_bubble_10, .animated_bubble_11, .animated_bubble_12 {
+    /* Options d'animation de x bulles */
+    animation-name: bulle_top_to_bottom;
+}
+
+.animated_bubble_1 {
+    /* Format de la bulle */
+    width:170px;
+    height: 170px;
+    /* Options d'animation de la bulle */
+    animation-duration: 7s;
+}
+
+.animated_bubble_2 {
+    /* Format de la bulle */
+    width:100px;
+    height: 100px;  
+    /* Options d'animation de la bulle */
+    animation-duration: 6s;
+    animation-delay: 1s;
+}
+
+.animated_bubble_3 {
+    /* Format de la bulle */
+    width:120px;
+    height: 120px;          
+    /* Options d'animation de la bulle */
+    animation-duration: 5s;
+    animation-delay: 3s;
+}
+
+.animated_bubble_4 {
+    /* Format de la bulle */
+    width:140px;
+    height: 140px;               
+    /* Options d'animation de la bulle */
+    animation-duration: 4.5s;
+    animation-delay: 1.5s;
+}
+
+.animated_bubble_5 {
+    /* Format de la bulle */
+    width:160px;
+    height: 160px;
+    /* Options d'animation de la bulle */
+    animation-duration: 6s;
+    animation-delay: 4s;
+}
+
+.animated_bubble_6 {
+    /* Format de la bulle */
+    width:100px;
+    height: 100px;  
+    /* Options d'animation de la bulle */
+    animation-duration: 7s;
+    animation-delay: 3s;
+}
+
+.animated_bubble_7 {
+    /* Format de la bulle */
+    width:120px;
+    height: 120px;          
+    /* Options d'animation de la bulle */
+    animation-duration: 4.5s;
+    animation-delay: 2.5s;
+}
+
+.animated_bubble_8 {
+    /* Format de la bulle */
+    width:100px;
+    height: 100px;               
+    /* Options d'animation de la bulle */
+    animation-duration: 9s;
+    animation-delay: 3s;
+}
+
+.animated_bubble_9 {
+    /* Format de la bulle */
+    width:150px;
+    height: 150px;
+    /* Options d'animation de la bulle */
+    animation-duration: 7s;
+    animation-delay: 1.5s;
+}
+
+.animated_bubble_10 {
+    /* Format de la bulle */
+    width:80px;
+    height: 80px;          
+    /* Options d'animation de la bulle */
+    animation-duration: 5s;
+    animation-delay: 2.5s;
+}
+
+.animated_bubble_11 {
+    /* Format de la bulle */
+    width:90px;
+    height: 90px;  
+    /* Options d'animation de la bulle */
+    animation-duration: 5s;
+    animation-delay: 4s;
+}
+
+.animated_bubble_12 {
+    /* Format de la bulle */
+    width:40px;
+    height: 40px;               
+    /* Options d'animation de la bulle */
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 3s;
+}
+
+/*******AJOUT 14/12-DEBUT**************/
+/* .bienvenue, #sectionquiz{
+    padding: 6rem 0;
+} */
+/*******AJOUT 14/12-FIN**************/
+
+
+#backgroundtop{
+    background: linear-gradient(180deg, #DCE7FF 0%, rgba(255, 241, 247, 0) 45.1%);
+    padding-top: 160px; /* Ajout 14 dec 16h */
+    position: relative;
+ }
+
+#backgroundbottom{
+   background:linear-gradient(180deg, #FFFFFF 15.1%, #E9F0FE 100%);
+}
+
+/* Section Qui sommes-nous ? */
+
+h1{
+    color: #2F2D84;
+    padding-bottom: 2rem;
+}
+
+#Qui {
+    margin: 5rem 0;
+}
+
+#txtbienvenue{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Section Quizz */
+
+#sectionquiz {
+    background-color: #3F3D9A;
+    margin-top: 100px; /* Ajout 14 dec 16h */
+    padding: 50px 0; /* Ajout 14 dec 16h */
+}
+
+#imgquiz {
+    border-radius: 100px;
+}
+
+.bouton{
+    margin-right: 2rem;
+    background-color: #FFB7D6;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 6px rgba(0, 0, 0, 0.05);
+    margin:auto;
+    width: 300px;
+    display: block;
+    margin:auto;
+}
+
+.bouton:hover{
+    background-color: #FF8EBF;
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.05);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.bouton:active{
+    background-color: #FFFFFF;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1);
+    color: #2F2D84;
+}
+
+.bouton, .bouton:hover, .bouton:active {
+    text-decoration: none;
+    padding: 8px 32px;
+    border-radius: 100px;
+}
+
+.bouton, .bouton:hover, #sectionquiz {
+    color: white;
+}
+
+.bouton:hover, .bouton:active {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* Je dit STOP au harcèlement */
+
+#STOP {
+    margin: auto;
+    padding-top: 8rem;
+    padding-bottom: 12rem;
+}
+
+#STOP h2 {
+    padding-bottom: 4rem;
+    color: #2F2D84
+}
+
+main #STOP img {
+    height: 160px;
+    width: 213px;
+}
+
+.cardaccueil{
+    background-color: #FEFEFE;
+    border: 1px solid rgba(88, 111, 169, 0.15);
+    box-shadow: 5px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 80px;
+    width: 330px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #C33070;
+    
+}
+
+.cardaccueil:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 6px rgba(0, 0, 0, 0.05);
+}
+.cardaccueil:active{
+    transform: scale(1.1);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.h3{
+    padding-top: 30px;
+}
+
+#h3{
+    padding-top: 15px;
+}
+
+/* Footer */
+
+#breakcontainer {
+    position: relative;
+    padding: 50px;
+    left: calc(-50vw + 50%);
+    width: 100vw;
+}
+
+footer .logo {
+    height: 60px;
+    width: 110px;
+}
