@@ -103,12 +103,6 @@ header nav ul li a:hover{
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1)
 
 }
-
-body {
-    background-color: #c4dee7d1;
-}
-
-
     
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
