@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap'); 
+
 h2{
     font-family: 'Poppins', sans-serif; 
     
@@ -11,8 +13,7 @@ h3{
     color: #2F2D84;
 }
 
-/******JE SOUTIENS******/
-h1{
+h2{
     font-family: 'Poppins', sans-serif; 
     
     font-weight: 700;
@@ -26,13 +27,14 @@ body p {
     font-weight: 400;
 }
 
+/******JE SOUTIENS******/
+
 .backgroundjesoutiens{
     background: url(../img/fondbulles.png);
     background-size:cover;
     background-repeat: no-repeat;
-    height: 46rem;
-    position: relative;
-   
+    height: 90vh; /*******************************MODIF 14/12*******/
+    position: relative;   
     
 }
 
@@ -41,14 +43,18 @@ body p {
     margin: auto;
 }
 
+/*********************************MODIF 14/12 - DEBUT******/
+
 #jesoutiens{
-    margin: auto;
+    padding-top:5rem;
+    padding-bottom:3rem
 }
 
 #jesoutienstxt{
-    padding-top: 12vh;
-    line-height: 35px;
+    padding-top: 1rem;
+    line-height: 40px;
 }
+/********************************MODIF 14/12 - FIN******/
 
 
 
@@ -133,42 +139,105 @@ body p {
 
 /******ETAPES******/
 
+/**************************************MODIF 14/12 - DEBUT******/
+
+#soutenir4etapes{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
 .cardsoutenir{
     background-color: #D0D7E5;
     width: 310px;
-    padding: 2rem;
+    padding: 3rem;
     border-radius: 50px;
-    height: 326.4px;
+    height: 470px;
+    margin: 3rem 0;
+    
 }
 
 .cardsoutenir:nth-child(2n){
     background-color: #4C6EAE
 }
 
-.num{
+.cardsoutenir:nth-child(2n) h4, .cardsoutenir:nth-child(2n) p{
     color: white;
 }
 
+.num{
+    color: white;
+    font-family:'Chewy', cursive ;
+    font-size: 5rem;
+}
+
+.conseil{
+    padding: 0.75rem 0;
+
+}
+
+/*****************************************MODIF 14/12 - FIN******/
+
 
 /******JE PREVIENS******/
- .image{
-     max-height: 310px;
- }
 
- #bouton{
+/**************************************MODIF 14/12 - DEBUT******/
+
+.backgroundjepreviens{
+    background: linear-gradient(180deg, #FFFFFF 15.1%, #E9F0FE 100%);
+}
+
+#jepreviens{
+    padding: 3rem 0;
+}
+
+#jepreviens article p{
+    padding: 2.5rem;
+
+}
+
+#jepreviens article{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    line-height: 30px;
+}
+
+.orange{
+    color: #F78008;
+}
+
+.rose{
+    color: #DF80A9;
+}
+
+.rose{
+    color: #DF80A9;
+}
+
+.makeup{
+    color:#C33070
+}
+
+/*****************************************MODIF 14/12 - FIN******/
+
+.image{
+     max-height: 310px;
+    
+}
+
+#bouton{
     text-decoration: none;
     background-color: #3F3D9A;
     padding: 8px 32px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 6px rgba(0, 0, 0, 0.05);
     border-radius: 100px;
     color: white;
-    margin:auto;
+    display: block; /**************************************MODIF 14/12******/
+    margin: auto;
     width: 191px;
     margin-bottom: 20px;
 }
 
 #bouton:hover{
-    text-decoration: none;
     background-color: #FF8EBF;
     padding: 8px 32px;
     box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.05);
@@ -179,7 +248,6 @@ body p {
 }
 
 #bouton:active{
-    text-decoration: none;
     background-color: #FF8EBF;
     padding: 8px 32px;
     box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.05);
@@ -188,4 +256,151 @@ body p {
     color: white;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1)
 
+}
+
+/**************************************MODIF 15/12 - DEBUT******/
+
+.backgroundoutil{
+    background: #E9F0FE;
+}
+
+.backgroundoutil h2{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/*****************************************MODIF 15/12 - FIN******/
+
+/***************************************************
+                    MAIN Boite a outils
+****************************************************/
+/* Général*/
+main {
+    background: #CED9EF;
+}
+
+#boiteaoutils h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+
+#boiteaoutils h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+
+#boiteaoutils h6 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+#boiteaoutils p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* Onglets*/
+
+#onglets h3 a {
+    color: #EFF3FB;
+    text-align: center;
+}
+
+
+#onglets {
+    background-color: #C33070;
+    border-radius: 20px;
+    width: 28%;
+    margin-left: 480px;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+#onglets #boutonateliers:hover {
+    background: #FFFFFF;
+    border-radius: 20px;
+    color: #2F2D84;
+    padding: 0.5rem;
+}
+
+#onglets #boutonarticles:hover {
+    background: #FFFFFF;
+    border-radius: 20px;
+    color: #2F2D84;
+    padding: 0.5rem;
+}
+
+/* Articles*/
+
+#boiteaoutils h1 {
+    text-align: center;
+    color: #2F2D84;
+    padding-bottom: 3rem;
+}
+
+#boiteaoutils h3 {
+    color: #C33070;
+}
+
+#boiteaoutils h6 {
+    color: #2F2D84;
+}
+
+#boiteaoutils p{
+    color: #2F2D84;
+}
+
+#boiteaoutils article {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 50px;
+    width: 310px;
+    height: 419px;
+    padding: 30px;
+    margin: 10px;
+}
+
+#boiteaoutils article:hover {
+    background: #FFFFFF;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+}
+
+#boiteaoutils h6:hover {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#boiteaoutils a {
+    text-decoration: none;
+    color: #2F2D84;
+}
+#boiteaoutils a:hover {
+    color: #C33070;
+}
+
+#boiteaoutils .theatre img {
+    width: 95%;
+    padding-bottom: 2rem;
+}
+
+#boiteaoutils .cohesion img {
+    width: 90%;
+    padding-bottom: 1.5rem;
+}
+
+#boiteaoutils .harcelement img {
+    width: 65%;
+    padding-bottom: 1.3rem;
+}
+
+
+#boiteaoutils .violencescolaire img {
+    width: 90%;
+    padding-bottom: 0.7rem;
 }
