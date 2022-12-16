@@ -1,0 +1,135 @@
+
+.h1, h2, h3, h4,p{
+    font-family:'Poppins', sans-serif;
+}
+
+#endirect h1, #academie h2, #association h2{
+    padding-bottom: 2rem;
+    color: #2F2D84;
+}
+
+#academie h2, #association h2{
+    padding-top: 4rem;
+}
+
+
+/**************EN DIRECT***************/
+
+/****CARDS****/
+
+.backgroundendirect{ 
+    background: url(../jedemandedelaide/images/vague-je-demande-de-laide.svg);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+
+#endirect{
+    padding-top: 7rem;
+}
+
+
+.cardurgence{
+    padding-top: 6rem;
+    padding-bottom: 12rem;
+}
+
+
+#card3020{
+    background: url(../img/demande/3020_hover.svg);
+}
+
+#card3018{
+    background: url(../img/demande/3018_hover.svg);
+}
+
+#cardapp3018{
+    background: url(../img/demande/app3018_hover.svg);
+}
+
+#card114{
+    background: url(../img/demande/114_hover.svg);
+}
+
+
+.urgencedefaut:hover, .urgencedefaut:active{
+    opacity: 0;
+    transition: opacity 0.1s linear;
+    position:relative
+}
+
+/****BANDE****/
+
+.backgroundbande{
+    background: #6471AF;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    position: absolute;
+    bottom: 0;
+}
+
+.bande h3{
+    color: white;
+}
+
+/**************ACADEMIE***************/
+.backgroundacademie{
+    background: linear-gradient(180deg, rgba(135, 163, 204, 0) 24.48%, #DFECFF 100%);
+}
+
+.referent{
+    background: #FFFFFF;
+    border: 2px solid rgba(135, 163, 204, 0.1);
+    box-shadow: 5px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    padding: 1rem 2rem ;
+    width: 305px;
+}
+
+.referent h3{
+    padding: 1.5rem 0;
+}
+
+.sonic{
+    color: #2F2D84;
+}
+
+.makeup{
+   color: #C33070
+}
+
+/**************ASSOCIATION***************/
+
+.assos{
+    background: #4C6EAE;
+    filter: drop-shadow(5px 2px 4px rgba(0, 0, 0, 0.1));
+    border-radius: 50px;
+    padding: 1.5rem 0;
+    margin: 2rem auto;
+}
+
+.assos p{
+    color: white;
+    padding: 1rem 2rem 1rem
+
+}
+
+.flecheasso{
+    width: 30px;
+    background: #D0D7E5 ;
+    border: none;
+    border-radius: 20px ;
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.05);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.flecheasso:hover{
+    width: 30px;
+    background: white ;
+    border: none;
+    border-radius: 20px ;
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.05);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
