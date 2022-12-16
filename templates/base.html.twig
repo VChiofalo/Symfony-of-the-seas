@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}Accueil!{% endblock %}</title>
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
         
@@ -13,18 +13,72 @@
         <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Anton&family=Mandali&family=Playfair+Display&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
         <link rel="stylesheet" href="{{asset('/assets/css/normalize.css')}}">
+
+        <link rel="stylesheet" href="/assets/css/style_barre_navigation.css"> 
+
         {% block stylesheets %}
+       {#  #}
             {{ encore_entry_link_tags('app') }}
         {% endblock %}
     </head>
-    <header>
-        <a href= {{path('app_home')}}> Bullee, c'est qui? </a> </br>
-        <a href= {{path('app_inform')}}> Je m'informe </a> </br>
-        <a href= {{path('app_agis')}}> J'agis </a> </br>
-        <a href= {{path('app_demande')}}>Je demande de l'aide </a> </br>
-        <a href= {{path('app_quiz_start')}}> Je refais le quizz </a> </br>     
+ 
+
+
+    <header id="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="/assets/img/Logo-bullee-nav-barre.svg" alt=""></a>
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="offset-lg-4 col-lg-8 col-sm-12 navbar-nav d-flex justify-content-between text-center">
+
+                    <li class="nav-item">
+                        <a href={{path('app_home')}}>Bullee, c'est qui ?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href={{path('app_inform')}}>Je m'informe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href={{path('app_agis')}}>J'agis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href={{path('app_demande')}}>Je demande de l'aide</a>
+                    </li>
+                    <li class="nav-item magin">
+                        <a href="#"></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="boutonnav" href={{path('app_quiz_start')}}>Je refais le quizz</a>
+                    </li>
+                    
+
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+       
+
     </header>
+      
     <body>
         {% block body %}
         
@@ -41,10 +95,14 @@
                 
             {% endblock %}
         </footer> 
-    </body>
 
-</html>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
 {% block javascripts %}
+<script src="/assets/js/scrollnav.js" >   </script> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
     {{ encore_entry_script_tags('app') }}
-{% endblock %}
+
+{% endblock %} 
+   </body>
+</html>

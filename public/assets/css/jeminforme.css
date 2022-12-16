@@ -40,14 +40,15 @@ body h3 {
     position: relative;
     height: 90vh;
     overflow: hidden;
-    background: url(../BULLEE/images/vague\ de\ fond-22.svg);
+    background: url(/assets/img/vague_de_fond-22.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 90vw;
+  /*   background-size: 90vw; */
+    padding-bottom: 30rem;
 }
 /*1*/
 #pancarte1{
-    background: url(../BULLEE/images/pancarte_defaut/pancarte\ 1-01.svg);
+    background: url(.public/assets/img/pancarte_defaut/pancarte_1-01.svg);
     position: absolute;
     width: 230px;
     bottom: -160px;  
@@ -59,7 +60,7 @@ body h3 {
 
 /*2*/
 #pancarte2{
-    background: url(../BULLEE/images/test-pancarte/pancarte\ 1\ hover-01.svg);
+    background: url(/assets/img/pancarte_hover/pancarte_2_hover-01.svg);
     position: absolute;
     width: 230px;
     bottom: -160px; 
@@ -72,7 +73,7 @@ body h3 {
 
 /*3*/
 #pancarte3{
-    background: url(../BULLEE/images/test-pancarte/pancarte\ 1\ hover-01.svg);
+    background: url(/assets/img/pancarte_hover/pancarte_3_hover-01.svg);
     position: absolute;
     width: 230px;
     bottom: -160px; 
@@ -85,7 +86,7 @@ body h3 {
 
 /*4*/
 #pancarte4{
-    background: url(../BULLEE/images/test-pancarte/pancarte\ 1\ hover-01.svg);
+    background: url(/assets/img/pancarte_hover/pancarte_4_hover-01.svg);
     position: absolute;
     width: 230px;
     bottom: -160px; 
@@ -98,7 +99,7 @@ body h3 {
 
 /*5*/
 #pancarte5{
-    background: url(../BULLEE/images/test-pancarte/pancarte\ 1\ hover-01.svg);
+    background: url(/assets/img/pancarte_hover/pancarte_5_hover-01.svg);
     position: absolute;
     width: 230px;
     bottom: -160px; 
@@ -111,7 +112,7 @@ body h3 {
 
 /*6*/
 #pancarte6{
-    background: url(../BULLEE/images/pancarte_hover/pancarte\ 6\ hover-01.svg);
+    background: url(/assets/img/pancarte_6_bis_hover-01.svg);
     position: absolute;
     width: 230px;
     bottom: -160px; 
@@ -124,7 +125,7 @@ body h3 {
 
 /*7*/
 #pancarte7{
-    background: url(../BULLEE/images/test-pancarte/pancarte\ 1\ hover-01.svg);
+    background: url(/assets/img/pancarte_hover/pancarte_7_hover-01.svg);
     position: absolute;
     width: 230px;
     bottom: -160px; 
@@ -137,7 +138,7 @@ body h3 {
 
 /*8*/
 #pancarte8{
-    background: url(../BULLEE/images/test-pancarte/pancarte\ 1\ hover-01.svg);
+    background: url(/assets/img/pancarte_hover/pancarte_8_hover-01.svg);
     position: absolute;
     width: 230px;
     bottom: -160px; 
@@ -150,7 +151,7 @@ body h3 {
 
 /*9*/
 #pancarte9{
-    background: url(../BULLEE/images/test-pancarte/pancarte\ 1\ hover-01.svg);
+    background: url(/assets/img/pancarte_hover/pancarte_9_hover-01.svg);
     position: absolute;
     width: 230px;
     bottom: -160px; 
@@ -511,5 +512,78 @@ h6{
     margin-top: 0;
 }
 
+/**15/12 MODAAAAAAAAAAAALES-DEBUT**/
+
+.modal-content{
+    padding: 4rem 0;
+
+}
+.soustitre{
+    padding-top:2rem
+}
+
+.artgrosse{
+    padding: 3rem 0;
+}
+
+.headermodale h1{
+    margin:0 1rem
+}
+
+.headermodale h1, .reperer{
+    color:#2F2D84
+}
+
+.makeup{
+   color: #C33070 ;
+}
+
+.sonic{
+    color: #2F2D84
+}
+
+.orange{
+    color: #F78008;
+
+}
+
+.lunette{
+    color: #4C6EAE;
+
+}
+
+.bubblegum{
+    color: #514EE1
+}
+
+.makeup, .sonic, .orange, .lunette, .bubblegum{
+    font-size: 21px;
+
+}
+
+.txtmodale{
+    line-height: 27px
+}
+
+.impact1{
+    background: #FBD8E6;
+    padding-top:0.8rem ;
+    padding-bottom:0.9rem;
+}
+
+.impact2{
+    background: #D0D7E5;
+    padding-top:0.9rem ;
+    padding-bottom: 0.3rem;
+
+}
+
+.impact1, .impact2{
+    font-weight: 600;
+    color: #2F2D84;
+    margin-top: -1rem;
+}
+
+/**15/12 MODAAAAAAAAAAAALES-FIN**/
 
 
