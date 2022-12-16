@@ -44,7 +44,7 @@
                         <h2 class="text-center">Le quiz</h2>
                         <p>Au quotidien, nous faisons face à de nombreuses situations pouvant être qualifiées de harcèlement.</p> 
                         <p>Le problème ? On ne le voit pas toujours, on ne sait pas comment y répondre, voire même, on y participe sans s’en rendre compte. Pour mieux comprendre ce qu’il se passe dans ces cas-là, des mises en situation interrogent notre rôle et son impact. </p>
-                        <a class="bouton text-center" href="">Je commence le quiz</a> 
+                        <a class="bouton text-center" href="{{ path('app_quiz_start') }}">Je commence le quiz</a> 
                     </article>
                 </section>
 
@@ -56,16 +56,22 @@
                 <h2 class="text-center"> Je dis STOP au harcèlement </h2>
                 <div class="d-flex justify-content-between text-center flex-wrap ">
                     <article class="cardaccueil">
-                        <img  src="assets/img/accueil/je-minforme.svg" alt="#">
-                        <h3 class="h3"> Je m'informe</h3>
+                        <a href="{{ path('app_inform') }}">
+                            <img  src="assets/img/accueil/je-minforme.svg" alt="#">
+                            <h3 class="h3"> Je m'informe</h3>
+                        </a>
                     </article>
                     <article class="cardaccueil">
-                        <img src="assets/img/accueil/jagis.svg" alt="#">
-                        <h3 class="h3"> J'agis</h3>
+                        <a href="{{ path('app_agis') }}">
+                            <img src="assets/img/accueil/jagis.svg" alt="#">
+                            <h3 class="h3"> J'agis</h3>
+                        </a>
                     </article>
                     <article class="cardaccueil">
-                        <img src="assets/img/accueil/je-demande.svg" alt="#">
-                        <h3 id="h3"> Je demande <br> de l'aide </h3>
+                        <a href="{{ path('app_demande') }}">
+                            <img src="assets/img/accueil/je-demande.svg" alt="#">
+                            <h3 id="h3"> Je demande <br> de l'aide </h3>
+                        </a>
                     </article>
                 </div>
             </section>
