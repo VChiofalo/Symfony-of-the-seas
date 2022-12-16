@@ -330,11 +330,11 @@ h6{
 }
 .btn-prev {
     left: 0;
-    background-color: #C33070;
+    background-image: url(/assets/img/fleche-carrousel=gauche.svg);
 }
 .btn-next {
     right: 0;
-    background-color: #454bd7;
+    background-image: url(/assets/img/fleche-carrousel=droite.svg);
 }
 
 .containertemoignage {
