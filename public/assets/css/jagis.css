@@ -30,7 +30,7 @@ body p {
 /******JE SOUTIENS******/
 
 .backgroundjesoutiens{
-    background: url(../img/fondbulles.png);
+    background: url(../img/agis/fondbulles.png);
     background-size:cover;
     background-repeat: no-repeat;
     height: 90vh; /*******************************MODIF 14/12*******/
