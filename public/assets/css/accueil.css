@@ -205,12 +205,12 @@
     }
     95% {
         /* Règles CSS à 95% de l'animation */
-        top: -10px;
+        top: -110px;
         left: 1824px;
     }
     100% {
         /* Règles CSS à 100% de l'animation */
-        top: -60px;
+        top: -160px;
         left: 1920px;
     }
 }
