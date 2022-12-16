@@ -1,0 +1,191 @@
+h2{
+    font-family: 'Poppins', sans-serif; 
+    
+    font-weight: 600;
+    color: #2F2D84;
+}
+
+h3{
+    font-family: 'Poppins', sans-serif; 
+
+    color: #2F2D84;
+}
+
+/******JE SOUTIENS******/
+h1{
+    font-family: 'Poppins', sans-serif; 
+    
+    font-weight: 700;
+    color: #2F2D84;
+    margin-bottom: 2rem;
+}
+
+body p {
+    font-family: 'Poppins', sans-serif;
+    
+    font-weight: 400;
+}
+
+.backgroundjesoutiens{
+    background: url(../img/fondbulles.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 46rem;
+    position: relative;
+   
+    
+}
+
+.container{
+    width: 1320px;
+    margin: auto;
+}
+
+#jesoutiens{
+    margin: auto;
+}
+
+#jesoutienstxt{
+    padding-top: 12vh;
+    line-height: 35px;
+}
+
+
+
+#bulle-ce-nest-pas-de-ta-faute-1{
+    /* bulle-ce-nest-pas-de-ta-faute 1 */
+    position: absolute;
+    width: 144px;
+    height: 144px;
+    left: 1035px;
+    top: 90px;
+}
+
+#bulle-tu-nest-pas-seule-1{
+    /* bulle-tu-nest-pas-seule 1 */
+    position: absolute;
+    width: 290px;
+    height: 290px;
+    left: 1223px;
+    top: 200px;
+}
+
+
+#bulle-il-navait-pas-le-droit-1{
+    /* bulle-il-navait-pas-le-droit-1 */
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    left: 1455px;
+    top: 490px;
+}
+
+#bulle-je-epux-taider-1{
+    /* bulle-je-epux-taider 1 */
+    position: absolute;
+    width: 162px;
+    height: 152px;
+    left: 1510px;
+    top: 35px;
+}
+
+#reconfort {
+    max-width: 400px;
+    position: absolute ;
+    
+    bottom: 0;
+}
+
+#bulle-tu-nest-pas-seule-1:hover, #bulle-je-epux-taider-1:hover, #bulle-il-navait-pas-le-droit-1:hover, #bulle-ce-nest-pas-de-ta-faute-1:hover {
+    /* bulle-tu-nest-pas-seule 1 */
+    animation: myAnim 3s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+	0% {
+		transform: scale3d(1, 1, 1);
+	}
+
+	30% {
+		transform: scale3d(1.25, 0.75, 1);
+	}
+
+	40% {
+		transform: scale3d(0.75, 1.25, 1);
+	}
+
+	50% {
+		transform: scale3d(1.15, 0.85, 1);
+	}
+
+	65% {
+		transform: scale3d(0.95, 1.05, 1);
+	}
+
+	75% {
+		transform: scale3d(1.05, 0.95, 1);
+	}
+
+	100% {
+		transform: scale3d(1, 1, 1);
+	}
+}
+
+/******ETAPES******/
+
+.cardsoutenir{
+    background-color: #D0D7E5;
+    width: 310px;
+    padding: 2rem;
+    border-radius: 50px;
+    height: 326.4px;
+}
+
+.cardsoutenir:nth-child(2n){
+    background-color: #4C6EAE
+}
+
+.num{
+    color: white;
+}
+
+
+/******JE PREVIENS******/
+ .image{
+     max-height: 310px;
+ }
+
+ #bouton{
+    text-decoration: none;
+    background-color: #3F3D9A;
+    padding: 8px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 100px;
+    color: white;
+    margin:auto;
+    width: 191px;
+    margin-bottom: 20px;
+}
+
+#bouton:hover{
+    text-decoration: none;
+    background-color: #FF8EBF;
+    padding: 8px 32px;
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.05);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
+    border-radius: 100px;
+    color: white;
+
+}
+
+#bouton:active{
+    text-decoration: none;
+    background-color: #FF8EBF;
+    padding: 8px 32px;
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.05);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
+    border-radius: 100px;
+    color: white;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1)
+
+}

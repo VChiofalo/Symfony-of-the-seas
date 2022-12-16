@@ -3,7 +3,7 @@
 {% block title %}Hello AgisController!{% endblock %}
 
 {% block body %}
-<style>
+{# <style>
     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
@@ -31,5 +31,170 @@
         <p>Voir plus</p>
     </a>
 {% endfor %}
-</div>
+</div> #}
+
+    {% block stylesheets %}
+        <link rel = "stylesheet" href = "assets/css/jagis.css">
+        <link rel = "stylesheet" href = "assets/css/agis.css">
+    {% endblock %}
+    <main>
+        <div class="container-fluid backgroundjesoutiens">
+            <div class="container row">
+                <section id="jesoutiens">
+                    <div id="jesoutienstxt" class="col-sm-12 col-md-12 col-lg-5">
+                        <h1 class="text-center">Je soutiens</h1>
+                        <p> 
+                        Face au harcèlement, il<span class="font_orange"> n’est pas facile d’agir</span>, et parfois même, de se confier. <br>On peut avoir peur d’aggraver la situation ou de <span class="font_rose">se sentir jugé</span>.<br>On peut penser que l’on a pas été assez fort, que c’est mérité ou que <span id="font_rouge"> personne ne nous prendra au sérieux</span>.
+                        <br><span class="font_rose">Bullee</span> t’accompagne donc pour<span class="font_orange"> ne laisser personne seul face au harcèlement</span>, en apprenant comment écouter, soutenir et aider.
+                        </p>
+                    </div>
+
+                    <div id="jesoutiensbulle" class="col-6">
+                        <img class="img-fluid" id="bulle-ce-nest-pas-de-ta-faute-1" src="../assets/svg/bulle-pas-de-ta-faute-144px.svg" alt="bulle">
+                        <img class="img-fluid" id="bulle-il-navait-pas-le-droit-1" src="../assets/svg/bulle-pas-le-droit-313px.svg" alt="bulle">
+                        <img class="img-fluid" id="bulle-je-epux-taider-1" src="../assets/svg/bulle-je-peux-taider-144px.svg" alt="bulle">
+                        <img class="img-fluid" id="bulle-tu-nest-pas-seule-1" src="../assets/svg/bulle-je-te-soutiens-313px.svg" alt="bulle">
+
+                       
+                    </div>
+                </section>
+                <img id="reconfort" src="../assets/img/reconfort.bonformat.svg" alt="image">
+
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="container">
+                <section id="soutenir4etapes">
+                    <h2 class="text-center">Soutenir en 4 étapes</h2>
+                    <div class="d-flex justify-content-between flex-wrap text-center align-items-center">
+                        <article class="cardsoutenir col-10">
+                            <h3 class="num">1</h3>
+                            <h4>Rassurer</h4>
+                            <p>Met en avant le courage dont la personne a fait preuve pour parler et le fait qu’elle a eu raison de le faire.</p>
+                        </article>
+
+                        <article class="cardsoutenir col-10"> 
+                            <h3 class="num">2</h3>
+                            <h4>Déculpabiliser</h4>
+                            <p>Déculpabiliser la victime en lui disant qu’aucune attitude de sa part ne justifie les violences subies et que l’agresseur est le seul responsable.</p>
+                        </article>
+
+                        <article class="cardsoutenir col-10">
+                            <h3 class="num">3</h3>
+                            <h4>Reformuler</h4>
+                            <p>Il est possible que la victime minimise les faits. Met des mots sur ce qu’elle a vécu et dis-lui que ce qu’elle a vécu n’est pas normal, qu’il s’agit de violence et que c’est interdit par la loi.</p>
+                        </article>
+
+                        <article class="cardsoutenir col-10">
+                            <h3 class="num">4</h3>
+                            <h4>Accompagner</h4>
+                            <p>Sois attentif à ses besoins. Accompagne la et dirigez la vers de l’aide dans la mesure du possible.</p>
+                        </article>       
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="container">
+                <h2 class="text-center">Je préviens</h2>
+                <section id="jepreviens" class="row align-items-center">
+                    <img class="image col-5"  src="../assets/img/reunion adulte.bonformat.svg" alt="photo">
+                    <article class="offset-1 col-6">
+                        <h3 class="text-center">Un adulte compétent</h3>
+                        <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing e, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                        ea commodo consequat. Duis aute   inreprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariar.</p>
+                        <a href="https://www.service-public.fr/particuliers/vosdroits/F31985#:~:text=r%C3%A9alisation%20des%20faits.-,Alerter%20les%20services%20de%20l%27%C3%A9ducation%20nationale,lutte%20contre%20les%20violences%20scolaires" id=bouton class="text-center" target="_blank">en savoir +</a>
+                    </article>
+
+                    <article class="col-6">
+                        <h3 class="text-center">La direction de l'établissement</h3>
+                        <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing e, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                        ea commodo consequat. Duis aute   inreprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariar.</p>
+                        <a href="https://www.service-public.fr/particuliers/vosdroits/F31985#:~:text=r%C3%A9alisation%20des%20faits.-,Alerter%20les%20services%20de%20l%27%C3%A9ducation%20nationale,lutte%20contre%20les%20violences%20scolaires" id=bouton class="text-center" target="_blank">en savoir +</a>
+                    </article>
+                    <img class="image offset-1 col-5" src="../assets/img/discussionProf.bonformat.svg" alt="photo">
+
+                    <img class="image col-5" src="../assets/img/appel.bonformat.svg" alt="photo">
+                    <article class="offset-1 col-6">
+                        <h3 class=text-center>La justice </h3>
+                        <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing e, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                        ea commodo consequat. Duis aute   inreprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariar.</p>
+                        <a href="https://www.service-public.fr/particuliers/vosdroits/F31985#:~:text=r%C3%A9alisation%20des%20faits.-,Alerter%20les%20services%20de%20l%27%C3%A9ducation%20nationale,lutte%20contre%20les%20violences%20scolaires" id=bouton class="text-center" target="_blank">en savoir +</a>
+                    </article>
+
+                </section>
+
+            </div>
+
+        </div>
+        <Section id="boiteaoutils" class="container-fluid">
+            <div class="container">
+            
+                <h1>Des outils pour sensibiliser</h1>
+
+                <!-- onglets-->
+                <div id="onglets">
+
+                    <div id="bouton" class="d-flex justify-content-around">
+                        <h3 ><a id="boutonateliers" href="#">Ateliers</a></h3>
+                        <h3 ><a id="boutonarticles" href="#">Articles</a></h3>
+                    </div> 
+                </div>
+
+                <!-- articles-->
+                <div class="row text-center" class="d-flex justify-content-between flex-wrap">
+                    <article class="col-lg-3 col-sm-12">
+                        <div class="theatre">   
+                            <img src="../assets/img/theatre enfant-01.png" alt="image">
+                            <h3>Théâtre</h3>
+                            <p>
+                                Un spectacle et des débats pour appréhender le harcèlement.
+                            </p>
+                            <h6><a href="">Voir plus</a></h6>
+                        </div>
+                    </article>
+
+                    <article class="col-lg-3 col-sm-12">
+                        <div class="cohesion">
+                            <img src="../assets/img/anti harcelement cohesion-01.png" alt="image">
+                            <h3>Cohésion</h3>
+                            <p>
+                                Atelier pour libérer la parole en classe et devenir défenseur.
+                            </p>
+                            <h6><a href="">Voir plus</a></h6>
+                        </div>
+                    </article>
+
+                    <article class="col-lg-3 col-sm-12">
+                        <div class="harcelement">
+                            <img src="../assets/img/harcelement ecole primaire_Mesa de trabajo 1.png" alt="image">
+                            <h3>Harcèlement</h3>
+                            <p>
+                                Des ateliers sur la construction de personnalité.
+                            </p>
+                            <h6><a href="">Voir plus</a></h6>
+                        </div>
+                    </article>
+
+                    <article class="col-lg-3 col-sm-12">
+                        <div class="violencescolaire">
+                            <img src="../assets/img/Stop la violence-01.png" alt="image">
+                            <h3>Violence scolaire</h3>
+                            <p>
+                                Un serious game pour éduquer sur le harcèlement de manière ludique.
+                            </p>
+                            <h6><a href="">Voir plus</a></h6>
+                        </div>
+                    </article>
+                </div>
+            </div>                  
+        </Section>
+
+    </main>
 {% endblock %}
+
