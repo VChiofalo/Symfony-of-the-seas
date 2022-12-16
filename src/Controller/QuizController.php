@@ -120,24 +120,12 @@ class QuizController extends AbstractController
         //dd($resultFinal);
 
         //display relevant profile and push it
-        if($resultFinal < 8){
-            $bad=$resultsRepository -> findOneById(3);
-            return $this->render('quiz/result.html.twig', [
-                'result' => $bad
-            ]);
-
-        }   elseif($resultFinal >8 && $resultFinal <16){
-            $medium=$resultsRepository -> findOneById(2);
-            return $this->render('quiz/result.html.twig', [
-                'result' => $medium
-            ]);
-
-        }   else {
-            $good=$resultsRepository -> findOneById(1);
-            return $this->render('quiz/result.html.twig', [
-                'result' => $good
-            ]);
-        }
+        $finalResult=$resultsRepository -> findResultDescription($resultFinal);
+        return $this->render('quiz/result.html.twig', [
+            'result' => current($finalResult)
+        ]);
+        //dd($finalResult);
+        
    
      
      
