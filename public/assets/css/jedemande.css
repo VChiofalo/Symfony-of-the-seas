@@ -18,24 +18,20 @@
 /****CARDS****/
 
 .backgroundendirect{ 
-    background: url(../jedemandedelaide/images/vague-je-demande-de-laide.svg);
+    background: url(../img/demande/vague-je-demande-de-laide.svg);
     background-size: cover ;
     background-repeat: no-repeat;
     position: relative;
 }
 
-
-
 #endirect{
     padding-top: 7rem;
 }
-
 
 .cardurgence{
     padding-top: 6rem;
     padding-bottom: 12rem;
 }
-
 
 #card3020{
     background: url(../img/demande/3020_hover.svg);
@@ -52,7 +48,6 @@
 #card114{
     background: url(../img/demande/114_hover.svg);
 }
-
 
 .urgencedefaut:hover, .urgencedefaut:active{
     opacity: 0;

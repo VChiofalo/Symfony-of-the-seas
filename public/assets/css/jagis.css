@@ -301,14 +301,15 @@ body p {
 
 /* Onglets*/
 
-#onglets h3 a {
+#onglets h3 span {
     color: #EFF3FB;
     text-align: center;
     position: absolute;
+    cursor: pointer;
 }
 
 #boutonateliers {
-    left: -20px;
+    left: -35px;
 }
 
 #onglets {
@@ -328,7 +329,7 @@ body p {
     position: absolute;
     padding: 10px;
     top: -2.5px;
-    left: -30px;
+    left: -45px;
 }
 
 #onglets #boutonarticles:hover {
@@ -391,7 +392,7 @@ body p {
     text-decoration: none;
 }
 
-#boiteaoutils a:hover {
+#boiteaoutils span:hover {
     color: #C33070;
 }
 
