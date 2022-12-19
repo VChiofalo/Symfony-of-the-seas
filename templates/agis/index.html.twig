@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello AgisController!{% endblock %}
+{% block title %}J'agis{% endblock %}
 
 {% block body %}
     {# <style>
@@ -34,6 +34,7 @@
     </div> #}
 
     {% block stylesheets %}
+        <link rel = "stylesheet" href = "assets/css/agis.css">
         <link rel = "stylesheet" href = "assets/css/jagis.css">
     {% endblock %}
     
@@ -137,7 +138,6 @@
 
                 <!-- onglets-->
                 <div id="onglets">
-
                     <div id="bouton" class="d-flex justify-content-around">
                         <h3 ><a id="boutonateliers" href="#">Ateliers</a></h3>
                         <h3 ><a id="boutonarticles" href="#">Articles</a></h3>
@@ -145,55 +145,61 @@
                 </div>
 
                 <!-- articles-->
-                <div class="row text-center" class="d-flex justify-content-between flex-wrap">
-                    <article class="col-lg-3 col-sm-12">
-                        <div class="theatre">   
-                            <img src="../assets/img/theatre enfant-01.png" alt="image">
-                            <h3>Théâtre</h3>
-                            <p>
-                                Un spectacle et des débats pour appréhender le harcèlement.
-                            </p>
-                            <h6><a href="">Voir plus</a></h6>
-                        </div>
-                    </article>
-
-                    <article class="col-lg-3 col-sm-12">
-                        <div class="cohesion">
-                            <img src="../assets/img/anti harcelement cohesion-01.png" alt="image">
-                            <h3>Cohésion</h3>
-                            <p>
-                                Atelier pour libérer la parole en classe et devenir défenseur.
-                            </p>
-                            <h6><a href="">Voir plus</a></h6>
-                        </div>
-                    </article>
-
-                    <article class="col-lg-3 col-sm-12">
-                        <div class="harcelement">
-                            <img src="../assets/img/harcelement ecole primaire_Mesa de trabajo 1.png" alt="image">
-                            <h3>Harcèlement</h3>
-                            <p>
-                                Des ateliers sur la construction de personnalité.
-                            </p>
-                            <h6><a href="">Voir plus</a></h6>
-                        </div>
-                    </article>
-
-                    <article class="col-lg-3 col-sm-12">
-                        <div class="violencescolaire">
-                            <img src="../assets/img/Stop la violence-01.png" alt="image">
-                            <h3>Violence scolaire</h3>
-                            <p>
-                                Un serious game pour éduquer sur le harcèlement de manière ludique.
-                            </p>
-                            <h6><a href="">Voir plus</a></h6>
-                        </div>
-                    </article>
+                <div class="articles-ateliers-container container">
+                    <i class="btn-prev"></i>
+                    <i class="btn-next"></i>
+                    <div class="articles row text-center d-flex justify-content-between flex-wrap">
+                        <article class="col-lg-3 col-sm-12">
+                            <div class="theatre">   
+                                <img src="../assets/img/theatre enfant-01.png" alt="image">
+                                <h3>Théâtre</h3>
+                                <p>
+                                    Un spectacle et des débats pour appréhender le harcèlement.
+                                </p>
+                                <h6><a href="">Voir plus</a></h6>
+                            </div>
+                        </article>
+    
+                        <article class="col-lg-3 col-sm-12">
+                            <div class="cohesion">
+                                <img src="../assets/img/anti harcelement cohesion-01.png" alt="image">
+                                <h3>Cohésion</h3>
+                                <p>
+                                    Atelier pour libérer la parole en classe et devenir défenseur.
+                                </p>
+                                <h6><a href="">Voir plus</a></h6>
+                            </div>
+                        </article>
+    
+                        <article class="col-lg-3 col-sm-12">
+                            <div class="harcelement">
+                                <img src="../assets/img/harcelement ecole primaire_Mesa de trabajo 1.png" alt="image">
+                                <h3>Harcèlement</h3>
+                                <p>
+                                    Des ateliers sur la construction de personnalité.
+                                </p>
+                                <h6><a href="">Voir plus</a></h6>
+                            </div>
+                        </article>
+    
+                        <article class="col-lg-3 col-sm-12">
+                            <div class="violencescolaire">
+                                <img src="../assets/img/Stop la violence-01.png" alt="image">
+                                <h3>Violence scolaire</h3>
+                                <p>
+                                    Un serious game pour éduquer sur le harcèlement de manière ludique.
+                                </p>
+                                <h6><a href="">Voir plus</a></h6>
+                            </div>
+                        </article>
+                    </div>
                 </div>
-            </div>                  
+            </div>           
         </Section>
 
     </main>
-    <script src="/assets/js/sliderTemoignages.js"></script>
+    {% block javascripts %}     
+        <script src="/assets/js/sliderJagis.js"></script>
+    {% endblock %}
 {% endblock %}
 

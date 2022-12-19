@@ -1,13 +1,13 @@
 //SLIDER A MODIFIER AVE LES CLASSES (REPRIS DE LA PAGE JE M'INFORME)
 document.addEventListener('DOMContentLoaded', (e) => {
 
-    let btnPrev = document.querySelector('#temoignages-container .btn-prev');
-    let btnNext = document.querySelector('#temoignages-container .btn-next');
+    let btnPrev = document.querySelector('.articles-ateliers-container .btn-prev');
+    let btnNext = document.querySelector('.articles-ateliers-container .btn-next');
     let delta = 0;
     let counter = 0;
     let step = 250;
-    let slider = document.querySelector('#temoignages');
-    let containerWidth = document.getElementById('temoignages-container').offsetWidth;
+    let slider = document.querySelector('.articles');
+    let containerWidth = document.querySelector('.articles-ateliers-container').offsetWidth;
     let nbSlide = slider.children.length;
     let divid = Math.round(containerWidth / step);
 
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
     btnNext.addEventListener('click', (e) => {
         if (counter < (nbSlide - (divid - 2))) {
             delta = delta - step;
-            slider.style.transform = `translate(${delta}px,0)`;
+            slider.style.transform = `translate(${delta}px, 0)`;
             counter++;
         }
     });

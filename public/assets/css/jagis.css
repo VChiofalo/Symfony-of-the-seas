@@ -403,3 +403,27 @@ body p {
     width: 90%;
     padding-bottom: 0.7rem;
 }
+
+.btn-prev,
+.btn-next {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    display: block;
+    top: calc(50% - 20px);
+    z-index: 999;
+}
+
+.btn-prev {
+    left: -40px;
+    background-image: url(/assets/img/fleche-carrousel=gauche.svg);
+}
+
+.btn-next {
+    right: -40px;
+    background-image: url(/assets/img/fleche-carrousel=droite.svg);
+}
+
+.articles-ateliers-container {
+    position: relative;
+}
