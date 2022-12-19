@@ -1,0 +1,18 @@
+/* Footer */
+#breakcontainer {
+    position: relative;
+    padding: 50px;
+    left: calc(-50vw + 50%);
+    width: 100vw;
+}
+
+
+
+footer .icones {
+    height: 50px;
+    width: 80px;
+}
+
+footer hr {
+    background-color:rgb(127, 125, 238); 
+}
