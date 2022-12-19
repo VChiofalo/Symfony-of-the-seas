@@ -11,6 +11,6 @@ function addClick(e){
     qValues = e.currentTarget;
     qValues = qValues.getAttribute('contact');
     dataValue.value = qValues;
-    console.log(dataValue.value);
+    /* console.log(dataValue.value); */
 };
 

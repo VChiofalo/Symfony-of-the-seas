@@ -3,119 +3,204 @@
 
 {% block stylesheets %}
     <link rel="stylesheet" href="{{asset('/assets/css/jeminforme.css')}}">
- {% endblock %}
+{% endblock %}
 
 {% block body %}
 
-     
-<section>
-<div class="containersigne container-fluid">
-            <section id="signes" class="container row text-center">
-                <h3 class="col-12">LES 4  SIGNES POUR RECONNAITRE LE HARCELEMENT</h3>
-                <div class="d-flex justify-content-between flex-wrap">
-                    <article class="cardsigne">
-                        <img src="." alt="">
-                        <div class="offset-1 col-10 txtsigne">
-                            <h4> Stress et anxiété </h4>
-                            <p> Tu as des difficulté à t’endormir, tu as mal au ventre, tu n’as plus d’appétit, tu as peur de venir à l’école </p>
-                        </div>
-                    </article>
-                    <article class="cardsigne">
-                        <img src="" alt="">
-                        <div class="offset-1 col-10 txtsigne">
-                            <h4> Isolement  </h4>
-                            <p> Tu ne fais plus partie d'un groupe, n'es plus invité et tu préfères rester seul</p>
-                        </div>
-                    </article>
-                    <article class="cardsigne">
-                        <img src="" alt="">
-                        <div class="titrelong offset-1 col-10 txtsigne">
-                            <h4> Changement de comportement </h4>
-                            <p> Tu te renfermes sur toi-même et tu peux devenir agressif</p>
-                        </div>
-                    </article>
-                    <article class="cardsigne">
-                        <img src="images/note-baisse.svg" alt="">
-                        <div class="titrelong offset-1 col-10 txtsigne">
-                            <h4> Note en baisse brutalement  </h4>
-                            <p> Tes notes scolaires sont en baisse et tu n’arrives plus à te concentrer </p>
-                        </div>
-                    </article>
-                </div>
+    <section>
 
-            </section>
+    <div class="pancartes container-fluid text-center">
+        <div class="container"> 
+            <img id="panneau" src="/assets/img/titre_pancarte_svg-23.svg" alt="">
+
+            <div id="pancarte1">
+                <img class="image_qui_disparait" src="/assets/img/pancarte_defaut/pancarte_1-01.svg" />
+            </div>
+
+            <div id="pancarte2">
+                <img class="image_qui_disparait" src="/assets/img/pancarte_defaut/pancarte_2-01.svg" />
+            </div>
+
+            <div id="pancarte3">
+                <img class="image_qui_disparait" src="/assets/img/pancarte_defaut/pancarte_3-01.svg" />
+            </div>
+
+            <div id="pancarte4">
+                <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal"><img class="image_qui_disparait" src="/assets/img/pancarte_defaut/pancarte_4-01.svg" /></a>
+            </div>
+
+            <div id="pancarte5">
+                <img class="image_qui_disparait" src="/assets/img/pancarte_defaut/pancarte_5-01.svg" />
+            </div>
+
+            <div id="pancarte6">
+                <img class="image_qui_disparait" src="/assets/img/pancarte_defaut/pancarte_6-01.svg" />
+            </div>
+
+            <div id="pancarte7">
+                <a href="" data-bs-toggle= "modal" data-bs-target="#exampleModal"><img class="image_qui_disparait" src="/assets/img/pancarte_defaut/pancarte_7-01.svg" /></a>
+            </div>
+
+            <div id="pancarte8">
+                <img class="image_qui_disparait" src="/assets/img/pancarte_defaut/pancarte_8-01.svg" />
+            </div>
+
+            <div id="pancarte9">
+                <img class="image_qui_disparait" src="/assets/img/pancarte_defaut/pancarte_9-01.svg" />
+            </div>
+
         </div>
-
- <div class="loibackground container-fluid">
-            <section id="laloi" class="container row">
-                <article class="artloi col-lg-5">
-                    <h2> Connaître la loi </h2>
-                    <p>Quelque soit la nature du harcèlement, celui-ci est toujours à prendre au sérieux. S’il est possible de régler certaines situations par la communication, d’autres cas peuvent nécessiter une aide un peu plus sérieuse. </p>
-                    <p>Le harcèlement, subi au sein de ton établissement scolaire ou à l’extérieur, est en effet puni par la loi.</p>
-                    <p>Les peines encourues vont dépendre de la gravité des conséquences du harcèlement et de l’âge des auteurs de harcèlement.</p>
-
-                    <div class="zoneaccordeon">
-                        <h6> <strong>MINEUR</strong></h6>
-                        <button class="accordion">- de 13 ans</button>
-                        <div class="panel">
-                        <p>La personne coupable de harcèlement ne pourra pas être emprisonnée mais elle aura une sanction spécifique.</p>
-                        </div>
-               
-                        <button class="accordion">+ de 13 ans</button>
-                        <div class="panel">
-                        <p>La personne coupable de harcèlement peut risquer jusqu'à 1 an et 5 ans de prison ainsi que 7 500€ d'amende maximum.</p>
-                        </div>
-            
-                        <h6><strong>MAJEUR</strong></h6>
-                        <button class="accordion">+ de 18 ans</button>
-                        <div class="panel">
-                        <p>La personne coupable de harcèlement peut risquer entre 3 ans et 10 ans de prison ainsi que 150 000€ d'amende maximum</p>
-                        </div>
+    </div>
+    
+    <div class="containersigne container-fluid">
+        <section id="signes" class="container row text-center">
+            <h3 class="col-12">LES 4  SIGNES POUR RECONNAITRE LE HARCELEMENT</h3>
+            <div class="d-flex justify-content-between flex-wrap">
+                <article class="cardsigne">
+                    <img src="/assets/img/informe/anxiete.svg" alt="">
+                    <div class="offset-1 col-10 txtsigne">
+                        <h4> Stress et anxiété </h4>
+                        <p> Tu as des difficulté à t’endormir, tu as mal au ventre, tu n’as plus d’appétit, tu as peur de venir à l’école </p>
                     </div>
-
                 </article>
-                <img class="offset-lg-1 " src="images/justice.bonformat.svg" alt="">
-                <a href="https://www.service-public.fr/particuliers/vosdroits/F31985#:~:text=r%C3%A9alisation%20des%20faits.-,Alerter%20les%20services%20de%20l%27%C3%A9ducation%20nationale,lutte%20contre%20les%20violences%20scolaires" id=bouton class="text-center" target="_blank">en savoir +</a>
+                <article class="cardsigne">
+                    <img src="/assets/img/informe/isolement.svg" alt="">
+                    <div class="offset-1 col-10 txtsigne">
+                        <h4> Isolement  </h4>
+                        <p> Tu ne fais plus partie d'un groupe, n'es plus invité et tu préfères rester seul</p>
+                    </div>
+                </article>
+                <article class="cardsigne">
+                    <img src="/assets/img/informe/changement-humeurs.svg" alt="">
+                    <div class="titrelong offset-1 col-10 txtsigne">
+                        <h4> Changement de comportement </h4>
+                        <p> Tu te renfermes sur toi-même et tu peux devenir agressif</p>
+                    </div>
+                </article>
+                <article class="cardsigne">
+                    <img src="/assets/img/informe/note-baisse.svg" alt="">
+                    <div class="titrelong offset-1 col-10 txtsigne">
+                        <h4> Note en baisse brutalement  </h4>
+                        <p> Tes notes scolaires sont en baisse et tu n’arrives plus à te concentrer </p>
+                    </div>
+                </article>
+            </div>
 
-            </section>
-        </div>
+        </section>
+    </div>
 
-        <div class="containertemoignage">
-            <section class="text-center">
-                <div class="container">
-                    <div class="row">
-                        <h3 class="col-lg-12">Témoignages</h3> 
-                        <h4 class="col-lg-12"> De nombreuses personnes ont réussi à mettre fin au harcèlement</h4> 
+    <div class="loibackground container-fluid">
+        <section id="laloi" class="container row">
+            <article class="artloi col-lg-5">
+                <h2> Connaître la loi </h2>
+                <p>Quelque soit la nature du harcèlement, celui-ci est toujours à prendre au sérieux. S’il est possible de régler certaines situations par la communication, d’autres cas peuvent nécessiter une aide un peu plus sérieuse. </p>
+                <p>Le harcèlement, subi au sein de ton établissement scolaire ou à l’extérieur, est en effet puni par la loi.</p>
+                <p>Les peines encourues vont dépendre de la gravité des conséquences du harcèlement et de l’âge des auteurs de harcèlement.</p>
+
+                <div class="zoneaccordeon">
+                    <h6> <strong>MINEUR</strong></h6>
+                    <button class="accordion">- de 13 ans</button>
+                    <div class="panel">
+                        <p>La personne coupable de harcèlement ne pourra pas être emprisonnée mais elle aura une sanction spécifique.</p>
+                    </div>
+            
+                    <button class="accordion">+ de 13 ans</button>
+                    <div class="panel">
+                        <p>La personne coupable de harcèlement peut risquer jusqu'à 1 an et 5 ans de prison ainsi que 7 500€ d'amende maximum.</p>
+                    </div>
+        
+                    <h6><strong>MAJEUR</strong></h6>
+                    <button class="accordion">+ de 18 ans</button>
+                    <div class="panel">
+                        <p>La personne coupable de harcèlement peut risquer entre 3 ans et 10 ans de prison ainsi que 150 000€ d'amende maximum</p>
                     </div>
                 </div>
 
-                <div id="temoignages-container" class="container">
-                    <i class="btn-prev"></i>
-                    <i class="btn-next"></i>
-                    <div id="temoignages" class="d-flex justify-content-between flex-no-wrap">
-                            
-                        {% for testimonial in testimonials %}
-                        <div class="carte{{ testimonial.classCss}}">
-                            <div class="reseau{{ testimonial.classCss}}">
-                                <img src="/assets/img/{{testimonial.logo}}" alt="{{testimonial.logo}}">
-                            </div>
-                            <div id="cardTemoigagnes" class="offset-1 col-lg-10">
-                                <div class="" data-id="{{ testimonial.id }}">
-                                    <h4>{{ testimonial.name }}</h4>
-                                    <h5>{{ testimonial.age }}</h5>
-                                    <p>{{ testimonial.content }}</p>
-                                </div>
+            </article>
+            <img class="offset-lg-1 " src="/assets/img/informe/justice.svg" alt="">
+            <a href="https://www.service-public.fr/particuliers/vosdroits/F31985#:~:text=r%C3%A9alisation%20des%20faits.-,Alerter%20les%20services%20de%20l%27%C3%A9ducation%20nationale,lutte%20contre%20les%20violences%20scolaires" id=bouton class="text-center" target="_blank">en savoir +</a>
+        </section>
+    </div>
+
+    <div class="containertemoignage">
+        <section class="text-center">
+            <div class="container">
+                <div class="row">
+                    <h3 class="col-lg-12">Témoignages</h3> 
+                    <h4 class="col-lg-12"> De nombreuses personnes ont réussi à mettre fin au harcèlement</h4> 
+                </div>
+            </div>
+
+            <div id="temoignages-container" class="container">
+                <i class="btn-prev"></i>
+                <i class="btn-next"></i>
+                <div id="temoignages" class="d-flex justify-content-between flex-no-wrap">
+                        
+                    {% for testimonial in testimonials %}
+                    <div class="carte{{ testimonial.classCss}}">
+                        <div class="reseau{{ testimonial.classCss}}">
+                            <img src="/assets/img/{{testimonial.logo}}" alt="{{testimonial.logo}}">
+                        </div>
+                        <div id="cardTemoigagnes" class="offset-1 col-lg-10">
+                            <div class="" data-id="{{ testimonial.id }}">
+                                <h4>{{ testimonial.name }}</h4>
+                                <h5>{{ testimonial.age }}</h5>
+                                <p>{{ testimonial.content }}</p>
                             </div>
                         </div>
-                        {% endfor %}
                     </div>
-                    
+                    {% endfor %}
                 </div>
-                
-            </section>
+            </div>
+        </section>
+    </div>
 
-        </div>
-             <script src="/assets/js/accordeon.js"></script>
-             <script src="/assets/js/sliderTemoignages.js"></script>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="container">
+                <div class="d-flex justify-content-center align-items-center headermodale">
+                    <img src="assets/img/informe/citation_gauche.svg" alt="">
+                    <h1>T'es assez grosse comme ça !</h1>
+                    <img src="assets/img/informe/citation_droite.svg" alt="">
+                </div>
+
+                <p class="text-center soustitre"> <span class="sonic">Tous les midis à la cantine, Manon se fait piquer son dessert par ses camarades car elle est jugée</span><br> <span class="makeup"> <strong>“trop grosse”</strong></span></p>
+
+                <article class="row artgrosse">
+                    <div class="offset-1 col-5 txtmodale">
+                        <p>Ici, des élèves justifient leur agression en <br> <span class="orange">se moquant du physique</span> de Manon, ce <br> qui leur donnerait la permission de l’agresser et <br> voler son dessert.</p>
+                        <p>Ces <span class="bubblegum">insultes, humiliations et intimidations</span> ont un nom, ce n’est pas une plaisanterie : c’est du <span class="makeup">harcèlement moral</span>.</p>
+                        <p>Le harcèlement moral, c’est subir <span class="lunette">de manière répétée</span> des mots ou des comportements agressifs qui <span class="orange">impactent ta santé mentale</span>.</p>
+
+                    </div>
+                    <img class="offset-1 col-4" src="../BULLEE/images/image_modale.png" alt="">
+                </article>
+
+                <h2 class="offset-1 reperer">Repérer son impact</h2>
+                <div class="container-fluid impact1">
+                    <div class="d-flex justify-content-around">
+                        <p>Isolement</p>
+                        <p>Perte d’appétit</p>
+                        <p>Complexes</p>
+                        <p>Mauvaise estime de soi</p>    
+                    </div>
+                </div>
+
+                <div class="container-fluid impact2">
+                    <div class="offset-1 d-flex justify-content-around">
+                        <p>Anxiété</p>
+                        <p>Peur de manger en public</p>
+                        <p>Dysmorphophobie</p>
+                        <p>Stress</p>    
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    {% block javascripts %}     
+        <script src="/assets/js/accordeon.js"></script>
+        <script src="/assets/js/sliderTemoignages.js"></script>
+    {% endblock %}
              {# <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>         #}
 {% endblock %}

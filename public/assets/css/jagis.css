@@ -30,12 +30,11 @@ body p {
 /******JE SOUTIENS******/
 
 .backgroundjesoutiens{
-    background: url(../img/fondbulles.png);
+    background: url(../img/agis/fondbulles.png);
     background-size:cover;
     background-repeat: no-repeat;
     height: 90vh; /*******************************MODIF 14/12*******/
-    position: relative;   
-    
+    position: relative;
 }
 
 .container{
@@ -157,7 +156,7 @@ body p {
 }
 
 .cardsoutenir:nth-child(2n){
-    /* background-color: #4C6EAE */
+    background-color: #4C6EAE
 }
 
 .cardsoutenir:nth-child(2n) h4, .cardsoutenir:nth-child(2n) p{

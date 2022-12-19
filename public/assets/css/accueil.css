@@ -113,104 +113,54 @@
         top: 300px;
         left: -20px;
     }
-    5% {
-        /* Règles CSS à 5% de l'animation */
-        top: 250px;
-        left: 96px;
-    }
     10% {
         /* Règles CSS à 10% de l'animation */
-        top: 200px;
+        top: 250px;
         left: 192px;
-    }
-    15% {
-        /* Règles CSS à 15% de l'animation */
-        top: 150px;
-        left: 288px;
     }
     20% {
         /* Règles CSS à 20% de l'animation */
-        top: 180px;
+        top: 200px;
         left: 384px;
-    }
-    25% { 
-        /* Règles CSS à 25% de l'animation */
-        top: 210px;
-        left: 480px;
     }
     30% {
         /* Règles CSS à 30% de l'animation */
-        top: 240px;
+        top: 250px;
         left: 576px;
-    }
-    35% {
-        /* Règles CSS à 35% de l'animation */
-        top: 270px;
-        left: 672px;
     }
     40% {
         /* Règles CSS à 40% de l'animation */
         top: 300px;
         left: 768px;
     }
-    45% {
-        /* Règles CSS à 45% de l'animation */
-        top: 250px;
-        left: 864px;
-    }
     50% {
         /* Règles CSS à 50% de l'animation */
-        top: 200px;
+        top: 250px;
         left: 960px;
-    }
-    55% {
-        /* Règles CSS à 55% de l'animation */
-        top: 150px;
-        left: 1056px;
     }
     60% {
         /* Règles CSS à 60% de l'animation */
-        top: 100px;
+        top: 200px;
         left: 1152px;
-    }
-    65% {
-        /* Règles CSS à 65% de l'animation */
-        top: 130px;
-        left: 1248px;
     }
     70% {
         /* Règles CSS à 70% de l'animation */
-        top: 160px;
+        top: 150px;
         left: 1344px;
-    }
-    75% {
-        /* Règles CSS à 75% de l'animation */
-        top: 190px;
-        left: 1440px;
     }
     80% {
         /* Règles CSS à 80% de l'animation */
-        top: 140px;
+        top: 100px;
         left: 1536px;
-    }
-    85% {
-        /* Règles CSS à 85% de l'animation */
-        top: 90px;
-        left: 1632px;
     }
     90% {
         /* Règles CSS à 90% de l'animation */
-        top: 40px;
+        top: 50px;
         left: 1728px;
-    }
-    95% {
-        /* Règles CSS à 95% de l'animation */
-        top: -110px;
-        left: 1824px;
     }
     100% {
         /* Règles CSS à 100% de l'animation */
-        top: -160px;
+        top: -20px;
         left: 1920px;
     }
 }
@@ -218,107 +168,57 @@
 @keyframes bulle_top_to_bottom {
     0% {
         /* Règles CSS de départ */
-        top: 40px;
+        top: -20px;
         left: -50px;
-    }
-    5% {
-        /* Règles CSS à 5% de l'animation */
-        top: 80px;
-        left: 96px;
     }
     10% {
         /* Règles CSS à 10% de l'animation */
-        top: 120px;
+        top: 30px;
         left: 192px;
-    }
-    15% {
-        /* Règles CSS à 15% de l'animation */
-        top: 140px;
-        left: 288px;
     }
     20% {
         /* Règles CSS à 20% de l'animation */
-        top: 180px;
+        top: 80px;
         left: 384px;
-    }
-    25% { 
-        /* Règles CSS à 25% de l'animation */
-        top: 190px;
-        left: 480px;
     }
     30% {
         /* Règles CSS à 30% de l'animation */
-        top: 160px;
-        left: 576px;
-    }
-    35% {
-        /* Règles CSS à 35% de l'animation */
         top: 130px;
-        left: 672px;
+        left: 576px;
     }
     40% {
         /* Règles CSS à 40% de l'animation */
-        top: 100px;
+        top: 180px;
         left: 768px;
-    }
-    45% {
-        /* Règles CSS à 45% de l'animation */
-        top: 150px;
-        left: 864px;
     }
     50% {
         /* Règles CSS à 50% de l'animation */
-        top: 200px;
+        top: 230px;
         left: 960px;
-    }
-    55% {
-        /* Règles CSS à 55% de l'animation */
-        top: 250px;
-        left: 1056px;
     }
     60% {
         /* Règles CSS à 60% de l'animation */
-        top: 300px;
+        top: 280px;
         left: 1152px;
-    }
-    65% {
-        /* Règles CSS à 65% de l'animation */
-        top: 270px;
-        left: 1248px;
     }
     70% {
         /* Règles CSS à 70% de l'animation */
-        top: 240px;
+        top: 230px;
         left: 1344px;
-    }
-    75% {
-        /* Règles CSS à 75% de l'animation */
-        top: 210px;
-        left: 1440px;
     }
     80% {
         /* Règles CSS à 80% de l'animation */
         top: 180px;
         left: 1536px;
     }
-    85% {
-        /* Règles CSS à 85% de l'animation */
-        top: 150px;
-        left: 1632px;
-    }
     90% {
         /* Règles CSS à 90% de l'animation */
-        top: 200px;
+        top: 230px;
         left: 1728px;
-    }
-    95% {
-        /* Règles CSS à 95% de l'animation */
-        top: 250px;
-        left: 1824px;
     }
     100% {
         /* Règles CSS à 100% de l'animation */
-        top: 300px;
+        top: 280px;
         left: 1920px;
     }
 }
@@ -337,27 +237,30 @@
     animation-timing-function: linear;      
 }
 
-.animated_bubble_1, .animated_bubble_3, .animated_bubble_6, .animated_bubble_8 {
+.animated_bubble_1, .animated_bubble_2{
     /* Options d'animation de x bulles */
     animation-name: bulle_bottom_to_top;
 }
 
-.animated_bubble_2, .animated_bubble_4, .animated_bubble_5, .animated_bubble_7 {
+.animated_bubble_3, .animated_bubble_5{
     /* Options d'animation de x bulles */
     animation-name: bulle_center;
 }
 
-.animated_bubble_9, .animated_bubble_10, .animated_bubble_11, .animated_bubble_12 {
+.animated_bubble_4, .animated_bubble_6{
     /* Options d'animation de x bulles */
     animation-name: bulle_top_to_bottom;
 }
 
-.animated_bubble_1 {
+.animated_bubble_1, .animated_bubble_5{
     /* Format de la bulle */
-    width:170px;
-    height: 170px;
+    width:160px;
+    height: 160px;
+}
+
+.animated_bubble_1 {
     /* Options d'animation de la bulle */
-    animation-duration: 7s;
+    animation-duration: 3s;
 }
 
 .animated_bubble_2 {
@@ -365,8 +268,8 @@
     width:100px;
     height: 100px;  
     /* Options d'animation de la bulle */
-    animation-duration: 6s;
-    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
 }
 
 .animated_bubble_3 {
@@ -374,8 +277,8 @@
     width:120px;
     height: 120px;          
     /* Options d'animation de la bulle */
-    animation-duration: 5s;
-    animation-delay: 3s;
+    animation-duration: 2.5s;
+    animation-delay: 1.5s;
 }
 
 .animated_bubble_4 {
@@ -383,17 +286,14 @@
     width:140px;
     height: 140px;               
     /* Options d'animation de la bulle */
-    animation-duration: 4.5s;
-    animation-delay: 1.5s;
+    animation-duration: 3s;
+    animation-delay: 1s;
 }
 
 .animated_bubble_5 {
-    /* Format de la bulle */
-    width:160px;
-    height: 160px;
     /* Options d'animation de la bulle */
-    animation-duration: 6s;
-    animation-delay: 4s;
+    animation-duration: 2.5s;
+    animation-delay: 1s;
 }
 
 .animated_bubble_6 {
@@ -401,63 +301,8 @@
     width:100px;
     height: 100px;  
     /* Options d'animation de la bulle */
-    animation-duration: 7s;
-    animation-delay: 3s;
-}
-
-.animated_bubble_7 {
-    /* Format de la bulle */
-    width:120px;
-    height: 120px;          
-    /* Options d'animation de la bulle */
-    animation-duration: 4.5s;
-    animation-delay: 2.5s;
-}
-
-.animated_bubble_8 {
-    /* Format de la bulle */
-    width:100px;
-    height: 100px;               
-    /* Options d'animation de la bulle */
-    animation-duration: 9s;
-    animation-delay: 3s;
-}
-
-.animated_bubble_9 {
-    /* Format de la bulle */
-    width:150px;
-    height: 150px;
-    /* Options d'animation de la bulle */
-    animation-duration: 7s;
-    animation-delay: 1.5s;
-}
-
-.animated_bubble_10 {
-    /* Format de la bulle */
-    width:80px;
-    height: 80px;          
-    /* Options d'animation de la bulle */
-    animation-duration: 5s;
-    animation-delay: 2.5s;
-}
-
-.animated_bubble_11 {
-    /* Format de la bulle */
-    width:90px;
-    height: 90px;  
-    /* Options d'animation de la bulle */
-    animation-duration: 5s;
-    animation-delay: 4s;
-}
-
-.animated_bubble_12 {
-    /* Format de la bulle */
-    width:40px;
-    height: 40px;               
-    /* Options d'animation de la bulle */
-    animation-duration: 5s;
-    animation-timing-function: linear;
-    animation-delay: 3s;
+    animation-duration: 2.5s;
+    animation-delay: 0.5s;
 }
 
 /*******AJOUT 14/12-DEBUT**************/
@@ -559,6 +404,14 @@ main #STOP img {
     width: 213px;
 }
 
+.cardaccueil a{
+    text-decoration: none;
+}
+
+.cardaccueil h3{
+    color: #C33070;
+}
+
 .cardaccueil{
     background-color: #FEFEFE;
     border: 1px solid rgba(88, 111, 169, 0.15);
@@ -575,11 +428,11 @@ main #STOP img {
     transform: scale(1.1);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 6px rgba(0, 0, 0, 0.05);
 }
+
 .cardaccueil:active{
     transform: scale(1.1);
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1);
 }
-
 
 .h3{
     padding-top: 30px;
