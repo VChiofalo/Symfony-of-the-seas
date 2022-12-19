@@ -316,6 +316,7 @@
     background: linear-gradient(180deg, #DCE7FF 0%, rgba(255, 241, 247, 0) 45.1%);
     padding-top: 160px; /* Ajout 14 dec 16h */
     position: relative;
+    padding-top: 160px;
  }
 
 #backgroundbottom{
