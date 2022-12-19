@@ -304,9 +304,6 @@ body p {
 
 /* Onglets*/
 
-<<<<<<< Updated upstream
-#onglets h3 a {
-=======
 #boutons-boite-outils {
     width: 32%;
     height: 50px;
@@ -314,16 +311,12 @@ body p {
 }
 
 #onglets h3 span {
->>>>>>> Stashed changes
     color: #EFF3FB;
     text-align: center;
     position: absolute;
 }
 
 #boutonateliers {
-<<<<<<< Updated upstream
-    left: -20px;
-=======
     left: 80px;
     top: 10px;
 }
@@ -331,7 +324,6 @@ body p {
 #boutonarticles {
     right: -200px;
     top: 10px;
->>>>>>> Stashed changes
 }
 
 #onglets {
@@ -350,11 +342,6 @@ body p {
     color: #2F2D84;
     position: absolute;
     padding: 10px;
-<<<<<<< Updated upstream
-    top: -2.5px;
-    left: -30px;
-=======
->>>>>>> Stashed changes
 }
 
 #boutonateliers:hover {
