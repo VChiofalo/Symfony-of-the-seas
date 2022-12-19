@@ -34,7 +34,7 @@ body h3 {
 }
 
 .pancarteBloc{
-    padding-top: 160px;
+    padding-top: 180px;
 }
 
 .pancartes{
@@ -44,7 +44,6 @@ body h3 {
     background: url(/assets/img/vague_de_fond-22.svg);
     background-repeat: no-repeat;
     background-position: center;
-  /*   background-size: 90vw; */
     padding-bottom: 30rem;
 }
 /*1*/
@@ -52,7 +51,7 @@ body h3 {
     background: url(/assets/img/pancarte_hover/pancarte_1_hover-01_12.16.16.svg);
     position: absolute;
     width: 230px;
-    bottom: -160px;  
+    bottom: -230px;  
     padding-top: 1.5px;
     left: 250px 
 }
@@ -66,7 +65,7 @@ body h3 {
     background: url(/assets/img/pancarte_hover/pancarte_2_hover-01.svg);
     position: absolute;
     width: 230px;
-    bottom: -160px; 
+    bottom: -180px; 
     left:420px 
 }
 
@@ -79,7 +78,7 @@ body h3 {
     background: url(/assets/img/pancarte_hover/pancarte_3_hover-15-01.svg);
     position: absolute;
     width: 230px;
-    bottom: -160px; 
+    bottom: -250px; 
     left:500px 
 }
 
@@ -92,7 +91,7 @@ body h3 {
     background: url(/assets/img/pancarte_hover/pancarte_4_hover-01.svg);
     position: absolute;
     width: 230px;
-    bottom: -160px; 
+    bottom: -200px; 
     left:650px 
 }
 
@@ -105,7 +104,7 @@ body h3 {
     background: url(/assets/img/pancarte_hover/pancarte_5_hover-01.svg);
     position: absolute;
     width: 230px;
-    bottom: -160px; 
+    bottom: -400px; 
     left:800px 
 }
 
@@ -118,8 +117,8 @@ body h3 {
     background: url(/assets/img/pancarte_6_bis_hover-01.svg);
     position: absolute;
     width: 230px;
-    bottom: -160px; 
-    left:920px 
+    bottom: -180px; 
+    left:995px 
 }
 
 #pancarte6:hover{
@@ -132,7 +131,7 @@ body h3 {
     position: absolute;
     width: 230px;
     bottom: -160px; 
-    left:1050px 
+    left:1140px 
 }
 
 #pancarte7:hover{
@@ -144,8 +143,8 @@ body h3 {
     background: url(/assets/img/pancarte_hover/pancarte_8_hover-01.svg);
     position: absolute;
     width: 230px;
-    bottom: -160px; 
-    left:1200px 
+    bottom: -320px; 
+    left:1340px 
 }
 
 #pancarte8:hover{
@@ -157,8 +156,8 @@ body h3 {
     background: url(/assets/img/pancarte_hover/pancarte_9_hover-01.svg);
     position: absolute;
     width: 230px;
-    bottom: -160px; 
-    left:1350px 
+    bottom: -360px; 
+    left:1450px 
 }
 
 #pancarte9:hover{
