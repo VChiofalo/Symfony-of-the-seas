@@ -71,13 +71,14 @@ main {
 
 /* Articles*/
 
-#boiteaoutils h1 {
+#boiteaoutils h2 {
     text-align: center;
     color: #2F2D84;
     padding-bottom: 3rem;
+    text-align: center;
 }
 
-#boiteaoutils h3 {
+.articles-ateliers-container h3 {
     color: #C33070;
 }
 
