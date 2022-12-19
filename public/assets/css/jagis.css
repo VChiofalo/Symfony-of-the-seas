@@ -34,8 +34,7 @@ body p {
     background-size:cover;
     background-repeat: no-repeat;
     height: 90vh; /*******************************MODIF 14/12*******/
-    position: relative;   
-    
+    position: relative;
 }
 
 .container{

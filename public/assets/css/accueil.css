@@ -115,17 +115,17 @@
     }
     10% {
         /* Règles CSS à 10% de l'animation */
-        top: 200px;
+        top: 250px;
         left: 192px;
     }
     20% {
         /* Règles CSS à 20% de l'animation */
-        top: 150px;
+        top: 200px;
         left: 384px;
     }
     30% {
         /* Règles CSS à 30% de l'animation */
-        top: 200px;
+        top: 250px;
         left: 576px;
     }
     40% {
@@ -140,27 +140,27 @@
     }
     60% {
         /* Règles CSS à 60% de l'animation */
-        top: 150px;
+        top: 200px;
         left: 1152px;
     }
     70% {
         /* Règles CSS à 70% de l'animation */
-        top: 100px;
+        top: 150px;
         left: 1344px;
     }
     80% {
         /* Règles CSS à 80% de l'animation */
-        top: 50px;
+        top: 100px;
         left: 1536px;
     }
     90% {
         /* Règles CSS à 90% de l'animation */
-        top: 0px;
+        top: 50px;
         left: 1728px;
     }
     100% {
         /* Règles CSS à 100% de l'animation */
-        top: -50px;
+        top: -20px;
         left: 1920px;
     }
 }
@@ -168,107 +168,57 @@
 @keyframes bulle_top_to_bottom {
     0% {
         /* Règles CSS de départ */
-        top: 40px;
+        top: -20px;
         left: -50px;
-    }
-    5% {
-        /* Règles CSS à 5% de l'animation */
-        top: 80px;
-        left: 96px;
     }
     10% {
         /* Règles CSS à 10% de l'animation */
-        top: 120px;
+        top: 30px;
         left: 192px;
-    }
-    15% {
-        /* Règles CSS à 15% de l'animation */
-        top: 140px;
-        left: 288px;
     }
     20% {
         /* Règles CSS à 20% de l'animation */
-        top: 180px;
+        top: 80px;
         left: 384px;
-    }
-    25% { 
-        /* Règles CSS à 25% de l'animation */
-        top: 190px;
-        left: 480px;
     }
     30% {
         /* Règles CSS à 30% de l'animation */
-        top: 160px;
-        left: 576px;
-    }
-    35% {
-        /* Règles CSS à 35% de l'animation */
         top: 130px;
-        left: 672px;
+        left: 576px;
     }
     40% {
         /* Règles CSS à 40% de l'animation */
-        top: 100px;
+        top: 180px;
         left: 768px;
-    }
-    45% {
-        /* Règles CSS à 45% de l'animation */
-        top: 150px;
-        left: 864px;
     }
     50% {
         /* Règles CSS à 50% de l'animation */
-        top: 200px;
+        top: 230px;
         left: 960px;
-    }
-    55% {
-        /* Règles CSS à 55% de l'animation */
-        top: 250px;
-        left: 1056px;
     }
     60% {
         /* Règles CSS à 60% de l'animation */
-        top: 300px;
+        top: 280px;
         left: 1152px;
-    }
-    65% {
-        /* Règles CSS à 65% de l'animation */
-        top: 270px;
-        left: 1248px;
     }
     70% {
         /* Règles CSS à 70% de l'animation */
-        top: 240px;
+        top: 230px;
         left: 1344px;
-    }
-    75% {
-        /* Règles CSS à 75% de l'animation */
-        top: 210px;
-        left: 1440px;
     }
     80% {
         /* Règles CSS à 80% de l'animation */
         top: 180px;
         left: 1536px;
     }
-    85% {
-        /* Règles CSS à 85% de l'animation */
-        top: 150px;
-        left: 1632px;
-    }
     90% {
         /* Règles CSS à 90% de l'animation */
-        top: 200px;
+        top: 230px;
         left: 1728px;
-    }
-    95% {
-        /* Règles CSS à 95% de l'animation */
-        top: 250px;
-        left: 1824px;
     }
     100% {
         /* Règles CSS à 100% de l'animation */
-        top: 300px;
+        top: 280px;
         left: 1920px;
     }
 }
@@ -310,7 +260,7 @@
 
 .animated_bubble_1 {
     /* Options d'animation de la bulle */
-    animation-duration: 4s;
+    animation-duration: 3s;
 }
 
 .animated_bubble_2 {
@@ -318,8 +268,8 @@
     width:100px;
     height: 100px;  
     /* Options d'animation de la bulle */
-    animation-duration: 4s;
-    animation-delay: 1.5s;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
 }
 
 .animated_bubble_3 {
@@ -327,7 +277,7 @@
     width:120px;
     height: 120px;          
     /* Options d'animation de la bulle */
-    animation-duration: 3.5s;
+    animation-duration: 2.5s;
     animation-delay: 1.5s;
 }
 
@@ -336,13 +286,13 @@
     width:140px;
     height: 140px;               
     /* Options d'animation de la bulle */
-    animation-duration: 4s;
+    animation-duration: 3s;
     animation-delay: 1s;
 }
 
 .animated_bubble_5 {
     /* Options d'animation de la bulle */
-    animation-duration: 3s;
+    animation-duration: 2.5s;
     animation-delay: 1s;
 }
 
@@ -351,7 +301,7 @@
     width:100px;
     height: 100px;  
     /* Options d'animation de la bulle */
-    animation-duration: 4s;
+    animation-duration: 2.5s;
     animation-delay: 0.5s;
 }
 
