@@ -6,13 +6,24 @@
     width: 100vw;
 }
 
-
-
 footer .icones {
     height: 50px;
     width: 80px;
 }
 
 footer hr {
-    background-color:rgb(127, 125, 238); 
+    background:rgb(127, 125, 238); 
+}
+
+.logo{
+    background-image: url(/assets/img/logofooter/logo-bullee-grand.svg);
+}
+
+.icones:hover{
+    transform: scale(1.1);
+}
+
+.mail{
+    text-decoration: none;
+    color: black ;
 }
