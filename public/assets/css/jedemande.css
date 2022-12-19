@@ -96,8 +96,9 @@
     color: #2F2D84;
 }
 
-.makeup{
-   color: #C33070
+.makeup a{
+    text-decoration: none;
+    color: #C33070
 }
 
 /**************ASSOCIATION***************/

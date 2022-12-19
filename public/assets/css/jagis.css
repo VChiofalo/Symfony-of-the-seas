@@ -325,14 +325,20 @@ body p {
     background: #FFFFFF;
     border-radius: 20px;
     color: #2F2D84;
-    padding: 0.5rem;
+    position: absolute;
+    padding: 10px;
+    top: -2.5px;
+    left: -30px;
 }
 
 #onglets #boutonarticles:hover {
     background: #FFFFFF;
     border-radius: 20px;
     color: #2F2D84;
-    padding: 0.5rem;
+    position: absolute;
+    padding: 10px;
+    top: -2.5px;
+    right: -40px;
 }
 
 /* Articles*/
@@ -432,4 +438,5 @@ body p {
 
 .articles-ateliers-container {
     position: relative;
+    /* overflow: hidden; */
 }
