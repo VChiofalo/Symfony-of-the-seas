@@ -200,19 +200,15 @@ body p {
     line-height: 30px;
 }
 
-.orange{
+.font_orange{
     color: #F78008;
 }
 
-.rose{
+.font_rose{
     color: #DF80A9;
 }
 
-.rose{
-    color: #DF80A9;
-}
-
-.makeup{
+#makeup{
     color:#C33070
 }
 
@@ -220,23 +216,22 @@ body p {
 
 .image{
      max-height: 310px;
-    
 }
 
 #bouton{
     text-decoration: none;
-    background-color: #3F3D9A;
     padding: 8px 32px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 6px rgba(0, 0, 0, 0.05);
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 6px rgba(0, 0, 0, 0.05); */
     border-radius: 100px;
     color: white;
     display: block; /**************************************MODIF 14/12******/
     margin: auto;
     width: 191px;
     margin-bottom: 20px;
+    position: relative;
 }
 
-#bouton:hover{
+/* #bouton:hover{
     background-color: #FF8EBF;
     padding: 8px 32px;
     box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.05);
@@ -244,7 +239,7 @@ body p {
     border-radius: 100px;
     color: white;
 
-}
+} */
 
 #bouton:active{
     background-color: #FF8EBF;
@@ -309,16 +304,20 @@ body p {
 #onglets h3 a {
     color: #EFF3FB;
     text-align: center;
+    position: absolute;
 }
 
+#boutonateliers {
+    left: -20px;
+}
 
 #onglets {
     background-color: #C33070;
     border-radius: 20px;
-    width: 28%;
+    width: 32%;
     margin-left: 480px;
-    padding-top: 2rem;
-    padding-bottom: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     margin-bottom: 4rem;
 }
 
@@ -326,25 +325,32 @@ body p {
     background: #FFFFFF;
     border-radius: 20px;
     color: #2F2D84;
-    padding: 0.5rem;
+    position: absolute;
+    padding: 10px;
+    top: -2.5px;
+    left: -30px;
 }
 
 #onglets #boutonarticles:hover {
     background: #FFFFFF;
     border-radius: 20px;
     color: #2F2D84;
-    padding: 0.5rem;
+    position: absolute;
+    padding: 10px;
+    top: -2.5px;
+    right: -40px;
 }
 
 /* Articles*/
 
-#boiteaoutils h1 {
+#boiteaoutils h2 {
     text-align: center;
     color: #2F2D84;
     padding-bottom: 3rem;
+    text-align: center;
 }
 
-#boiteaoutils h3 {
+.articles-ateliers-container h3 {
     color: #C33070;
 }
 
@@ -375,10 +381,16 @@ body p {
 #boiteaoutils h6:hover {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 #boiteaoutils a {
     text-decoration: none;
     color: #2F2D84;
 }
+
+#bouton input {
+    text-decoration: none;
+}
+
 #boiteaoutils a:hover {
     color: #C33070;
 }
@@ -402,4 +414,29 @@ body p {
 #boiteaoutils .violencescolaire img {
     width: 90%;
     padding-bottom: 0.7rem;
+}
+
+.btn-prev,
+.btn-next {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    display: block;
+    top: calc(50% - 20px);
+    z-index: 999;
+}
+
+.btn-prev {
+    left: -40px;
+    background-image: url(/assets/img/fleche-carrousel=gauche.svg);
+}
+
+.btn-next {
+    right: -40px;
+    background-image: url(/assets/img/fleche-carrousel=droite.svg);
+}
+
+.articles-ateliers-container {
+    position: relative;
+    /* overflow: hidden; */
 }
