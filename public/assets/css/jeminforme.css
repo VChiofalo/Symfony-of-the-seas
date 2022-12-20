@@ -180,6 +180,11 @@ body h3 {
     margin: auto;
 }
 
+.lesSignes{
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
 .txtsigne h4{
     color: #2F2D84
 
@@ -327,9 +332,17 @@ h6{
     transition-property: transform;
     transition: 1s;
 }
-.btn-prev,
+.btn-prev{
+    float: right;
+    margin-top: 100px;
+    width: 40px;
+    height: 40px;
+    display: block;
+    top: calc(50% - 20px);
+    z-index: 999;
+}
 .btn-next {
-    position: absolute;
+    margin-top: 100px;
     width: 40px;
     height: 40px;
     display: block;
@@ -529,7 +542,7 @@ h6{
 
 .modal-content{
     padding: 4rem 0;
-
+    border-radius: 100px;
 }
 .soustitre{
     padding-top:2rem
@@ -588,15 +601,16 @@ h6{
     background: #D0D7E5;
     padding-top:0.9rem ;
     padding-bottom: 0.3rem;
-
 }
 
 .impact1, .impact2{
     font-weight: 600;
     color: #2F2D84;
     margin-top: -1rem;
+    
 }
 
 /**15/12 MODAAAAAAAAAAAALES-FIN**/
+
 
 

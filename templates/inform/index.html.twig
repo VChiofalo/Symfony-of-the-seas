@@ -7,7 +7,6 @@
 {% endblock %}
 
 {% block body %}
-
     <section>
     <div class="pancarteBloc">
         <div class="pancartes container-fluid text-center">
@@ -55,7 +54,7 @@
     
     <div class="containersigne container-fluid">
         <section id="signes" class="container row text-center">
-            <h3 class="col-12">LES 4  SIGNES POUR RECONNAITRE LE HARCELEMENT</h3>
+            <h3 class="col-12 lesSignes">LES 4  SIGNES POUR RECONNAITRE LE HARCELEMENT</h3>
             <div class="d-flex justify-content-between flex-wrap">
                 <article class="cardsigne">
                     <img src="/assets/img/informe/anxiete.svg" alt="">
@@ -132,27 +131,38 @@
                 </div>
             </div>
 
-            <div id="temoignages-container" class="container">
-                <i class="btn-prev"></i>
-                <i class="btn-next"></i>
-                <div id="temoignages" class="d-flex justify-content-between flex-no-wrap">
-                        
-                    {% for testimonial in testimonials %}
-                    <div class="carte{{ testimonial.classCss}}">
-                        <div class="reseau{{ testimonial.classCss}}">
-                            <img src="/assets/img/{{testimonial.logo}}" alt="{{testimonial.logo}}">
-                        </div>
-                        <div id="cardTemoigagnes" class="offset-1 col-lg-10">
-                            <div class="" data-id="{{ testimonial.id }}">
-                                <h4>{{ testimonial.name }}</h4>
-                                <h5>{{ testimonial.age }}</h5>
-                                <p>{{ testimonial.content }}</p>
+            <div class="row">
+                <div class="col-lg-1">
+                    <i class="btn-prev"></i>
+                </div>
+                <div class="col-lg-10">
+                
+                    <div id="temoignages-container" class="container">
+                        <div id="temoignages" class="d-flex justify-content-between flex-no-wrap">
+                                
+                            {% for testimonial in testimonials %}
+                            <div class="carte{{ testimonial.classCss}}">
+                                <div class="reseau{{ testimonial.classCss}}">
+                                    <img src="/assets/img/{{testimonial.logo}}" alt="{{testimonial.logo}}">
+                                </div>
+                                <div id="cardTemoigagnes" class="offset-1 col-lg-10">
+                                    <div class="" data-id="{{ testimonial.id }}">
+                                        <h4>{{ testimonial.name }}</h4>
+                                        <h5>{{ testimonial.age }}</h5>
+                                        <p>{{ testimonial.content }}</p>
+                                    </div>
+                                </div>
                             </div>
+                            {% endfor %}
                         </div>
                     </div>
-                    {% endfor %}
+
+                </div>
+                <div class="col-lg-1">
+                    <i class="btn-next"></i>
                 </div>
             </div>
+            
         </section>
     </div>
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -167,8 +177,6 @@
 
                     <p class="text-center soustitre"> <span class="sonic">Tous les midis à la cantine, Manon se fait piquer son dessert par ses camarades car elle est jugée</span><br> <span class="makeup"> <strong>“trop grosse”</strong></span></p>
 
-                    <p class="text-center soustitre"> <span class="sonic">Tous les midis à la cantine, Manon se fait piquer son dessert par ses camarades car elle est jugée</span><br> <span class="makeup"> <strong>“trop grosse”</strong></span></p>
-
                     <article class="row artgrosse">
                         <div class="offset-1 col-5 txtmodale">
                             <p>Ici, des élèves justifient leur agression en <br> <span class="orange">se moquant du physique</span> de Manon, ce <br> qui leur donnerait la permission de l’agresser et <br> voler son dessert.</p>
@@ -176,7 +184,7 @@
                             <p>Le harcèlement moral, c’est subir <span class="lunette">de manière répétée</span> des mots ou des comportements agressifs qui <span class="orange">impactent ta santé mentale</span>.</p>
 
                         </div>
-                        <img class="offset-1 col-4" src="../BULLEE/images/image_modale.png" alt="">
+                        <img class="offset-1 col-4" src="/assets/img/informe/bulle-modalegrosse2.png" alt="">
                     </article>
 
                     <h2 class="offset-1 reperer">Repérer son impact</h2>

@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', (e) => {
 
-    let btnPrev = document.querySelector('#temoignages-container .btn-prev');
-    let btnNext = document.querySelector('#temoignages-container .btn-next');
+    let btnPrev = document.querySelector('.btn-prev');
+    let btnNext = document.querySelector('.btn-next');
     let delta = 0;
     let counter = 0;
     let step = 250;
