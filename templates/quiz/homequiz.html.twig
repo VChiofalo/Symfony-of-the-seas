@@ -1,25 +1,43 @@
-{% extends 'base.html.twig' %}
+{# {% extends 'base.html.twig' %} #}
 
-{% block title %}Hello QuizQRController!{% endblock %}
+{% block title %}Accueil quiz{% endblock %}
 
 {% block stylesheets %}
-    <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">   
+
+    <link rel="stylesheet" href="{{asset('/assets/css/quiz/homequizbis.css')}}">   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/reset.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
 {% endblock %}
 
 {% block body %}
- 
-<div class="example-wrapper">
 
-<p class="quit-form">Je me rends directement sur le site <a> #rajouter img# </a> </p>
-    {# RAJOUTER LOGO A LA PLACE DU H1#}
-    <h1> Bullee </h1>
-</div>
+<main>
+        <div class="container-fluid backgroundhomequiz">
+            <div class="d-flex justify-content-end">
+                <a id="direct" href={{path('app_home')}}><i>Je me rends directement sur le site</i><img src="/assets/img/iconesQuiz/icone-porte/icon-porte-defaut.svg" alt="iconeporte"></a>
+            </div>
+            <div class="container">
+                <div class="text-center">
+                    <img class="img-fluid" id= "logoquiz" src="/assets/img/logoquiz/logo-bullee-grand.svg" alt="logo">
+                </div>
 
-<div>
-    <p class="onleft"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex repellat eius error sequi nisi aut placeat ducimus pariatur accusantium sit suscipit repudiandae voluptas nam earum dolor, eaque hic possimus quisquam?</p>
+                <div class="row text-center" id="txthomequiz">
+                    <div class="col-lg-5 col-sm-10">
+                        <p>Lorem ipsum magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <a class="bouton text-center" href={{path('app_quiz_tuto')}}>Je commence le quiz</a> 
+                    </div>
 
-    <button><a href="{{'app_quiz'}}">Je commence le quiz</a></button>
+                    <div class="offset-2 col-5">
+                        <img id="imghomequiz" src="/assets/img/illustrationquizz/illustration-BULLEE.svg" alt="">
 
-</div>
+                    </div>
+                </div>     
+            </div> 
+        </div>
+</main>
+
 {% endblock %}
  

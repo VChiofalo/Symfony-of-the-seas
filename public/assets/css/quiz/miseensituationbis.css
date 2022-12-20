@@ -1,0 +1,43 @@
+/*************** BACKGROUND MISE EN SITUATION*******************/
+
+.backgroundmiseensituation{
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #2F2D84;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+/***************ICONE CROIX*******************/
+
+.quitter {
+    width: 45px;
+    height: 45px;
+    margin-top: 2rem;
+    margin-right: 3rem;
+    
+}
+
+/***************IMAGE*******************/
+
+#imgquiz{
+    width: 60%;
+    margin: 5rem auto;
+    border-radius: 50px;
+    
+}  
+ 
+#suivant {
+    width: 3rem;
+    
+    
+}
+
+
+
+

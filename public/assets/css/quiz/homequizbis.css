@@ -1,0 +1,99 @@
+#txthomequiz, #direct{
+    font-family:'Poppins', sans-serif; 
+}
+
+/**********BACKGROUND************/
+
+.backgroundhomequiz{
+    background-image: url(/assets/img/vaguesQuiz/vague-home-quiz.svg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #2F2D84;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    min-width: 100%;
+    min-height: 100%;
+}
+
+/**********JE ME RENDS SUR LE SITE************/
+
+#direct{
+    text-decoration: none;
+    color: #FFB7D6;
+    padding: 2rem;
+}
+
+
+#direct img{
+    width: 65px;
+}
+
+#direct img:hover{
+    width: 85px;
+}
+
+/**********LOGO************/
+
+#logoquiz{
+    margin-top: -9rem;
+    margin-bottom: 3rem;
+    
+}
+
+@media screen and (max-width:1280px){
+    #logoquiz{
+        margin-top: -2rem;
+    }
+} 
+
+/**********IMAGE BULLEE************/
+#imghomequiz{
+    width: 45rem;
+    margin-top: -5rem;
+}
+
+
+/**********TEXTE ACCUEIL************/
+
+#txthomequiz{
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 38px;
+}
+
+/**********BOUTON************/
+
+.bouton{
+    text-decoration: none;
+    background-color: #FFB7D6;
+    padding: 8px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 100px;
+    color: white;
+    display: block;
+    margin : 4rem auto;
+    width: 400px;
+    
+    
+}
+
+.bouton:hover{
+    background-color: #FF8EBF;
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.05);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.bouton:active{
+    background-color: #FFFFFF;
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.05);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
+    color: #2F2D84;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1)
+
+}

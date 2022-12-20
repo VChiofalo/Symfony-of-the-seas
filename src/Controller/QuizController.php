@@ -18,7 +18,6 @@ use Symfony\Component\Routing\Annotation\Route;
 class QuizController extends AbstractController
 {
     //clear session in case of restart the quiz
-
     #[Route('/quiz', name: 'app_quiz_start')]
     public function initiate(RequestStack $requestStack) : Response
     {
@@ -30,8 +29,27 @@ class QuizController extends AbstractController
         ]);
     }
 
+   //homequiz
+    #[Route('/homequiz', name: 'app_quiz_home')]
+    public function index(): Response
+    {
+        return $this->render('quiz/homequiz.html.twig', [
+            'controller_name' => 'QuizController',
+        ]);
+    }
+    //how to
+    #[Route('/tutoquiz', name: 'app_quiz_tuto')]
+    public function tuto(): Response
+    {
+        return $this->render('quiz/tutoquiz.html.twig', [
+            'controller_name' => 'QuizController',
+        ]);
+    }
+
+     
+
     
-    //define Route
+    //define Route to question
     #[Route('/quiz/{questions_id}', name: 'app_quiz_question')]
     public function question($questions_id, QuestionsRepository $questionsRepository , RequestStack $requestStack): Response
     {
