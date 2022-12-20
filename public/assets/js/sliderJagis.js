@@ -23,6 +23,8 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
     btnNext.addEventListener('click', (e) => {
         if (counter < (nbSlide - (divid - 2))) {
+            console.log(nbSlide);
+            console.log(divid);
             delta = delta - step;
             slider.style.transform = `translate(${delta}px, 0)`;
             counter++;
