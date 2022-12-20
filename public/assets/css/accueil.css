@@ -387,6 +387,46 @@ h1{
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+/* .bouton{
+    margin-right: 2rem;
+    text-decoration: none;
+    background-color: #FFB7D6;
+    padding: 8px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 100px;
+    color: white;
+    width: 300px;
+    display: block;
+    margin:auto;
+    
+    
+}
+
+.bouton:hover{
+    text-decoration: none;
+    background-color: #FF8EBF;
+    padding: 8px 32px;
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.05);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
+    border-radius: 100px;
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.bouton:active{
+    text-decoration: none;
+    background-color: #FFFFFF;
+    padding: 8px 32px;
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.05);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
+    border-radius: 100px;
+    color: #2F2D84;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1)
+
+} */
+
+
 /* Je dit STOP au harcèlement */
 
 #STOP {
