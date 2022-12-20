@@ -34,40 +34,42 @@
 
 
     <header id="header">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="{{ path('app_home') }}"><img src="/assets/img/Logo-bullee-nav-barre.svg" alt=""></a>
+        {% block header %}
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="{{ path('app_home') }}"><img src="/assets/img/Logo-bullee-nav-barre.svg" alt=""></a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="offset-lg-4 col-lg-8 col-sm-12 navbar-nav d-flex justify-content-between text-center">
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="offset-lg-4 col-lg-8 col-sm-12 navbar-nav d-flex justify-content-between text-center">
 
-                        <li class="nav-item">
-                            <a href={{path('app_home')}}>Bullee, c'est qui ?</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href={{path('app_inform')}}>Je m'informe</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href={{path('app_agis')}}>J'agis</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href={{path('app_demande')}}>Je demande de l'aide</a>
-                        </li>
-                        <li class="nav-item magin">
-                            <a href="#"></a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="boutonnav" href={{path('app_quiz_start')}}>Je refais le quizz</a>
-                        </li>
+                            <li class="nav-item">
+                                <a href={{path('app_home')}}>Bullee, c'est qui ?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href={{path('app_inform')}}>Je m'informe</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href={{path('app_agis')}}>J'agis</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href={{path('app_demande')}}>Je demande de l'aide</a>
+                            </li>
+                            <li class="nav-item magin">
+                                <a href="#"></a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="boutonnav" href={{path('app_quiz_start')}}>Je refais le quizz</a>
+                            </li>
 
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        {% endblock %}
     </header>
       
     <body>
@@ -75,46 +77,48 @@
         
         {% endblock %}
         <footer>
-        
-            <section id="breakcontainer" class="row">
+            {% block footer %}
+            
+                <section id="breakcontainer" class="row">
 
-                <div id="logonav" class="d-flex justify-content-between align-items-center">
-                    <a href={{path('app_home')}}><img class="logo" alt="logo"></a>
-                    <div class="d-flex justify-content-between">
-                        <a href={{path('app_home')}}>
-                            <img class="icones iconesFb" src="/assets/img/iconesfooter/facebook-01.svg" alt="facebook">
-                        </a>
-                        <a href={{path('app_home')}}>
-                            <img class="icones iconesInsta" src="/assets/img/iconesfooter/instagram-03.svg" alt="instagram">
-                        </a>
-                        <a href={{path('app_home')}}>
-                            <img class="icones iconesTwit" src="/assets/img/iconesfooter/twitter-09.svg" alt="twitter">
-                        </a>
-                        <a href={{path('app_home')}}>
-                            <img class="icones iconesSnap" src="/assets/img/iconesfooter/snapchat-05.svg" alt="snapchat">
-                        </a>
-                        <a href={{path('app_home')}}>
-                            <img class="icones iconesTk" src="/assets/img/iconesfooter/tiktok-07.svg" alt="tiktok">
-                        </a>
+                    <div id="logonav" class="d-flex justify-content-between align-items-center">
+                        <a href={{path('app_home')}}><img class="logo" alt="logo"></a>
+                        <div class="d-flex justify-content-between">
+                            <a href={{path('app_home')}}>
+                                <img class="icones iconesFb" src="/assets/img/iconesfooter/facebook-01.svg" alt="facebook">
+                            </a>
+                            <a href={{path('app_home')}}>
+                                <img class="icones iconesInsta" src="/assets/img/iconesfooter/instagram-03.svg" alt="instagram">
+                            </a>
+                            <a href={{path('app_home')}}>
+                                <img class="icones iconesTwit" src="/assets/img/iconesfooter/twitter-09.svg" alt="twitter">
+                            </a>
+                            <a href={{path('app_home')}}>
+                                <img class="icones iconesSnap" src="/assets/img/iconesfooter/snapchat-05.svg" alt="snapchat">
+                            </a>
+                            <a href={{path('app_home')}}>
+                                <img class="icones iconesTk" src="/assets/img/iconesfooter/tiktok-07.svg" alt="tiktok">
+                            </a>
+                        </div>
                     </div>
-                </div>
+                        
+                    <hr>
                     
-                <hr>
-                
-                <div class="col-lg-3">
-                    <p>Mentions légales</p>  
-                    <p>Politique de confidentialité</p>  
-                    <p>Paramètres des cookies</p> 
-                </div>
-                <div class="col-lg-3">
-                    <p>Questions fréquentes</p>
-                    <p>Les avis sur Bullee</p>
-                </div>
-                <div class="col offset-lg-3 col-lg-3">
-                    <a href = "#" class="mail"><p>Nous contacter </p></a>
-                    <a href class=" mail mailto:bullee@contact.fr"><p>bullee@contact.fr</p></a>
-                </div>
-            </section>
+                    <div class="col-lg-3">
+                        <p>Mentions légales</p>  
+                        <p>Politique de confidentialité</p>  
+                        <p>Paramètres des cookies</p> 
+                    </div>
+                    <div class="col-lg-3">
+                        <p>Questions fréquentes</p>
+                        <p>Les avis sur Bullee</p>
+                    </div>
+                    <div class="col offset-lg-3 col-lg-3">
+                        <a href = "#" class="mail"><p>Nous contacter </p></a>
+                        <a href class=" mail mailto:bullee@contact.fr"><p>bullee@contact.fr</p></a>
+                    </div>
+                </section>
+            {% endblock %} 
         </footer> 
 
 
