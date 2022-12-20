@@ -351,7 +351,11 @@ h1{
     border-radius: 100px;
 }
 
-.bouton{
+#nous{
+    z-index: 9;
+}
+
+.bouton, #nous{
     margin-right: 2rem;
     background-color: #FFB7D6;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 6px rgba(0, 0, 0, 0.05);
@@ -361,13 +365,13 @@ h1{
     margin:auto;
 }
 
-.bouton:hover{
+.bouton:hover, #nous:hover{
     background-color: #FF8EBF;
     box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.05);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.bouton:active{
+.bouton:active, #nous:active{
     background-color: #FFFFFF;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1);
     color: #2F2D84;

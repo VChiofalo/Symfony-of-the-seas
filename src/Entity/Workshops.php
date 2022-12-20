@@ -17,14 +17,14 @@ class Workshops
     #[ORM\Column(length: 255)]
     private ?string $title = null;
 
-    #[ORM\Column(type: Types::TEXT)]
+    #[ORM\Column(type: Types::TEXT, nullable: true)]
     private ?string $contents = null;
 
     #[ORM\Column(length: 255)]
     private ?string $thumbnail = null;
 
-    #[ORM\Column(type: Types::DATE_MUTABLE, nullable: true)]
-    private ?\DateTimeInterface $date = null;
+    #[ORM\Column(length: 255, nullable: true)]
+    private ?string $url = null;
 
     #[ORM\Column(length: 255)]
     private ?string $slug = null;
@@ -73,14 +73,14 @@ class Workshops
         return $this;
     }
 
-    public function getDate(): ?\DateTimeInterface
+    public function getUrl(): ?string
     {
-        return $this->date;
+        return $this->url;
     }
 
-    public function setDate(?\DateTimeInterface $date): self
+    public function setUrl(string $url): self
     {
-        $this->date = $date;
+        $this->url = $url;
 
         return $this;
     }

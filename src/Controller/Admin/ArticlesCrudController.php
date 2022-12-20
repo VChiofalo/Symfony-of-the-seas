@@ -44,7 +44,9 @@ class ArticlesCrudController extends AbstractCrudController
                 ->setFormTypeOption('required', false),                 // Retire l'option require en édition
             TextField::new('description', 'Extrait'),                   // Récuperation du champ description pour ajouter/éditer les extraits
             SlugField::new('slug', 'Slug ?')                            // Récuperation du chanp slug pour ajouter/éditer la date de publication des articles
-                ->setTargetFieldName('title')                           // Rattache le slug au titre
+                ->setTargetFieldName('title'),                          // Rattache le slug au titre
+            TextField::new('url', 'Url (optionnel)'),                   // Récuperation du champ url pour ajouter/éditer l'url des articles
+
         ];
     }
    
