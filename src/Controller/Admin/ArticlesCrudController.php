@@ -39,8 +39,8 @@ class ArticlesCrudController extends AbstractCrudController
                 ->setFormType(CKEditorType::class)      // Appelle du formulaire Wisiwig
                 ->hideOnIndex(),
             ImageField::new('thumbnail', 'Miniature')   // Récuperation du champ img pour ajouter/éditer les images
-                ->setUploadDir('public/assets/img/')    // Direction d'upload des images
-                ->setBasePath('/assets/img/'),          // Recherche la route de l'image pour l'afficher dans le backoffice
+                ->setUploadDir('public/assets/img/agis/articles/')    // Direction d'upload des images
+                ->setBasePath('/assets/img/agis/articles/'),          // Recherche la route de l'image pour l'afficher dans le backoffice
             TextField::new('description', 'Extrait'),   // Récuperation du champ description pour ajouter/éditer les extraits
             SlugField::new('slug', 'Slug ?')            // Récuperation du chanp slug pour ajouter/éditer la date de publication des articles
                 ->setTargetFieldName('title')           // Rattache le slug au titre

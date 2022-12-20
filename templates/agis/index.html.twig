@@ -151,10 +151,10 @@
                                 <article class="col-lg-3 col-sm-12 article inactif">
                                     <div>
                                         <a href="{{ path('app_article', {'slug':article.slug} ) }}">
-                                            <img src="{{ article.thumbnail }}" alt="">
+                                            <img src="assets/img/agis/articles/{{ article.thumbnail }}" alt="">
                                             <h3>{{ article.title }}</h3>
                                             <p>{{  article.description }}</p>
-                                            <p>Voir plus</p>
+                                            <p class="voir">Voir plus</p>
                                         </a>
                                     </div>
                                 </article>
@@ -163,11 +163,11 @@
                                 {% for workshop in workshops %}
                                 <article class="col-lg-3 col-sm-12 atelier">
                                     <div>
-                                        <a href="{{ path('app_article', {'slug':workshop.slug} ) }}">
-                                            <img src="{{ workshop.thumbnail }}" alt="">
+                                        <a href="{{ path('app_workshop', {'slug':workshop.slug} ) }}">
+                                            <img src="assets/img/agis/ateliers/{{ workshop.thumbnail }}" alt="">
                                             <h3>{{ workshop.title }}</h3>
                                             <p>{{  workshop.description }}</p>
-                                            <p>Voir plus</p>
+                                            <p class="voir">Voir plus</p>
                                         </a>
                                     </div>
                                 </article>

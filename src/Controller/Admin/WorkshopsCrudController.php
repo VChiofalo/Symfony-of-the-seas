@@ -38,8 +38,8 @@ class WorkshopsCrudController extends AbstractCrudController
                 ->setFormType(CKEditorType::class)      // Appelle du formulaire Wisiwig
                 ->hideOnIndex(),
             ImageField::new('thumbnail', 'Miniature')   // Récuperation du champ img pour ajouter/éditer les images
-                ->setUploadDir('public/assets/img/')    // Direction d'upload des images
-                ->setBasePath('/assets/img/'),          // Recherche la route de l'image pour l'afficher dans le backoffice
+                ->setUploadDir('public/assets/img/agis/ateliers/')    // Direction d'upload des images
+                ->setBasePath('/assets/img/agis/ateliers/'),          // Recherche la route de l'image pour l'afficher dans le backoffice
             TextField::new('description', 'Extrait'),   // Récuperation du champ description pour ajouter/éditer les extraits
             DateField::new('date', 'Date'),             // Récuperation du chanp date pour ajouter/éditer la date de publication des ateliers
             SlugField::new('slug', 'Slug ?')            // Récuperation du chanp slug pour ajouter/éditer la date de publication des ateliers
