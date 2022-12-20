@@ -345,23 +345,34 @@ h1{
     font-weight: 600;
 }
 
+#backgroundtop a{
+    margin-top: 120px !important;
+    background: #3F3D9A;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 100px;
+    width: 340px;
+    height: 69px;
+    text-align: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 52px;
+}
+
 /* Section Quizz */
 
 #sectionquiz {
     background-color: #3F3D9A;
-    margin-top: 100px; /* Ajout 14 dec 16h */
-    padding: 50px 0; /* Ajout 14 dec 16h */
+    margin-top: 100px;
+    padding: 50px 0;
 }
 
 #imgquiz {
     border-radius: 100px;
 }
 
-#nous{
-    z-index: 9999;
-}
-
-.bouton, #nous{
+.bouton{
     margin-right: 2rem;
     background-color: #FFB7D6;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 6px rgba(0, 0, 0, 0.05);
@@ -371,13 +382,13 @@ h1{
     margin:auto;
 }
 
-.bouton:hover, #nous:hover{
+.bouton:hover {
     background-color: #FF8EBF;
     box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.05);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.bouton:active, #nous:active{
+.bouton:active {
     background-color: #FFFFFF;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1);
     color: #2F2D84;
@@ -396,46 +407,6 @@ h1{
 .bouton:hover, .bouton:active {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-
-/* .bouton{
-    margin-right: 2rem;
-    text-decoration: none;
-    background-color: #FFB7D6;
-    padding: 8px 32px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 6px rgba(0, 0, 0, 0.05);
-    border-radius: 100px;
-    color: white;
-    width: 300px;
-    display: block;
-    margin:auto;
-    
-    
-}
-
-.bouton:hover{
-    text-decoration: none;
-    background-color: #FF8EBF;
-    padding: 8px 32px;
-    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.05);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
-    border-radius: 100px;
-    color: white;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-}
-
-.bouton:active{
-    text-decoration: none;
-    background-color: #FFFFFF;
-    padding: 8px 32px;
-    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.05);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
-    border-radius: 100px;
-    color: #2F2D84;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1)
-
-} */
-
 
 /* Je dit STOP au harcèlement */
 
