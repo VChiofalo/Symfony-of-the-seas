@@ -17,7 +17,7 @@ class Workshops
     #[ORM\Column(length: 255)]
     private ?string $title = null;
 
-    #[ORM\Column(type: Types::TEXT, nullable: true)]
+    #[ORM\Column(type: Types::TEXT)]
     private ?string $contents = null;
 
     #[ORM\Column(length: 255)]
