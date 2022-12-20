@@ -226,36 +226,42 @@
 #box {
     overflow: hidden;
     width: calc(100% - 24px);  
-    height: 100%;
-    position: absolute;   
+    height: 100%;  
+    z-index: 1;
+    top: 60px;
 }
 .animated_bubble {
     /* Options générale à toutes les bulles */
     position: absolute;
     left: 1920px;
     top: 200px;
-    animation-timing-function: linear;      
+    animation-timing-function: linear;     
+    z-index: 1;    
 }
 
 .animated_bubble_1, .animated_bubble_2{
     /* Options d'animation de x bulles */
     animation-name: bulle_bottom_to_top;
+    z-index: 1;    
 }
 
 .animated_bubble_3, .animated_bubble_5{
     /* Options d'animation de x bulles */
     animation-name: bulle_center;
+    z-index: 1;    
 }
 
 .animated_bubble_4, .animated_bubble_6{
     /* Options d'animation de x bulles */
     animation-name: bulle_top_to_bottom;
+    z-index: 1;    
 }
 
 .animated_bubble_1, .animated_bubble_5{
     /* Format de la bulle */
     width:160px;
     height: 160px;
+    z-index: 1;    
 }
 
 .animated_bubble_1 {
@@ -352,7 +358,7 @@ h1{
 }
 
 #nous{
-    z-index: 9;
+    z-index: 9999;
 }
 
 .bouton, #nous{
