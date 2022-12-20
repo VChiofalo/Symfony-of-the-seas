@@ -360,6 +360,10 @@ h1{
     line-height: 52px;
 }
 
+#backgroundtop a:hover{
+    background: #FF8EBF;
+}
+
 /* Section Quizz */
 
 #sectionquiz {
