@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', (e) => {
     let nbSlide = slider.children.length;
     let divid = Math.round(containerWidth / step);
 
-
     if (!btnPrev || !btnNext) return;
 
     btnPrev.addEventListener('click', (e) => {
@@ -22,11 +21,9 @@ document.addEventListener('DOMContentLoaded', (e) => {
     });
 
     btnNext.addEventListener('click', (e) => {
-        if (counter < (nbSlide - (divid - 2))) {
-            console.log(nbSlide);
-            console.log(divid);
+        if (counter < (nbSlide - (divid + 4))) {
             delta = delta - step;
-            slider.style.transform = `translate(${delta}px, 0)`;
+            slider.style.transform = `translate(${delta}px,0)`;
             counter++;
         }
     });
