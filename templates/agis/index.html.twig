@@ -138,8 +138,8 @@
                 <!-- onglets-->
                 <div id="onglets">
                     <div id="boutons-boite-outils" class="d-flex justify-content-around">
-                        <h3><span id="boutonateliers">Ateliers</span></h3>
-                        <h3><span id="boutonarticles">Articles</span></h3>
+                        <h3 id="btnatelier"><span id="boutonateliers" class="actif">Ateliers</span></h3>
+                        <h3 id="btnarticle"><span id="boutonarticles">Articles</span></h3>
                     </div> 
                 </div>
 
@@ -197,9 +197,10 @@
         </Section>
 
     </main>
-    {% block javascripts %}     
+    
+{% endblock %}
+
+{% block javascripts %}     
         <script src="/assets/js/sliderJagis.js"></script>
         <script src="/assets/js/boiteOutils.js"></script>
     {% endblock %}
-{% endblock %}
-

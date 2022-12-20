@@ -355,10 +355,24 @@ body p {
     right: -210px;
 }
 
-#boutonateliers .active, #boutonarticles .active {
+#btnatelier .actif{
     background: #FFFFFF;
     border-radius: 20px;
     color: #2F2D84;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    left: 70px;
+}
+
+#btnarticle .actif {
+    background: #FFFFFF;
+    border-radius: 20px;
+    color: #2F2D84;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    right: -210px;
 }
 
 /* Articles*/
@@ -411,7 +425,7 @@ body p {
     text-decoration: none;
 }
 
-#boiteaoutils span:hover {
+#boiteaoutils a:hover {
     color: #C33070;
 }
 
@@ -462,4 +476,4 @@ body p {
 
 .articles{
     overflow: hidden;
-} 
+}

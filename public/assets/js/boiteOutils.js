@@ -1,8 +1,13 @@
+// Déclaration des variables
+let btnAtelier;
+let btnArticle;
+let ateliersCartes;
+let articlesCartes;
 // Récuperation du Dom
-let btnAtelier = document.getElementById('boutonateliers');
-let btnArticle = document.getElementById('boutonarticles');
-let ateliersCartes = document.querySelectorAll('');
-let articlesCartes = document.querySelectorAll('');
+btnAtelier = document.getElementById('boutonateliers');
+btnArticle = document.getElementById('boutonarticles');
+/* ateliersCartes = document.querySelectorAll('');
+articlesCartes = document.querySelectorAll(''); */
 // Gestionnaire d'event
 btnAtelier.addEventListener('click', () => {
     if (btnAtelier.classList.contains('actif')) {
@@ -11,13 +16,13 @@ btnAtelier.addEventListener('click', () => {
 
     if (btnArticle.classList.contains('actif')) {
         btnAtelier.classList.add('actif');
-        ateliersCartes.classList.remove('inactif');
+/*         ateliersCartes.classList.remove('inactif'); */
         btnArticle.classList.remove('actif');
-        articlesCartes.classList.add('inactif');
+/*         articlesCartes.classList.add('inactif'); */
     } else {
         btnAtelier.classList.add('actif');
-        ateliersCartes.classList.remove('inactif');
-        articlesCartes.classList.add('inactif');
+/*         ateliersCartes.classList.remove('inactif');
+        articlesCartes.classList.add('inactif'); */
     }
 })
 
@@ -28,12 +33,12 @@ btnArticle.addEventListener('click', () => {
 
     if (btnAtelier.classList.contains('actif')) {
         btnArticle.classList.add('actif');
-        articlesCartes.classList.remove('inactif');
+/*         articlesCartes.classList.remove('inactif'); */
         btnAtelier.classList.remove('actif');
-        articlesCartes.classList.add('inactif');
+/*         articlesCartes.classList.add('inactif'); */
     } else {
         btnArticle.classList.add('actif');
-        articlesCartes.classList.remove('inactif');
-        articlesCartes.classList.add('inactif');
+/*         articlesCartes.classList.remove('inactif');
+        articlesCartes.classList.add('inactif'); */
     }
 }) 
