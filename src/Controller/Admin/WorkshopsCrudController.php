@@ -33,17 +33,18 @@ class WorkshopsCrudController extends AbstractCrudController
     public function configureFields(string $pageName): iterable
     {
         return [
-            TextField::new('title', 'Titre'),           // Récuperation du champ title pour ajouter/éditer le titre des ateliers
-            TextareaField::new('contents', 'Contenue')  // Récuperation du champ contents pour ajouter/éditer le contenue des ateliers
-                ->setFormType(CKEditorType::class)      // Appelle du formulaire Wisiwig
+            TextField::new('title', 'Titre'),                           // Récuperation du champ title pour ajouter/éditer le titre des ateliers
+            TextareaField::new('contents', 'Contenue')                  // Récuperation du champ contents pour ajouter/éditer le contenue des ateliers
+                ->setFormType(CKEditorType::class)                      // Appelle du formulaire Wisiwig
                 ->hideOnIndex(),
-            ImageField::new('thumbnail', 'Miniature')   // Récuperation du champ img pour ajouter/éditer les images
-                ->setUploadDir('public/assets/img/agis/ateliers/')    // Direction d'upload des images
-                ->setBasePath('/assets/img/agis/ateliers/'),          // Recherche la route de l'image pour l'afficher dans le backoffice
-            TextField::new('description', 'Extrait'),   // Récuperation du champ description pour ajouter/éditer les extraits
-            DateField::new('date', 'Date'),             // Récuperation du chanp date pour ajouter/éditer la date de publication des ateliers
-            SlugField::new('slug', 'Slug ?')            // Récuperation du chanp slug pour ajouter/éditer la date de publication des ateliers
-                ->setTargetFieldName('title')           // Rattache le slug au titre
+            ImageField::new('thumbnail', 'Miniature')                   // Récuperation du champ img pour ajouter/éditer les images
+                ->setUploadDir('public/assets/img/agis/ateliers/')      // Direction d'upload des images
+                ->setBasePath('/assets/img/agis/ateliers/')             // Recherche la route de l'image pour l'afficher dans le backoffice
+                ->setFormTypeOption('required', false),                 // Retire l'option require en édition
+            TextField::new('description', 'Extrait'),                   // Récuperation du champ description pour ajouter/éditer les extraits
+            DateField::new('date', 'Date'),                             // Récuperation du chanp date pour ajouter/éditer la date de publication des ateliers
+            SlugField::new('slug', 'Slug ?')                            // Récuperation du chanp slug pour ajouter/éditer la date de publication des ateliers
+                ->setTargetFieldName('title')                           // Rattache le slug au titre
         ];
     }
    

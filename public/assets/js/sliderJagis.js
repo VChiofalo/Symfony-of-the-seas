@@ -1,4 +1,3 @@
-//SLIDER A MODIFIER AVE LES CLASSES (REPRIS DE LA PAGE JE M'INFORME)
 document.addEventListener('DOMContentLoaded', (e) => {
 
     let btnPrev = document.querySelector('.btn-prev');

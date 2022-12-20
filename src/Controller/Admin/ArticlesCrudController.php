@@ -34,16 +34,17 @@ class ArticlesCrudController extends AbstractCrudController
     public function configureFields(string $pageName): iterable
     {
         return [
-            TextField::new('title', 'Titre'),           // Récuperation du champ title pour ajouter/éditer le titre des articles
-            TextareaField::new('contents', 'Contenue')  // Récuperation du champ contents pour ajouter/éditer le contenue des articles
-                ->setFormType(CKEditorType::class)      // Appelle du formulaire Wisiwig
+            TextField::new('title', 'Titre'),                           // Récuperation du champ title pour ajouter/éditer le titre des articles
+            TextareaField::new('contents', 'Contenue')                  // Récuperation du champ contents pour ajouter/éditer le contenue des articles
+                ->setFormType(CKEditorType::class)                      // Appelle du formulaire Wisiwig
                 ->hideOnIndex(),
-            ImageField::new('thumbnail', 'Miniature')   // Récuperation du champ img pour ajouter/éditer les images
-                ->setUploadDir('public/assets/img/agis/articles/')    // Direction d'upload des images
-                ->setBasePath('/assets/img/agis/articles/'),          // Recherche la route de l'image pour l'afficher dans le backoffice
-            TextField::new('description', 'Extrait'),   // Récuperation du champ description pour ajouter/éditer les extraits
-            SlugField::new('slug', 'Slug ?')            // Récuperation du chanp slug pour ajouter/éditer la date de publication des articles
-                ->setTargetFieldName('title')           // Rattache le slug au titre
+            ImageField::new('thumbnail', 'Miniature')                   // Récuperation du champ img pour ajouter/éditer les images
+                ->setUploadDir('public/assets/img/agis/articles/')      // Direction d'upload des images
+                ->setBasePath('/assets/img/agis/articles/')             // Recherche la route de l'image pour l'afficher dans le backoffice
+                ->setFormTypeOption('required', false),                 // Retire l'option require en édition
+            TextField::new('description', 'Extrait'),                   // Récuperation du champ description pour ajouter/éditer les extraits
+            SlugField::new('slug', 'Slug ?')                            // Récuperation du chanp slug pour ajouter/éditer la date de publication des articles
+                ->setTargetFieldName('title')                           // Rattache le slug au titre
         ];
     }
    
