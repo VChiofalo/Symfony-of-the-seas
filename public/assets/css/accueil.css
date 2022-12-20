@@ -506,3 +506,121 @@ footer .logo {
     height: 60px;
     width: 110px;
 }
+
+/************************19/12 MODAAAAAAAAAAAALES-DEBUT**********************************/
+
+
+.modal-content{
+    padding: 4rem 0;
+    background-image: url(../img/Accueil/teambullee/vague-qui-sommes-nous.svg);
+    background-repeat: no-repeat;
+}
+
+.quisommesnous{
+    padding-bottom:35rem;
+}
+
+
+.headermodale h1{
+    margin:0 1rem
+}
+
+
+.sonic{
+    color: #2F2D84
+}
+
+.lunette{
+color: #4C6EAE;
+}
+
+
+
+.makeup, .sonic, .orange, .lunette, .bubblegum{
+    font-size: 21px;
+
+}
+
+#toutequipe img {
+    height: 300px;
+}
+
+#jud {
+    position: absolute;
+    z-index: 20;
+    left: 297px;
+    top: 226px;
+}
+#jud div {
+    margin-top: -1rem;
+}
+
+#alice {
+    position: absolute;
+    z-index: 0;
+    left: 627px;
+    top: 231px;
+
+}
+#alice div {
+    margin-top: -2.5rem;
+    margin-left: 1.9rem;
+}
+
+#vincent {
+    position: absolute;
+    z-index: 0;
+    left: 121px;
+    top: 387px;
+}
+#vincent div {
+    margin-top: -2.5rem;
+    margin-right: 1rem;
+}
+
+#laurye {
+    position: absolute;
+    z-index: 40;
+    left: 469px;
+    top: 387px;  
+}
+#laurye div {
+    margin-top: -1.5rem;
+    margin-right: 1rem;
+}
+
+#virginie {
+    position: absolute;
+    z-index: 30;
+    left: 808px;
+    top: 415px;   
+}
+#virginie div {
+    margin-top: -3rem;
+    margin-right: -2rem;
+}
+
+#megane {
+    position: absolute;
+    z-index: 50;
+    left: 271px;
+    top: 558px; 
+}
+#megane div {
+    margin-top: -3rem;
+    margin-right: 1rem;
+}
+
+#noemie {
+    position: absolute;
+    z-index: 50;
+    left: 640px;
+    top: 586px;
+}
+#noemie div {
+    margin-top: -3rem;
+    margin-right: 1rem;
+}
+
+
+/************************19/12 MODAAAAAAAAAAAALES-FIN**********************************/
