@@ -233,6 +233,7 @@ body p {
     margin: auto;
     width: 191px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .bouton:hover{
@@ -274,6 +275,7 @@ body p {
 /* Général*/
 #boiteaoutils {
     background: #E9F0FE;
+    padding-bottom: 100px;
 }
 
 #boiteaoutils h2 {
@@ -300,6 +302,8 @@ body p {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     font-weight: 400;
+    color: #2F2D84;
+    padding: 10px 0;
 }
 
 /* Onglets*/
@@ -318,7 +322,7 @@ body p {
 }
 
 #boutonateliers {
-    left: 80px;
+    left: 60px;
     top: 10px;
 }
 
@@ -330,8 +334,8 @@ body p {
 #onglets {
     background-color: #C33070;
     border-radius: 20px;
-    width: 32%;
-    margin-left: 480px;
+    width: 20%;
+    margin-left: 750px;
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin-bottom: 4rem;
@@ -347,7 +351,7 @@ body p {
 
 #boutonateliers:hover {
     top: 0px;
-    left: 70px;
+    left: 50px;
 }
 
 #boutonarticles:hover {
@@ -362,7 +366,7 @@ body p {
     padding: 10px;
     position: absolute;
     top: 0px;
-    left: 70px;
+    left: 50px;
 }
 
 #btnarticle .actif {
@@ -429,25 +433,36 @@ body p {
     color: #C33070;
 }
 
-#boiteaoutils .theatre img {
-    width: 95%;
-    padding-bottom: 2rem;
+.article, .atelier{
+    text-align: center;
+    position: relative;
 }
 
-#boiteaoutils .cohesion img {
-    width: 90%;
-    padding-bottom: 1.5rem;
+.voir{
+    bottom: 20px;
+    left: 37%;
+    position: absolute;
+    font-family: 'Poppins';
+    font-style: normal;
+    color: #2F2D84;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
 }
 
-#boiteaoutils .harcelement img {
-    width: 65%;
-    padding-bottom: 1.3rem;
+.voir p{
+/*     font-family: 'Poppins';
+    font-style: normal;
+    color: #2F2D84;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px; */
 }
 
-
-#boiteaoutils .violencescolaire img {
-    width: 90%;
-    padding-bottom: 0.7rem;
+#boiteaoutils img {
+    width: 237.64px;
+    height: 142.47px;
+    padding-bottom: 1rem;
 }
 
 .btn-prev,
@@ -461,19 +476,22 @@ body p {
 }
 
 .btn-prev {
-    left: -40px;
+    left: 170px;
+    top: 3540px;
     background-image: url(/assets/img/fleche-carrousel=gauche.svg);
 }
 
 .btn-next {
-    right: -40px;
+    right: 170px;
+    top: 3540px;
     background-image: url(/assets/img/fleche-carrousel=droite.svg);
 }
 
 .articles-ateliers-container {
     position: relative;
+    overflow: hidden;
 }
 
-.articles{
-    overflow: hidden;
+.inactif {
+    display: none;
 }

@@ -131,69 +131,55 @@
 
         </div>
         <Section id="boiteaoutils" class="container-fluid">
-            <div class="container">
-            
-                <h2>Des outils pour sensibiliser</h2>
-
-                <!-- onglets-->
-                <div id="onglets">
-                    <div id="boutons-boite-outils" class="d-flex justify-content-around">
-                        <h3 id="btnatelier"><span id="boutonateliers" class="actif">Ateliers</span></h3>
-                        <h3 id="btnarticle"><span id="boutonarticles">Articles</span></h3>
-                    </div> 
-                </div>
-
-                <!-- articles-->
-                <div class="articles-ateliers-container container">
-                    <i class="btn-prev"></i>
-                    <i class="btn-next"></i>
-                    <div class="articles row text-center d-flex justify-content-between flex-wrap">
-                        <article class="col-lg-3 col-sm-12">
-                            <div class="theatre">   
-                                <img src="../assets/img/theatre enfant-01.png" alt="image">
-                                <h3>Théâtre</h3>
-                                <p>
-                                    Un spectacle et des débats pour appréhender le harcèlement.
-                                </p>
-                                <h6><a href="">Voir plus</a></h6>
-                            </div>
-                        </article>
-    
-                        <article class="col-lg-3 col-sm-12">
-                            <div class="cohesion">
-                                <img src="../assets/img/anti harcelement cohesion-01.png" alt="image">
-                                <h3>Cohésion</h3>
-                                <p>
-                                    Atelier pour libérer la parole en classe et devenir défenseur.
-                                </p>
-                                <h6><a href="">Voir plus</a></h6>
-                            </div>
-                        </article>
-    
-                        <article class="col-lg-3 col-sm-12">
-                            <div class="harcelement">
-                                <img src="../assets/img/harcelement ecole primaire_Mesa de trabajo 1.png" alt="image">
-                                <h3>Harcèlement</h3>
-                                <p>
-                                    Des ateliers sur la construction de personnalité.
-                                </p>
-                                <h6><a href="">Voir plus</a></h6>
-                            </div>
-                        </article>
-    
-                        <article class="col-lg-3 col-sm-12">
-                            <div class="violencescolaire">
-                                <img src="../assets/img/Stop la violence-01.png" alt="image">
-                                <h3>Violence scolaire</h3>
-                                <p>
-                                    Un serious game pour éduquer sur le harcèlement de manière ludique.
-                                </p>
-                                <h6><a href="">Voir plus</a></h6>
-                            </div>
-                        </article>
+            <div id="onglets">
+                <div id="boutons-boite-outils" class="d-flex justify-content-around">
+                    <h3 id="btnatelier"><span id="boutonateliers" class="actif">Ateliers</span></h3>
+                    <h3 id="btnarticle"><span id="boutonarticles">Articles</span></h3>
+                </div> 
+            </div>
+            <div id="boiteaoutils">
+                <div class="row">
+                    <div class="col-lg-1">
+                        <i class="btn-prev"></i>
                     </div>
-                </div>
-            </div>           
+                    <div class="col-lg-10">
+                        
+                        <div class="container articles-ateliers-container">
+                            <div class="d-flex justify-content-between flex-no-wrap articles">
+
+                                {% for article in articles %}
+                                <article class="col-lg-3 col-sm-12 article inactif">
+                                    <div>
+                                        <a href="{{ path('app_article', {'slug':article.slug} ) }}">
+                                            <img src="assets/img/agis/articles/{{ article.thumbnail }}" alt="">
+                                            <h3>{{ article.title }}</h3>
+                                            <p>{{  article.description }}</p>
+                                            <p class="voir">Voir plus</p>
+                                        </a>
+                                    </div>
+                                </article>
+                                {% endfor %}
+
+                                {% for workshop in workshops %}
+                                <article class="col-lg-3 col-sm-12 atelier">
+                                    <div>
+                                        <a href="{{ path('app_workshop', {'slug':workshop.slug} ) }}">
+                                            <img src="assets/img/agis/ateliers/{{ workshop.thumbnail }}" alt="">
+                                            <h3>{{ workshop.title }}</h3>
+                                            <p>{{  workshop.description }}</p>
+                                            <p class="voir">Voir plus</p>
+                                        </a>
+                                    </div>
+                                </article>
+                                {% endfor %}
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="btn-next"></i>
+                    </div>
+                </div> 
+            </div>
         </Section>
 
     </main>
@@ -201,6 +187,6 @@
 {% endblock %}
 
 {% block javascripts %}     
-        <script src="/assets/js/sliderJagis.js"></script>
-        <script src="/assets/js/boiteOutils.js"></script>
-    {% endblock %}
+    <script src="/assets/js/sliderJagis.js"></script>
+    <script src="/assets/js/boiteOutils.js"></script>
+{% endblock %}
