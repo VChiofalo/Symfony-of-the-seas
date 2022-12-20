@@ -1,30 +1,39 @@
-let atelier = document.getElementById('boutonateliers');
-let article = document.getElementById('boutonarticles');
-let ateliers = document.querySelectorAll('');
-let articles = document.querySelectorAll('');
+// Récuperation du Dom
+let btnAtelier = document.getElementById('boutonateliers');
+let btnArticle = document.getElementById('boutonarticles');
+let ateliersCartes = document.querySelectorAll('');
+let articlesCartes = document.querySelectorAll('');
 // Gestionnaire d'event
-atelier.addEventListener('click', () => {
-    if (article.classList.contains('actif')) {
-        atelier.classList.add('actif');
-        ateliers.classList.remove('inactif');
-        article.classList.remove('actif');
-        article.classList.add('inactif');
+btnAtelier.addEventListener('click', () => {
+    if (btnAtelier.classList.contains('actif')) {
+        return;
+    }
+
+    if (btnArticle.classList.contains('actif')) {
+        btnAtelier.classList.add('actif');
+        ateliersCartes.classList.remove('inactif');
+        btnArticle.classList.remove('actif');
+        articlesCartes.classList.add('inactif');
     } else {
-        atelier.classList.toggle('actif');
-        ateliers.classList.remove('inactif');
-        article.classList.add('inactif');
+        btnAtelier.classList.add('actif');
+        ateliersCartes.classList.remove('inactif');
+        articlesCartes.classList.add('inactif');
     }
 })
 
-article.addEventListener('click', () => {
-    if (atelier.classList.contains('actif')) {
-        article.classList.add('actif');
-        articles.classList.remove('inactif');
-        atelier.classList.remove('actif');
-        ateliers.classList.add('inactif');
+btnArticle.addEventListener('click', () => {
+    if (btnArticle.classList.contains('actif')) {
+        return;
+    }
+
+    if (btnAtelier.classList.contains('actif')) {
+        btnArticle.classList.add('actif');
+        articlesCartes.classList.remove('inactif');
+        btnAtelier.classList.remove('actif');
+        articlesCartes.classList.add('inactif');
     } else {
-        article.classList.toggle('actif');
-        articles.classList.remove('inactif');
-        ateliers.classList.add('inactif');
+        btnArticle.classList.add('actif');
+        articlesCartes.classList.remove('inactif');
+        articlesCartes.classList.add('inactif');
     }
 }) 
