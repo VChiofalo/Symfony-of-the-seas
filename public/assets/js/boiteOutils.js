@@ -3,12 +3,14 @@ let btnAtelier;
 let btnArticle;
 let ateliersCartes;
 let articlesCartes;
+
 // Récuperation du Dom
 btnAtelier = document.getElementById('boutonateliers');
 btnArticle = document.getElementById('boutonarticles');
-/* ateliersCartes = document.querySelectorAll('');
-articlesCartes = document.querySelectorAll(''); */
-// Gestionnaire d'event
+ateliersCartes = document.querySelectorAll('.atelier');
+articlesCartes = document.querySelectorAll('.article');
+
+// Gestionnaire d'event bouton atelier
 btnAtelier.addEventListener('click', () => {
     if (btnAtelier.classList.contains('actif')) {
         return;
@@ -16,16 +18,17 @@ btnAtelier.addEventListener('click', () => {
 
     if (btnArticle.classList.contains('actif')) {
         btnAtelier.classList.add('actif');
-/*         ateliersCartes.classList.remove('inactif'); */
+        ateliersCartes.forEach(element => {
+            element.classList.remove('inactif');
+        });
         btnArticle.classList.remove('actif');
-/*         articlesCartes.classList.add('inactif'); */
-    } else {
-        btnAtelier.classList.add('actif');
-/*         ateliersCartes.classList.remove('inactif');
-        articlesCartes.classList.add('inactif'); */
+        articlesCartes.forEach(element => {
+            element.classList.add('inactif');
+        });
     }
 })
 
+// Gestionnaire d'event bouton article
 btnArticle.addEventListener('click', () => {
     if (btnArticle.classList.contains('actif')) {
         return;
@@ -33,12 +36,12 @@ btnArticle.addEventListener('click', () => {
 
     if (btnAtelier.classList.contains('actif')) {
         btnArticle.classList.add('actif');
-/*         articlesCartes.classList.remove('inactif'); */
+        articlesCartes.forEach(element => {
+            element.classList.remove('inactif');
+        });
         btnAtelier.classList.remove('actif');
-/*         articlesCartes.classList.add('inactif'); */
-    } else {
-        btnArticle.classList.add('actif');
-/*         articlesCartes.classList.remove('inactif');
-        articlesCartes.classList.add('inactif'); */
+        ateliersCartes.forEach(element => {
+            element.classList.add('inactif');
+        });
     }
 }) 

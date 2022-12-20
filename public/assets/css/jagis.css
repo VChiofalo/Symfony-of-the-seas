@@ -319,7 +319,7 @@ body p {
 }
 
 #boutonateliers {
-    left: 80px;
+    left: 60px;
     top: 10px;
 }
 
@@ -331,8 +331,8 @@ body p {
 #onglets {
     background-color: #C33070;
     border-radius: 20px;
-    width: 32%;
-    margin-left: 480px;
+    width: 20%;
+    margin-left: 750px;
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin-bottom: 4rem;
@@ -348,7 +348,7 @@ body p {
 
 #boutonateliers:hover {
     top: 0px;
-    left: 70px;
+    left: 50px;
 }
 
 #boutonarticles:hover {
@@ -363,7 +363,7 @@ body p {
     padding: 10px;
     position: absolute;
     top: 0px;
-    left: 70px;
+    left: 50px;
 }
 
 #btnarticle .actif {
@@ -462,16 +462,22 @@ body p {
 }
 
 .btn-prev {
-    left: -15px;
+    left: 170px;
+    top: 3420px;
     background-image: url(/assets/img/fleche-carrousel=gauche.svg);
 }
 
 .btn-next {
-    right: -6px;
+    right: 170px;
+    top: 3420px;
     background-image: url(/assets/img/fleche-carrousel=droite.svg);
 }
 
 .articles-ateliers-container {
     position: relative;
     overflow: hidden;
+}
+
+.inactif {
+    display: none;
 }

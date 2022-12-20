@@ -1,11 +1,11 @@
 //SLIDER A MODIFIER AVE LES CLASSES (REPRIS DE LA PAGE JE M'INFORME)
 document.addEventListener('DOMContentLoaded', (e) => {
 
-    let btnPrev = document.querySelector('.articles-ateliers-container .btn-prev');
-    let btnNext = document.querySelector('.articles-ateliers-container .btn-next');
+    let btnPrev = document.querySelector('.btn-prev');
+    let btnNext = document.querySelector('.btn-next');
     let delta = 0;
     let counter = 0;
-    let step = 250;
+    let step = 340;
     let slider = document.querySelector('.articles');
     let containerWidth = document.querySelector('.articles-ateliers-container').offsetWidth;
     let nbSlide = slider.children.length;
