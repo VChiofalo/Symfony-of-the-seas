@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
+/*************** BACKGROUND MISE EN SITUATION*******************/
+
+.backgroundmiseensituation{
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #2F2D84;
+    /* position: fixed;  */
+    top: 0; 
+    left: 0; 
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+/***************ICONE CROIX*******************/
+
+.quitter {
+    width: 45px;
+    height: 45px;
+    margin-top: 2rem;
+    margin-right: 3rem;
+    
+}
+
+
+/***************IMAGE ZOOM*******************/
+
+.test{
+    padding-top:92px;
+}
+.cadreimage{
+    width: 854px;
+    height: 639px;
+    /* background: url(../quiz/illustrationquizz/img-question-4.png); */
+    display: block;
+    margin: -0.2rem 6rem 0;
+   /*  background-size: cover; */
+
+    background-position: 75% 60%;
+    border-radius: 50px;
+    margin-bottom: 120px;
+
+    
+    
+}
+
+/***************QUESTIONS*******************/
+
+#sectionquestions{
+    padding: 2.5rem 8rem 6rem 3rem; 
+    width: 50%;
+}
+
+#numeroquestion{
+    font-family: 'Chewy', cursive;
+    font-size: 40px;
+    color: #FCDDEC;
+}
+
+#question{
+    font-family: 'Poppins', sans-serif;    
+    font-size: 25px;
+    font-weight: 450; 
+    color: #D0D7E5;
+    margin-bottom: 2rem;
+}
+
+/***************REPONSES*******************/
+input[type=radio]{
+    visibility: hidden;
+}
+
+input[type=radio]{
+    visibility: hidden;
+}
+
+input[type=radio]+label{
+    font-weight: 700;
+    font-size: 25px;
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif ;
+    background-color: white;
+    padding: 18px 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 100px;
+    color: #2F2D84;
+    width: 650px;
+      
+}
+
+
+input[type=radio]+label:hover{    
+    background-color: #FFE4EF;
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.05);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
+    border-radius: 100px;
+    color: #0F0E33;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ 
+}
+ 
+input[type=radio]+label:active{
+    background-color: #FF8EBF;
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.05);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
+    border-radius: 100px;
+    color: #FFFFFF;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1)
+
+}
+
+/***************BOUTON SUIVANT*******************/
+
+ 
+.bouton{
+    font-family: 'Poppins', sans-serif;  
+    font-size: 27px;
+    text-decoration: none;
+    background-color: #FFB7D6;
+    padding: 8px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 100px;
+    color: white;
+    width: 300px;
+    display: block;
+    margin: 1rem auto;
+    background: #FFB7D6;   
+    margin-top:50px;
+}
+ 
+
+.bouton :hover{
+    background-color: #FFFFFF;
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.05);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
+    color: #2F2D84;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+ 
+
+.bouton:active{
+
+    background-color: #FFFFFF;
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.05);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
+    border-radius: 100px;
+    color: #2F2D84;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1)
+ 
+}
+

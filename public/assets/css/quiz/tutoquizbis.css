@@ -1,0 +1,103 @@
+#tuto p, #tuto a{
+    font-family: 'Poppins', sans-serif;
+}
+
+#tuto p{
+    font-size: 25px;
+    line-height: 38px;
+    color: #2F2D84;
+}
+
+/**********BACKGROUND************/
+
+.backgroundtutoquiz{
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #2F2D84;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+/**********JE ME RENDS SUR LE SITE************/
+
+#direct{
+    text-decoration: none;
+    color: #FFB7D6;
+    padding: 2rem;
+}
+
+
+#direct img{
+    width: 65px;
+}
+
+#direct img:hover{
+    width: 85px;
+}
+
+
+/**********TUTO*****************************/
+
+#tuto{
+    background: #FCDDEC;
+    width: 40vw;
+    padding: 4rem;
+    margin-top: 3rem;
+    box-shadow: 5px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 70px;
+}
+
+@media screen and (max-width:1280px){
+    #tuto{
+       width: 90vw;
+    }
+
+    #tuto p, #tuto a{
+        font-size:16px
+    }
+
+    #tuto a{
+        width: fit-content;
+    }
+} 
+
+
+/**********BOUTON*****************************/
+
+.bouton{
+    text-decoration: none;
+    background-color: #2F2D84;
+    padding: 8px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 100px;
+    color: white;
+    margin: 3.5rem auto 0.5rem;
+    width: 300px;
+    display: block;
+    font-size: 27px;
+    width: 400px
+    
+    
+}
+
+.bouton:hover{
+    background-color: white;
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.05);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
+    color: #2F2D84;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.bouton:active{
+    background-color: white;
+    color: #2F2D84;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 100px;   
+
+}

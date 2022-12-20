@@ -1,0 +1,102 @@
+ /* fait 14 dec après-midi */
+  /* General*/
+ main {
+    background: linear-gradient(180deg, #6154AE 0%, #9E96D5 15.1%, rgba(194, 190, 224, 0.76) 28.65%, rgba(228, 226, 244, 0.734286) 38.02%, rgba(252, 253, 255, 0.7) 50.52%, rgba(228, 226, 244, 0.73) 61.46%, rgba(194, 190, 224, 0.76) 72.4%, #9E96D5 85.94%, #6154AE 100%);
+    height: 100vh;
+}
+main h3 {
+    color: #2F2D84;
+    }
+    
+    main p {
+    color: #2F2D84;
+    }
+
+ 
+/* icone retour */
+.retour {
+    padding-left: 5rem;
+}
+
+/* Bloc de texte */
+.encadrer {
+    background: #FFF1F9;
+    /* width: 250px; */
+    /* height: 620px; */
+    margin-top: 5rem;
+    padding: 5rem;
+    box-shadow: 5px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 70px;
+} 
+
+main #titre {
+    padding-top: 3rem;
+    display: inline-block;
+    color: #FCDDEC;
+}
+
+/* Bulles */
+#grande {
+position: absolute;
+width: 353.09px;
+height: 353.09px;
+left: 1381px;
+top: 32px;
+}
+
+#moyen {
+position: absolute;
+width: 198px;
+height: 198px;
+left: 1316px;
+top: 229px;
+}
+
+#petite{
+position: absolute;
+width: 110px;
+height: 110px;
+left: 1250px;
+top: 62px;    
+}
+
+/* Bouton, */
+.bouton{
+    margin-right: 2rem;
+    text-decoration: none;
+    background-color: #2F2D84;
+    padding: 8px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 100px;
+    color: white;
+    margin:auto;
+    width: 300px;
+    display: block;
+    margin:auto;
+    
+    
+}
+
+.bouton:hover{
+    text-decoration: none;
+    background-color: #2F2D84;
+    padding: 8px 32px;
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.05);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
+    border-radius: 100px;
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.bouton:active{
+    text-decoration: none;
+    background-color: #FFFFFF;
+    padding: 8px 32px;
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.05);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
+    border-radius: 100px;
+    color: #2F2D84;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1)
+
+}
