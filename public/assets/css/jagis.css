@@ -233,6 +233,7 @@ body p {
     margin: auto;
     width: 191px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .bouton:hover{
@@ -461,19 +462,16 @@ body p {
 }
 
 .btn-prev {
-    left: -40px;
+    left: -15px;
     background-image: url(/assets/img/fleche-carrousel=gauche.svg);
 }
 
 .btn-next {
-    right: -40px;
+    right: -6px;
     background-image: url(/assets/img/fleche-carrousel=droite.svg);
 }
 
 .articles-ateliers-container {
     position: relative;
-}
-
-.articles{
     overflow: hidden;
 }
