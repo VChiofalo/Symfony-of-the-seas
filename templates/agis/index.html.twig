@@ -150,7 +150,11 @@
                                 {% for article in articles %}
                                 <article class="col-lg-3 col-sm-12 article inactif">
                                     <div>
+                                        {% if article.url == null %}
                                         <a href="{{ path('app_article', {'slug':article.slug} ) }}">
+                                        {% else %}
+                                        <a href="{{ article.url }}">
+                                        {% endif %}
                                             <img src="assets/img/agis/articles/{{ article.thumbnail }}" alt="">
                                             <h3>{{ article.title }}</h3>
                                             <p>{{  article.description }}</p>
@@ -163,7 +167,11 @@
                                 {% for workshop in workshops %}
                                 <article class="col-lg-3 col-sm-12 atelier">
                                     <div>
+                                        {% if workshop.url == null %}
                                         <a href="{{ path('app_workshop', {'slug':workshop.slug} ) }}">
+                                        {% else %}
+                                        <a href="{{ workshop.url }}">
+                                        {% endif %}
                                             <img src="assets/img/agis/ateliers/{{ workshop.thumbnail }}" alt="">
                                             <h3>{{ workshop.title }}</h3>
                                             <p>{{  workshop.description }}</p>
