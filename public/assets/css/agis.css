@@ -37,6 +37,10 @@ main {
     font-weight: 400;
 }
 
+.couleurtxt{
+    color: #2F2D84;
+}
+
 /* Onglets*/
 
 #onglets h3 a {
