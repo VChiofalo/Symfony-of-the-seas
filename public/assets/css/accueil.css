@@ -341,6 +341,7 @@ h1{
 }
 
 #txtbienvenue{
+    color: #2F2D84;
     font-size: 20px;
     font-weight: 600;
 }
@@ -362,6 +363,16 @@ h1{
 
 #backgroundtop a:hover{
     background: #FF8EBF;
+}
+
+.bouton2{
+    margin-right: 2rem;
+    background-color: #FFB7D6;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 6px rgba(0, 0, 0, 0.05);
+    margin:auto;
+    width: 100px;
+    display: block;
+    margin:auto;
 }
 
 /* Section Quizz */
