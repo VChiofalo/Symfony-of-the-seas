@@ -32,9 +32,9 @@ class TestimonialsCrudController extends AbstractCrudController
             IntegerField::new('age', 'Age'),                                // Récupération du chamge age pour ajouter/éditer l'âge des témoignants
             TextField::new('content', 'Témoignage'),                        // Récuperation du champ description pour ajouter/éditer le contenue des témoignages
             TextField::new('class_css', 'Class Css (exemple : facebook)'),  // Récuperation du champ description pour ajouter/éditer le contenue des class Css
-            ImageField::new('logo', 'Logo')                            // Récuperation du champ img pour ajouter/éditer les images
-                ->setUploadDir('public/assets/logo/')                       // Direction d'upload des logos
-                ->setBasePath('/assets/logo/'),                             // Recherche la route du logo pour l'afficher dans le backoffice
+            ImageField::new('logo', 'Logo')                                 // Récuperation du champ img pour ajouter/éditer les images
+                ->setUploadDir('public/assets/img/')                        // Direction d'upload des logos
+                ->setBasePath('/assets/img/'),                              // Recherche la route du logo pour l'afficher dans le backoffice
         ];
     }
    
