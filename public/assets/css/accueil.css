@@ -311,13 +311,6 @@
     animation-delay: 0.5s;
 }
 
-/*******AJOUT 14/12-DEBUT**************/
-/* .bienvenue, #sectionquiz{
-    padding: 6rem 0;
-} */
-/*******AJOUT 14/12-FIN**************/
-
-
 #backgroundtop{
     background: linear-gradient(180deg, #DCE7FF 0%, rgba(255, 241, 247, 0) 45.1%);
     padding-top: 160px; /* Ajout 14 dec 16h */
@@ -336,13 +329,18 @@ h1{
     padding-bottom: 2rem;
 }
 
+#titrebullee {
+    font-weight: 700;
+    font-size: 45px;
+}
+
 #Qui {
     margin: 5rem 0;
 }
 
 #txtbienvenue{
     color: #2F2D84;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
 }
 

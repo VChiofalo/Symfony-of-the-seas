@@ -227,14 +227,18 @@ body h3 {
     height: 430px;
     width: 630px;
 }
+
 .artloi h2{
     color: #2F2D84;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 45px;
 }
 
 .artloi2{
     color: #2F2D84;
 }
-
 
 /*Accordéon*/
 .accordion {  
@@ -377,6 +381,14 @@ h6{
 
 .phraseHarcelement{
     padding-bottom: 40px;
+    color: #0F0E33;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.tem h3 {
+    font-weight: 700;
+    font-size: 45px;
 }
 
 /*Facebook*/

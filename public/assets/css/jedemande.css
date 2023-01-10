@@ -6,12 +6,17 @@
 #endirect h1, #academie h2, #association h2{
     padding-bottom: 2rem;
     color: #2F2D84;
+    font-weight: 700;
+    font-size: 45px;
 }
 
 #academie h2, #association h2{
     padding-top: 4rem;
 }
 
+.encre {
+    color: #0F0E33;
+}
 
 /**************EN DIRECT***************/
 
@@ -53,6 +58,10 @@
     opacity: 0;
     transition: opacity 0.1s linear;
     position:relative
+}
+
+#endirect h3 {
+    font-weight: 600;
 }
 
 /****BANDE****/
@@ -130,4 +139,8 @@
     border-radius: 20px ;
     box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.05);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+#violet {
+    color: #3F3D9A;
 }

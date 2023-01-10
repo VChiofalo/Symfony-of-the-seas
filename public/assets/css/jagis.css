@@ -57,9 +57,8 @@ body p {
     padding-top: 1rem;
     line-height: 40px;
 }
+
 /********************************MODIF 14/12 - FIN******/
-
-
 
 #bulle-ce-nest-pas-de-ta-faute-1{
     /* bulle-ce-nest-pas-de-ta-faute 1 */
@@ -214,6 +213,10 @@ body p {
 
 #makeup{
     color:#C33070
+}
+
+.blue{
+    color: #345A9F;
 }
 
 /*****************************************MODIF 14/12 - FIN******/
