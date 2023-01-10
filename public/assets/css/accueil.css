@@ -351,18 +351,18 @@ h1{
 }
 
 #backgroundtop a{
-    margin-top: 120px !important;
+    margin-top: 70px !important;
     background: #3F3D9A;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 6px rgba(0, 0, 0, 0.05);
     border-radius: 100px;
-    width: 340px;
-    height: 69px;
+    width: 238px;
+    height: 54px;
     text-align: center;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
-    font-size: 35px;
-    line-height: 52px;
+    font-size: 20px;
+    line-height: 37.5px;
 }
 
 #backgroundtop a:hover{
