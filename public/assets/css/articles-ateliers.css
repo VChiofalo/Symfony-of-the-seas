@@ -1,3 +1,41 @@
-main {
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap'); 
+
+body {
     background: url(../img/vague-degrader-wordpress.png);
+    margin-top: 150px;
+}
+
+.container{
+    width: 1320px;
+}
+
+.flex {
+    display: flex;
+}
+
+h1 {
+    color: #C33070;
+    font-weight: 700;
+    font-size: 45px; 
+    margin-bottom: 50px;
+}
+
+h2 {
+    color: #2F2D84;
+    font-weight: 600;
+    font-size: 30px; 
+    margin-bottom: 50px;
+}
+
+h3 {
+    color: #0F0E33;
+    font-weight: 600;
+    font-size: 25px; 
+    margin-bottom: 50px;
+}
+
+p {
+    color: #0F0E33;
+    font-weight: 400;
+    font-size: 20px;
 }

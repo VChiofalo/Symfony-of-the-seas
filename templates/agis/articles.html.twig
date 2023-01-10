@@ -1,7 +1,13 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{{ article.title }}{% endblock %}
+{% block title %}{{ article.title}}{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="assets/css/articles-ateliers.css">
+{% endblock %}
 
 {% block body %}
-    {{ article.contents|raw }}
+    <div>
+        {{ article.contents|raw }}
+    </div>
 {% endblock %}
