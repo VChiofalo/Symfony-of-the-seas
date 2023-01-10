@@ -480,13 +480,13 @@ body p {
 
 .btn-prev {
     left: 170px;
-    top: 3540px;
+    top: 3740px;
     background-image: url(/assets/img/fleche-carrousel=gauche.svg);
 }
 
 .btn-next {
     right: 160px;
-    top: 3540px;
+    top: 3740px;
     background-image: url(/assets/img/fleche-carrousel=droite.svg);
 }
 
