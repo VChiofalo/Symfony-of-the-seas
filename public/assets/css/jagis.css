@@ -31,6 +31,10 @@ body p {
     font-weight: 400;
 }
 
+.textsize{
+    font-size: 18px;
+}
+
 /******JE SOUTIENS******/
 
 .backgroundjesoutiens{
@@ -205,18 +209,22 @@ body p {
 
 .font_orange{
     color: #F78008;
+    font-size: 20px;
 }
 
 .font_rose{
     color: #DF80A9;
+    font-size: 20px;
 }
 
 #makeup{
-    color:#C33070
+    color:#C33070;
+    font-size: 20px;
 }
 
 .blue{
     color: #345A9F;
+    font-size: 20px;
 }
 
 /*****************************************MODIF 14/12 - FIN******/
@@ -463,7 +471,6 @@ body p {
 }
 
 #boiteaoutils img {
-    width: 237.64px;
     height: 142.47px;
     padding-bottom: 1rem;
 }
@@ -480,13 +487,13 @@ body p {
 
 .btn-prev {
     left: 170px;
-    top: 3740px;
+    top: 3840px;
     background-image: url(/assets/img/fleche-carrousel=gauche.svg);
 }
 
 .btn-next {
     right: 160px;
-    top: 3740px;
+    top: 3840px;
     background-image: url(/assets/img/fleche-carrousel=droite.svg);
 }
 

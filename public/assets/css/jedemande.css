@@ -68,8 +68,8 @@
 
 .backgroundbande{
     background: #6471AF;
-    padding-top: 1rem;
-    padding-bottom: 0.5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 1.5rem;
     position: absolute;
     bottom: 0;
     left: 0px;
@@ -80,6 +80,11 @@
 }
 
 /**************ACADEMIE***************/
+
+.textgras{
+    font-weight: 600;
+}
+
 .backgroundacademie{
     background: linear-gradient(180deg, rgba(135, 163, 204, 0) 24.48%, #DFECFF 100%);
 }
