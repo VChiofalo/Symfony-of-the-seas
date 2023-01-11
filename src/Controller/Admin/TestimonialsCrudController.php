@@ -34,7 +34,8 @@ class TestimonialsCrudController extends AbstractCrudController
             TextField::new('class_css', 'Class Css (exemple : facebook)'),  // Récuperation du champ description pour ajouter/éditer le contenue des class Css
             ImageField::new('logo', 'Logo')                                 // Récuperation du champ img pour ajouter/éditer les images
                 ->setUploadDir('public/assets/img/')                        // Direction d'upload des logos
-                ->setBasePath('/assets/img/'),                              // Recherche la route du logo pour l'afficher dans le backoffice
+                ->setBasePath('/assets/img/')                               // Recherche la route du logo pour l'afficher dans le backoffice
+                ->setFormTypeOption('required', false),                     // Retire l'option require en édition
         ];
     }
    

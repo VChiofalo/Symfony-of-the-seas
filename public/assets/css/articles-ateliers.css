@@ -2,39 +2,40 @@
 
 body {
     background: url(../img/vague-degrader-wordpress.png);
-    margin-top: 150px;
+    margin-top: 200px;
 }
 
 .container{
     width: 1320px;
+    margin-bottom: 100px;
 }
 
-.flex {
-    display: flex;
+.container h1, .container h2, .container h3, .container p{
+    font-family: 'Poppins';
 }
 
-h1 {
+.container h1 {
     color: #C33070;
     font-weight: 700;
     font-size: 45px; 
     margin-bottom: 50px;
 }
 
-h2 {
+.container h2 {
     color: #2F2D84;
     font-weight: 600;
     font-size: 30px; 
     margin-bottom: 50px;
 }
 
-h3 {
+.container h3 {
     color: #0F0E33;
     font-weight: 600;
     font-size: 25px; 
     margin-bottom: 50px;
 }
 
-p {
+.container p {
     color: #0F0E33;
     font-weight: 400;
     font-size: 20px;

@@ -61,37 +61,44 @@ top: 62px;
 }
 
 .bulleesize{
-    /*  width: 300px; */
-     height: 200px;
+    position: absolute;
+    width: 850px;
+    left: 1010px;
+    top: 10px;
+    z-index: 0;
  }
 
 /* Bouton, */
 .bouton{
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 52.5px;
+    text-align: center;
     margin-right: 2rem;
+    margin-top: 4rem !important;
     text-decoration: none;
     background-color: #2F2D84;
     padding: 8px 32px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 6px rgba(0, 0, 0, 0.05);
     border-radius: 100px;
     color: white;
-    margin:auto;
-    width: 300px;
+    width: 402px;
+    height: 69px;
     display: block;
-    margin:auto;
-    
-    
+    margin:auto; 
+    z-index: 9999;
 }
 
 .bouton:hover{
     text-decoration: none;
-    background-color: #2F2D84;
+    background-color: #FF8EBF;
     padding: 8px 32px;
     box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.05);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
     border-radius: 100px;
     color: white;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
+    z-index: 1;
 }
 
 .bouton:active{
@@ -102,6 +109,6 @@ top: 62px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
     border-radius: 100px;
     color: #2F2D84;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1)
-
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1; 
 }

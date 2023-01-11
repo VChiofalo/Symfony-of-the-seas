@@ -4,6 +4,7 @@
     padding: 50px;
     left: calc(-50vw + 50%);
     width: 100vw;
+    background-color: white;
 }
 
 footer .icones {
@@ -28,6 +29,6 @@ footer hr {
     color: black ;
 }
 
-p{
+.pfooter p, .pfooter a{
     color: #0F0E33;
 }

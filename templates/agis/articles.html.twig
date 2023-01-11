@@ -3,11 +3,11 @@
 {% block title %}{{ article.title }}{% endblock %}
 
 {% block stylesheets %}
-    <link rel="stylesheet" href="assets/css/articles-ateliers.css">
+    <link rel="stylesheet" href="../assets/css/articles-ateliers.css">
 {% endblock %}
 
 {% block body %}
-    <div>
+    <div class="container">
         {{ article.contents|raw }}
     </div>
 {% endblock %}
